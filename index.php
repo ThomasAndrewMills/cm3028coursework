@@ -242,7 +242,7 @@
 						
 						<div class="col-md-4 col-sm-6 work-grid html bootstrap graphic">
 							<div class="portfolio-content">
-								<img class="img-responsive" src="cluster/images/works/portfolio-6.jpg" alt="">
+								<img class="img-responsive" src="cluster/images/works/athletics.jpg" alt="">
 								<div class="portfolio-overlay">
 									<a href="cluster/images/works/portfolio-6.jpg"><i class="fa fa-camera-retro"></i></a>
 									<h5>Web Development</h5>
