@@ -53,13 +53,14 @@
 					</button>
 					<a class="logo" href="index.php"><b>GOPORTLETHEN</b></a>
 				</div>
-				<form action="page.php" method="post">
-					<label>UN:</label><input type="text" name="name">
-					<label>PW:</label><input type="text" name="gender">
-					<input type="submit" value="Submit">
-				</form>
+
 				<div class="collapse navbar-collapse" id="st-navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
+						<form action="page.php" method="post">
+							<li><label>UN:</label><input type="text" name="name"></li>
+							<li><label>PW:</label><input type="text" name="gender"></li>
+							<input type="submit" value="Submit">
+						</form>
 				    	<li><a href="#header">Home</a></li>
 				    	<li><a href="#services">About</a></li>
 				    	<li><a href="#clubs">Clubs</a></li>
