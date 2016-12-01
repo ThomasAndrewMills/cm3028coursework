@@ -187,7 +187,7 @@
 						
 						<div class="col-md-4 col-sm-6 work-grid wordpress graphic">
 							<div class="portfolio-content">
-								<img class="img-responsive" src="cluster/images/works/portfolio-1.jpg" alt="">
+								<img class="img-responsive" src="cluster/images/works/tennis.jpg" alt="">
 								<div class="portfolio-overlay">
 									<a href="cluster/images/works/portfolio-1.jpg"><i class="fa fa-camera-retro"></i></a>
 									<h5>Web Development</h5>
@@ -198,7 +198,7 @@
 						
 						<div class="col-md-4 col-sm-6 work-grid html php bootstrap">
 							<div class="portfolio-content">
-								<img class="img-responsive" src="cluster/images/works/portfolio-2.jpg" alt="">
+								<img class="img-responsive" src="cluster/images/works/hockey.jpg" alt="">
 								<div class="portfolio-overlay">
 									<a href="cluster/images/works/portfolio-2.jpg"><i class="fa fa-camera-retro"></i></a>
 									<h5>Web Development</h5>
@@ -209,7 +209,7 @@
 						
 						<div class="col-md-4 col-sm-6 work-grid wordpress graphic">
 							<div class="portfolio-content">
-								<img class="img-responsive" src="cluster/images/works/portfolio-3.jpg" alt="">
+								<img class="img-responsive" src="cluster/images/works/football.jpg" alt="">
 								<div class="portfolio-overlay">
 									<a href="cluster/images/works/portfolio-3.jpg"><i class="fa fa-camera-retro"></i></a>
 									<h5>Web Development</h5>
@@ -220,7 +220,7 @@
 						
 						<div class="col-md-4 col-sm-6 work-grid html php bootstrap">
 							<div class="portfolio-content">
-								<img class="img-responsive" src="cluster/images/works/portfolio-4.jpg" alt="">
+								<img class="img-responsive" src="cluster/images/works/martialArts.jpg" alt="">
 								<div class="portfolio-overlay">
 									<a href="cluster/images/works/portfolio-4.jpg"><i class="fa fa-camera-retro"></i></a>
 									<h5>Web Development</h5>
@@ -231,7 +231,7 @@
 						
 						<div class="col-md-4 col-sm-6 work-grid wordpress graphic php">
 							<div class="portfolio-content">
-								<img class="img-responsive" src="cluster/images/works/portfolio-5.jpg" alt="">
+								<img class="img-responsive" src="cluster/images/works/dance.jpg" alt="">
 								<div class="portfolio-overlay">
 									<a href="cluster/images/works/portfolio-5.jpg"><i class="fa fa-camera-retro"></i></a>
 									<h5>Web Development</h5>
