@@ -78,7 +78,7 @@
 					<div class="carousel-caption container">
 						<div class="row">
 							<div class="col-sm-7">
-								<h1>DiscoverM</h1>
+								<h1>Discover</h1>
 								<h2>North Kincardineshire</h2>
 								<p>Discover new places and plan your routes around Portlethen</p>
 							</div>
@@ -127,34 +127,30 @@
 				</div>
 
 				<div class="col-md-4 col-sm-6 st-service">
-					<h2><i class="fa fa-desktop"></i> Web Design</h2>
+					<h2><i class="fa fa-desktop"></i> Community Engagement</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio dolor.</p>
 				</div>
 
 				<div class="col-md-4 col-sm-6 st-service">
-					<h2><i class="fa fa-cogs"></i> Web Developement</h2>
+					<h2><i class="fa fa-cogs"></i> Keeping Active</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio dolor.</p>
 				</div>
 
 				<div class="col-md-4 col-sm-6 st-service">
-					<h2><i class="fa fa-code"></i> Custom Development</h2>
+					<h2><i class="fa fa-code"></i> Discover Portlethen</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio dolor.</p>
 				</div>
 
 				<div class="col-md-4 col-sm-6 st-service">
-					<h2><i class="fa fa-dashboard"></i> Super Fast Web</h2>
+					<h2><i class="fa fa-dashboard"></i> Healthy Living</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio dolor.</p>
 				</div>
 
 				<div class="col-md-4 col-sm-6 st-service">
-					<h2><i class="fa fa-life-ring"></i> Friendly Support</h2>
+					<h2><i class="fa fa-life-ring"></i> Run by YOU</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio dolor.</p>
 				</div>
-
-				<div class="col-md-4 col-sm-6 st-service">
-					<h2><i class="fa fa-weixin"></i> Live Support</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio dolor.</p>
-				</div>
+				
 			</div>
 		</div>
 	</section>
