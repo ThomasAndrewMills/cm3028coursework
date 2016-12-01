@@ -65,8 +65,8 @@
 				    	<li><a href="#our-team">Team</a></li>
 				    	<li><a href="#contact">Contact</a></li>
 				    	<li><a href="cluster/blog.html">healthy living blog</a></li>
-						<li><label>UN:</label><input type="text" name="name"></li>
-						<li><label>PW:</label><input type="text" name="gender"></li>
+						<li style="padding-top:5px;"><label>UN:</label><input type="text" name="name"></li>
+						<li style="padding-top:5px;"><label>PW:</label><input type="text" name="gender"></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container -->
