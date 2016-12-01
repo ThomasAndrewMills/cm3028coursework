@@ -79,7 +79,7 @@
 						<div class="row">
 							<div class="col-sm-7">
 								<h1>Map your Route </h1>
-								<h2>Go Explore</h2>
+								<h2>Discover North Kincardineshire</h2>
 								<p>Discover new places and plan your routes around Portlethen</p>
 							</div>
 						</div>
@@ -121,7 +121,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="section-title">
-						<h1>About</h1>
+						<h1>What is Go Portlethen?</h1>
 						<span class="st-border"></span>
 					</div>
 				</div>
