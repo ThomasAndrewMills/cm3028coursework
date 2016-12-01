@@ -150,7 +150,7 @@
 					<h2><i class="fa fa-life-ring"></i> Run by YOU</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio dolor.</p>
 				</div>
-				
+
 			</div>
 		</div>
 	</section>
@@ -159,6 +159,7 @@
 
 	<!-- OUR WORKS -->
 	<section id="clubs">
+		rgrg
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
