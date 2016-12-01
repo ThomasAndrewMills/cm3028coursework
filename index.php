@@ -276,7 +276,7 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="team-member">
 						<div class="member-image">
-							<img class="img-responsive" src="cluster/images/members/team1.jpg" alt="">
+							<img class="img-responsive" src="cluster/images/members/profile1.jpg" alt="">
 							<div class="member-social">
 								<a href=""><i class="fa fa-facebook"></i></a>
 								<a href=""><i class="fa fa-twitter"></i></a>
@@ -285,8 +285,8 @@
 							</div>
 						</div>
 						<div class="member-info">
-							<h4>Khalil Uddin</h4>
-							<span>Designer</span>
+							<h4>John Smith</h4>
+							<span>Co-ordinator</span>
 						</div>
 					</div>
 				</div>
@@ -294,7 +294,7 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="team-member">
 						<div class="member-image">
-							<img class="img-responsive" src="cluster/images/members/team2.jpg" alt="">
+							<img class="img-responsive" src="cluster/images/members/profile2.jpg" alt="">
 							<div class="member-social">
 								<a href=""><i class="fa fa-facebook"></i></a>
 								<a href=""><i class="fa fa-twitter"></i></a>
@@ -303,7 +303,7 @@
 							</div>
 						</div>
 						<div class="member-info">
-							<h4>Rubel Miah</h4>
+							<h4>Bob Smith</h4>
 							<span>Lead Developer</span>
 						</div>
 					</div>
@@ -312,7 +312,7 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="team-member">
 						<div class="member-image">
-							<img class="img-responsive" src="cluster/images/members/team1.jpg" alt="">
+							<img class="img-responsive" src="cluster/images/members/profile3.jpg" alt="">
 							<div class="member-social">
 								<a href=""><i class="fa fa-facebook"></i></a>
 								<a href=""><i class="fa fa-twitter"></i></a>
@@ -321,7 +321,7 @@
 							</div>
 						</div>
 						<div class="member-info">
-							<h4>Shamim Shohag</h4>
+							<h4>Boris Smith</h4>
 							<span>Developer</span>
 						</div>
 					</div>
@@ -330,7 +330,7 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="team-member">
 						<div class="member-image">
-							<img class="img-responsive" src="cluster/images/members/team2.jpg" alt="">
+							<img class="img-responsive" src="cluster/images/members/profile4.jpg" alt="">
 							<div class="member-social">
 								<a href=""><i class="fa fa-facebook"></i></a>
 								<a href=""><i class="fa fa-twitter"></i></a>
@@ -339,7 +339,7 @@
 							</div>
 						</div>
 						<div class="member-info">
-							<h4>Zubayer Rahman</h4>
+							<h4>John Doe</h4>
 							<span>Marketer</span>
 						</div>
 					</div>
@@ -405,19 +405,19 @@
 				</div>
 				<div class="col-sm-6 col-md-3">
 					<div class="fun-fact text-center">
-						<h3><i class="fa fa-briefcase fa-6"></i> <span class="st-counter">73987</span></h3>
+						<h3><i class="fa fa-briefcase fa-6"></i> <span class="st-counter">50</span></h3>
 						<p>Members</p>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-3">
 					<div class="fun-fact text-center">
-						<h3><i class="fa fa-coffee"></i> <span class="st-counter">297345</span></h3>
+						<h3><i class="fa fa-coffee"></i> <span class="st-counter">5</span></h3>
 						<p>Club Genres</p>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-3">
 					<div class="fun-fact text-center">
-						<h3><i class="fa fa-code"></i> <span class="st-counter">9823686</span></h3>
+						<h3><i class="fa fa-code"></i> <span class="st-counter">22</span></h3>
 						<p>Locations of Interest</p>
 					</div>
 				</div>
