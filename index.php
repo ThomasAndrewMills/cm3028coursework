@@ -53,7 +53,12 @@
 					</button>
 					<a class="logo" href="index.php"><b>GOPORTLETHEN</b></a>
 				</div>
-
+				<form action="superheroDisplay.php" method="post">
+					<label>Name:</label><input type="text" name="name">
+					<label>Gender:</label><input type="text" name="gender">
+					<label>Superhero power:</label><input type="text" name="power">
+					<input type="submit" value="Submit">
+				</form>
 				<div class="collapse navbar-collapse" id="st-navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
 				    	<li><a href="#header">Home</a></li>
