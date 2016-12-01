@@ -57,16 +57,16 @@
 				<div class="collapse navbar-collapse" id="st-navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
 
-							<li><label>UN:</label><input type="text" name="name"></li>
-							<li><label>PW:</label><input type="text" name="gender"></li>
-							<input type="submit" value="Submit">
-						
+
+
 				    	<li><a href="#header">Home</a></li>
 				    	<li><a href="#services">About</a></li>
 				    	<li><a href="#clubs">Clubs</a></li>
 				    	<li><a href="#our-team">Team</a></li>
 				    	<li><a href="#contact">Contact</a></li>
 				    	<li><a href="cluster/blog.html">healthy living blog</a></li>
+						<li><label>UN:</label><input type="text" name="name"></li>
+						<li><label>PW:</label><input type="text" name="gender"></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container -->
