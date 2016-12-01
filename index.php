@@ -78,8 +78,8 @@
 					<div class="carousel-caption container">
 						<div class="row">
 							<div class="col-sm-7">
-								<h1>Map your Route </h1>
-								<h2>Discover North Kincardineshire</h2>
+								<h1>DiscoverM</h1>
+								<h2>North Kincardineshire</h2>
 								<p>Discover new places and plan your routes around Portlethen</p>
 							</div>
 						</div>
