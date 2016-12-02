@@ -110,7 +110,7 @@
                             <b>Password:</b><br>
                             <input type="password" name="password" value="password"><br><br>
 
-                            <b><input type="submit" value="Sign in"></b>
+                            <b><input name="signin" type="submit" value="Sign in"></b>
                         </form>
 
                     </div>
@@ -135,7 +135,7 @@
                             <b>Password:</b><br>
                             <input type="text" name="password" value="password"><br><br>
 
-                            <b><input type="submit" value="Create Account"></b>
+                            <b><input name="signup" type="submit" value="Create Account"></b>
                         </form>
                         <!--------------------------------------------------------------------------------------------->
 

@@ -74,10 +74,17 @@
 
 
 
+
                         <?php
-                            $email = $_POST["email"];
-                            $password = $_POST["password"];
-                            print("<li><p>Hello {$email} {$password}</p></li>");
+
+                        if(isset($_POST["signin"]))
+                            echo "sign in has been submitted";
+                        else if(isset($_POST["signup"]))
+                            echo "sign up has been submitted";
+
+                            //$email = $_POST["email"];
+                            //$password = $_POST["password"];
+                            //print("<li><p>Hello {$email} {$password}</p></li>");
                         ?>
                         <li>
                             <form action="createUser.php" style="margin-top:10px;">
