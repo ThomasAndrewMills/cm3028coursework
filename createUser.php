@@ -106,22 +106,22 @@
                         <?
                         if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                         ?>
-                        <form action="<? echo "$_SERVER['PHP_SELF']"; ?>">
-                            <b>Email:</b><br>
-                            <input type="text" name="email" value="email"><br>
+                            <form action="<? echo "$_SERVER['PHP_SELF']"; ?>">
+                                <b>Email:</b><br>
+                                <input type="text" name="email" value="email"><br>
 
-                            <b>Password:</b><br>
-                            <input type="password" name="password" value="password"><br><br>
+                                <b>Password:</b><br>
+                                <input type="password" name="password" value="password"><br><br>
 
-                            <b><input type="submit" value="Sign in"></b>
-                        </form>
+                                <b><input type="submit" value="Sign in"></b>
+                            </form>
 
                         <?
-                        elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                        } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             // execute if requested using HTTP POST Method
-                        $forename = $_POST["forename"];
-                        $surname = $_POST["surname"];
-                        print("<h1>Hello {$forename} {$surname}</h1>");
+                            $forename = $_POST["forename"];
+                            $surname = $_POST["surname"];
+                            print("<h1>Hello {$forename} {$surname}</h1>");
                         }
                         ?>
                     </div>
