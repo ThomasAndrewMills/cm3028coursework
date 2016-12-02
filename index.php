@@ -43,7 +43,7 @@
 	<!-- HEADER -->
 	<header id="header">
 		<nav class="navbar st-navbar navbar-fixed-top">
-			<div class="container">
+			<div class="container" style="width:1300px;">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#st-navbar-collapse">
 						<span class="sr-only">Toggle navigation</span>
@@ -60,13 +60,20 @@
 
 
 				    	<li><a href="#header">Home</a></li>
-				    	<li><a href="#services">About</a></li>
+				    	<li><a href="#about">About</a></li>
 				    	<li><a href="#clubs">Clubs</a></li>
 				    	<li><a href="#our-team">Team</a></li>
 				    	<li><a href="#contact">Contact</a></li>
-				    	<li><a href="cluster/blog.html">healthy living blog</a></li>
-						<li style="padding-top:11px;"><label>UN:</label><input type="text" name="name"></li>
-						<li style="padding-top:11px;"><label>PW:</label><input type="text" name="gender"></li>
+				    	<li><a href="blog.html">healthy living blog</a></li>
+                        <li>
+                            <form action="index.php" method="POST">
+						        <input type="text" name="name" placeholder='USERNAME'>
+						        <input type="text" name="gender" placeholder='PASSWORD'>
+                                <input style="font-weight: 600;" type="submit" value="sign in">
+
+                            </form>
+                        </li>
+                        <a href="createUser.php" style="font-weight:700;">CREATE AN ACCOUNT</a>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container -->
@@ -121,7 +128,7 @@
 
 	
 	<!-- SERVICES -->
-	<section id="services">
+	<section id="about">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -194,9 +201,9 @@
 							<div class="portfolio-content">
 								<img class="img-responsive" src="cluster/images/works/tennis.jpg" alt="">
 								<div class="portfolio-overlay">
-									<a href="cluster/images/works/portfolio-1.jpg"><i class="fa fa-camera-retro"></i></a>
-									<h5>Web Development</h5>
-									<p>Design, Develop</p>
+									<a href="cluster/images/works/tennis.jpg"><i class="fa fa-camera-retro"></i></a>
+									<h5>Tennis Club</h5>
+									<p>Join our tennis Club!</p>
 								</div>
 							</div>	
 						</div>
@@ -205,9 +212,9 @@
 							<div class="portfolio-content">
 								<img class="img-responsive" src="cluster/images/works/hockey.jpg" alt="">
 								<div class="portfolio-overlay">
-									<a href="cluster/images/works/portfolio-2.jpg"><i class="fa fa-camera-retro"></i></a>
-									<h5>Web Development</h5>
-									<p>Design, Develop</p>
+									<a href="cluster/images/works/hockey.jpg"><i class="fa fa-camera-retro"></i></a>
+									<h5>Hockey Club</h5>
+									<p>Join our Hockey Club!</p>
 								</div>
 							</div>	
 						</div>
@@ -216,9 +223,9 @@
 							<div class="portfolio-content">
 								<img class="img-responsive" src="cluster/images/works/football.jpg" alt="">
 								<div class="portfolio-overlay">
-									<a href="cluster/images/works/portfolio-3.jpg"><i class="fa fa-camera-retro"></i></a>
-									<h5>Web Development</h5>
-									<p>Design, Develop</p>
+									<a href="cluster/images/works/football.jpg"><i class="fa fa-camera-retro"></i></a>
+									<h5>Footbal Club</h5>
+									<p>Join our Football Club!</p>
 								</div>
 							</div>	
 						</div>
@@ -227,9 +234,9 @@
 							<div class="portfolio-content">
 								<img class="img-responsive" src="cluster/images/works/martialArts.jpg" alt="">
 								<div class="portfolio-overlay">
-									<a href="cluster/images/works/portfolio-4.jpg"><i class="fa fa-camera-retro"></i></a>
-									<h5>Web Development</h5>
-									<p>Design, Develop</p>
+									<a href="cluster/images/works/martialArts.jpg"><i class="fa fa-camera-retro"></i></a>
+									<h5>Martial Arts</h5>
+									<p>Join our Martial Arts Club!</p>
 								</div>
 							</div>	
 						</div>
@@ -238,9 +245,9 @@
 							<div class="portfolio-content">
 								<img class="img-responsive" src="cluster/images/works/dance.jpg" alt="">
 								<div class="portfolio-overlay">
-									<a href="cluster/images/works/portfolio-5.jpg"><i class="fa fa-camera-retro"></i></a>
-									<h5>Web Development</h5>
-									<p>Design, Develop</p>
+									<a href="cluster/images/works/dance.jpg"><i class="fa fa-camera-retro"></i></a>
+									<h5>Dance Club</h5>
+									<p>Join our Dance Club!</p>
 								</div>
 							</div>	
 						</div>
@@ -249,9 +256,9 @@
 							<div class="portfolio-content">
 								<img class="img-responsive" src="cluster/images/works/athletics.jpg" alt="">
 								<div class="portfolio-overlay">
-									<a href="cluster/images/works/portfolio-6.jpg"><i class="fa fa-camera-retro"></i></a>
-									<h5>Web Development</h5>
-									<p>Design, Develop</p>
+									<a href="cluster/images/works/athletics.jpg"><i class="fa fa-camera-retro"></i></a>
+									<h5>Athletics Club</h5>
+									<p>Join our Athletics Club!</p>
 								</div>
 							</div>	
 						</div>
