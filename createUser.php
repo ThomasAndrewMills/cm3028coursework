@@ -103,7 +103,7 @@
                         <h1>sign in</h1>
                         <span class="st-border"></span>
 
-                        <form action="index.php">
+                        <form action="index.php" method="post">
                             <b>Email:</b><br>
                             <input type="text" name="email" value="email"><br>
 
