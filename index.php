@@ -13,7 +13,8 @@
 	<link rel="stylesheet" href="cluster/css/style.css" />
 	<link rel="stylesheet" href="cluster/css/responsive.css" />
 
-	
+    @import url("http://fonts.googleapis.com/css?family=Raleway:200,300,600,700&subset=latin,latin-ext");
+
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="cluster/images/icon/favicon.png">
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="cluster/images/icon/apple-touch-icon-144-precomposed.png">
@@ -47,7 +48,7 @@
         <nav class="navbar st-navbar navbar-fixed-top">
 
 
-            <div style="text-align:center; font-size:50px;">
+            <div style="text-align:center; font-size:30px;font-family: "Raleway";>
                 <a class="logo"  href="index.php"><b>GOPORTLETHEN</b></a>
             </div>
 
@@ -61,31 +62,21 @@
 
                 <br>
 				<div class="collapse navbar-collapse" id="st-navbar-collapse">
-					<ul class="nav navbar-nav navbar-right">
-
-
-
-				    	<li><a href="#header">Home</a></li>
-				    	<li><a href="#about">About</a></li>
-				    	<li><a href="#clubs">Clubs</a></li>
-				    	<li><a href="#our-team">Team</a></li>
-				    	<li><a href="#contact">Contact</a></li>
-				    	<li><a href="blog.php">healthy living blog</a></li>
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#clubs">Clubs</a></li>
+                        <li><a href="#our-team">Team</a></li>
+                        <li><a href="discover.php">Discover</a></li>
+                        <li><a href="healthNews.php">healthy living blog</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <form action="index.php" method="POST" style="margin-top:10px;font-weight:900;">
-						        <input type="text" name="name" placeholder='USERNAME' style="border-radius: 3px;border:none;width:150px;">
-						        <input type="password" name="gender" placeholder='PASSWORD' style="border-radius: 3px;border:none;width:150px;">
-                                <input style="font-weight: 600;border-radius: 5px;background-color: white;" type="submit" value="sign in">
-                            </form>
-                        </li>
-                        <li>
-
                             <form action="createUser.php" style="margin-top:10px;">
-                                &nbsp;
-                                &nbsp;<input style="font-weight: 600;border-radius: 5px;background-color: white;" type="submit" value="CREATE AN ACCOUNT">
+                                    <input style="font-weight: 600;border-radius: 5px;background-color: lightgray;" type="submit" value="SIGN IN/SIGN UP">
                             </form>
                         </li>
-					</ul>
+                    </ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container -->
 		</nav>
@@ -179,6 +170,9 @@
 				</div>
 
 			</div>
+            <br>
+            <br>
+            <br>
 		</div>
 	</section>
 	<!-- /SERVICES -->

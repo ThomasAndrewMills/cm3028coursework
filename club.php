@@ -61,7 +61,7 @@
 				    	<li><a href="#clubs">Clubs</a></li>
 				    	<li><a href="#our-team">Team</a></li>
 				    	<li><a href="#contact">Contact</a></li>
-				    	<li><a href="blog.php">Blog</a></li>
+				    	<li><a href="healthNews.php">Blog</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container -->

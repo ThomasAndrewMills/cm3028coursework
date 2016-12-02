@@ -565,26 +565,26 @@
 
 /* 9. ABOUT US */
 	
-	#about-us{
+	#about{
 		background-color: #f5f5f5;
 	}
 
-	#about-us .about-us{
+	#about .about-us{
 		padding-left: 15%;
 		padding-right: 15%;
 		padding-top: 15%;
 	}
 
-	#about-us .about-us h4{
+	#about .about-us h4{
 		margin-top: 0;
 		margin-bottom: 30px;
 	}
 
-	#about-us .about-us .btn-send{
+	#about .about-us .btn-send{
 		margin-top: 30px;
 	}
 
-	#about-us .our-office{
+	#about .our-office{
 		padding-right: 0px;
 	}
 
