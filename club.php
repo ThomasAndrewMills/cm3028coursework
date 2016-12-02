@@ -61,7 +61,7 @@
 				    	<li><a href="#clubs">Clubs</a></li>
 				    	<li><a href="#our-team">Team</a></li>
 				    	<li><a href="#contact">Contact</a></li>
-				    	<li><a href="blog.html">Blog</a></li>
+				    	<li><a href="blog.php">Blog</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container -->
@@ -482,7 +482,7 @@
 				<!-- SOCIAL ICONS -->
 				<div class="col-sm-6 col-sm-push-6 footer-social-icons">
 					<span>Follow us:</span>
-					<a href="https://www.facebook.com/Portlethen-Sports-Club-703745156314817/"><i class="fa fa-facebook"></i></a>
+					<a href="https://www.facebook.com/Portlethen-Sports-Club-703745156314817/club.php"><i class="fa fa-facebook"></i></a>
 					<a href=""><i class="fa fa-twitter"></i></a>
 				</div>
 				<!-- /SOCIAL ICONS -->

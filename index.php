@@ -42,18 +42,24 @@
 	
 	<!-- HEADER -->
 	<header id="header">
-		<nav class="navbar st-navbar navbar-fixed-top">
-			<div class="container" style="width:1300px;">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#st-navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-				    	<span class="icon-bar"></span>
-				    	<span class="icon-bar"></span>
-				    	<span class="icon-bar"></span>
-					</button>
-					<a class="logo" href="index.php"><b>GOPORTLETHEN</b></a>
-				</div>
 
+
+        <nav class="navbar st-navbar navbar-fixed-top">
+
+
+            <div style="text-align:center; font-size:50px;">
+                <a class="logo"  href="index.php"><b>GOPORTLETHEN</b></a>
+            </div>
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#st-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+			<div class="container">
+
+                <br>
 				<div class="collapse navbar-collapse" id="st-navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
 
@@ -64,16 +70,21 @@
 				    	<li><a href="#clubs">Clubs</a></li>
 				    	<li><a href="#our-team">Team</a></li>
 				    	<li><a href="#contact">Contact</a></li>
-				    	<li><a href="blog.html">healthy living blog</a></li>
+				    	<li><a href="blog.php">healthy living blog</a></li>
                         <li>
-                            <form action="index.php" method="POST">
-						        <input type="text" name="name" placeholder='USERNAME'>
-						        <input type="text" name="gender" placeholder='PASSWORD'>
-                                <input style="font-weight: 600;" type="submit" value="sign in">
-
+                            <form action="index.php" method="POST" style="margin-top:10px;font-weight:900;">
+						        <input type="text" name="name" placeholder='USERNAME' style="border-radius: 3px;border:none;width:150px;">
+						        <input type="password" name="gender" placeholder='PASSWORD' style="border-radius: 3px;border:none;width:150px;">
+                                <input style="font-weight: 600;border-radius: 5px;background-color: white;" type="submit" value="sign in">
                             </form>
                         </li>
-                        <a href="createUser.php" style="font-weight:700;">CREATE AN ACCOUNT</a>
+                        <li>
+
+                            <form action="createUser.php" style="margin-top:10px;">
+                                &nbsp;
+                                &nbsp;<input style="font-weight: 600;border-radius: 5px;background-color: white;" type="submit" value="CREATE AN ACCOUNT">
+                            </form>
+                        </li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container -->
@@ -102,7 +113,7 @@
 						<div class="row">
 							<div class="col-sm-7">
 								<h1>Sports in your area</h1>
-								<h2>Go Active</h2>
+								<h2>stay active</h2>
 								<p>Discover sports and clubs in the Portlethen Community</p>
 							</div>
 						</div>
@@ -113,7 +124,7 @@
 						<div class="row">
 							<div class="col-sm-7">
 								<h1>health and wellbeing</h1>
-								<h2>Go Health</h2>
+								<h2>be healthy</h2>
 								<p>Discover the latest news and information to ensure a healthy lifestyle</p>
 							</div>
 						</div>
@@ -133,6 +144,10 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="section-title">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
 						<h1>What is Go Portlethen?</h1>
 						<span class="st-border"></span>
 					</div>
@@ -265,7 +280,10 @@
 						
 					</div>				
 				</div>
-
+                <div style="margin-bottom: 100px;">
+                    <a href="club.php"><h1>Click here to view more clubs!</h1></a>
+                    <span class="st-border"></span>
+                </div>
 			</div>
 		</div>
 	</section>
