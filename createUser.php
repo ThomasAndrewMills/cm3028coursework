@@ -103,10 +103,10 @@
                         <h1>sign in</h1>
                         <span class="st-border"></span>
 
-                        <?
+                        <?/*
                         if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-                        ?>
-                            <form action="<? echo "$_SERVER['PHP_SELF']"; ?>">
+                        */?><!--
+                            <form action="<?/* echo "$_SERVER['PHP_SELF']"; */?>">
                                 <b>Email:</b><br>
                                 <input type="text" name="email" value="email"><br>
 
@@ -116,14 +116,14 @@
                                 <b><input type="submit" value="Sign in"></b>
                             </form>
 
-                        <?
+                        --><?/*
                         } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             // execute if requested using HTTP POST Method
                             $email = $_POST["email"];
                             $password = $_POST["password"];
                             print("<h1>Hello {$forename} {$surname}</h1>");
                         }
-                        ?>
+                        */?>
                     </div>
 
                 </div>
