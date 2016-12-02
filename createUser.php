@@ -106,7 +106,7 @@
                         <?
                         if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                         ?>
-                            <form action="<? echo "createUser.php"; ?>">
+                            <form action="<?php echo $_SERVER['PHP_SELF']; ?>">
                                 <b>Email:</b><br>
                                 <input type="text" name="email" value="email"><br>
 
