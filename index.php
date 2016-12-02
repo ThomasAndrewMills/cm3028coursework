@@ -73,7 +73,6 @@
                     <ul class="nav navbar-nav navbar-right">
 
 
-                            <li><p>Not logged in</p></li>
 
                         <?php
                             $email = $_POST["email"];
