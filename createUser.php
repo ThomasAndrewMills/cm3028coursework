@@ -122,7 +122,7 @@
                         <span class="st-border"></span>
 
                         <!--------------------------------------------------------------------------------------------->
-                        <form action="index.php">
+                        <form action="index.php" method="post">
                             <b>Name:</b><br>
                             <input type="text" name="name" value="name"><br>
 
