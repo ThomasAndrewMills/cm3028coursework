@@ -103,7 +103,10 @@
                         <h1>sign in</h1>
                         <span class="st-border"></span>
 
-                        <form action="index.php">
+                        <?
+                        if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+                        ?>
+                        <form action="<? echo "$_SERVER['PHP_SELF']"; ?>">
                             <b>Email:</b><br>
                             <input type="text" name="email" value="email"><br>
 
@@ -113,6 +116,14 @@
                             <b><input type="submit" value="Sign in"></b>
                         </form>
 
+                        <?
+                        elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                            // execute if requested using HTTP POST Method
+                        $forename = $_POST["forename"];
+                        $surname = $_POST["surname"];
+                        print("<h1>Hello {$forename} {$surname}</h1>");
+                        }
+                        ?>
                     </div>
 
                 </div>
@@ -138,6 +149,9 @@
                             <b><input type="submit" value="Create Account"></b>
                         </form>
                         <!--------------------------------------------------------------------------------------------->
+
+
+
 
                     </div>
                 </div>
