@@ -103,27 +103,16 @@
                         <h1>sign in</h1>
                         <span class="st-border"></span>
 
-                        <?
-                        if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-                        ?>
-                            <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-                                <b>Email:</b><br>
-                                <input type="text" name="email" value="email"><br>
+                        <form action="index.php">
+                            <b>Email:</b><br>
+                            <input type="text" name="email" value="email"><br>
 
-                                <b>Password:</b><br>
-                                <input type="password" name="password" value="password"><br><br>
+                            <b>Password:</b><br>
+                            <input type="password" name="password" value="password"><br><br>
 
-                                <b><input type="submit" value="Sign in"></b>
-                            </form>
+                            <b><input type="submit" value="Sign in"></b>
+                        </form>
 
-                        <?
-                        } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                            // execute if requested using HTTP POST Method
-                            $email = $_POST["email"];
-                            $password = $_POST["password"];
-                            print("<h1>Hello {$email} {$password}</h1>");
-                        }
-                        ?>
                     </div>
 
                 </div>
@@ -149,9 +138,6 @@
                             <b><input type="submit" value="Create Account"></b>
                         </form>
                         <!--------------------------------------------------------------------------------------------->
-
-
-
 
                     </div>
                 </div>
