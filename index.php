@@ -72,17 +72,13 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
 
-                        <?
-                        if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-                            ?>
+
                             <li><p>Not logged in</p></li>
-                        <?
-                        } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                            // execute if requested using HTTP POST Method
-                        $email = $_POST["email"];
-                        $password = $_POST["password"];
-                        print("<li><p>Hello {$email} {$password}</p></li>");
-                        }
+
+                        <?php
+                            $email = $_POST["email"];
+                            $password = $_POST["password"];
+                            print("<li><p>Hello {$email} {$password}</p></li>");
                         ?>
                         <li>
                             <form action="createUser.php" style="margin-top:10px;">
