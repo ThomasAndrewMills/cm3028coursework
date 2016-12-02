@@ -121,7 +121,7 @@
                             // execute if requested using HTTP POST Method
                             $email = $_POST["email"];
                             $password = $_POST["password"];
-                            print("<h1>Hello {$forename} {$surname}</h1>");
+                            print("<h1>Hello {$email} {$password}</h1>");
                         }
                         ?>
                     </div>
