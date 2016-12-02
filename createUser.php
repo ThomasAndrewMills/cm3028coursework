@@ -98,35 +98,47 @@
                 <br>
                 <br>
                 <br>
-                <div style="float:left;border:1px black solid;width:530px;">
+                <div style="float:left;width:530px;">
                     <div class="section-title">
                         <h1>sign in</h1>
-                        <form action="action_page.php">
-                            Name:<br>
-                            <input type="text" name="firstname" value="Mickey"><br>
-
-                            Last name:<br>
-                            <input type="text" name="lastname" value="Mouse"><br><br>
-
-                            Last name:<br>
-                            <input type="text" name="lastname" value="Mouse"><br><br>
-
-                            Last name:<br>
-                            <input type="text" name="lastname" value="Mouse"><br><br>
-
-                            Last name:<br>
-                            <input type="text" name="lastname" value="Mouse"><br><br>
-
-                            <input type="submit" value="Submit">
-                        </form>
                         <span class="st-border"></span>
+
+                        <form action="index.php">
+                            <b>Email:</b><br>
+                            <input type="text" name="email" value="email"><br>
+
+                            <b>Password:</b><br>
+                            <input type="password" name="password" value="password"><br><br>
+
+                            <b><input type="submit" value="Sign in"></b>
+                        </form>
+
                     </div>
 
                 </div>
-                <div style="float:right;border:1px black solid;width:530px;">
+                <div style="float:right;width:530px;">
                     <div class="section-title">
                         <h1>create account</h1>
                         <span class="st-border"></span>
+
+                        <!--------------------------------------------------------------------------------------------->
+                        <form action="index.php">
+                            <b>Name:</b><br>
+                            <input type="text" name="name" value="name"><br>
+
+                            <b>Email Address</b><br>
+                            <input type="text" name="email" value="email"><br><br>
+
+                            <b>Display name:</b><br>
+                            <input type="text" name="displayName" value="displayName"><br><br>
+
+                            <b>Password:</b><br>
+                            <input type="text" name="password" value="password"><br><br>
+
+                            <b><input type="submit" value="Create Account"></b>
+                        </form>
+                        <!--------------------------------------------------------------------------------------------->
+
                     </div>
                 </div>
             </div>

@@ -275,7 +275,7 @@
 					</div>				
 				</div>
                 <div style="margin-bottom: 100px;">
-                    <a href="club.php"><h1>Click here to view more clubs!</h1></a>
+                    <a href="club.php"style="color:#5b5b5b;"><h2>Click here to view more clubs!</h2></a>
                     <span class="st-border"></span>
                 </div>
 			</div>
