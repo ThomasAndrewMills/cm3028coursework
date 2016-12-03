@@ -126,22 +126,27 @@
                                     die('Connectfailed[' . $db->connect_error . ']');
                                 }
                                 // create a SQL query as a string
-                                $sql_query = "SELECT * FROM users WHERE emailAddress = '$email' AND password = '$password'";
+                                $sql_query = "SELECT EXISTS(SELECT 1 FROM users WHERE emailAddress = '$email' AND password = '$password')";
                                 // execute the SQL query
                                 $result = $db->query($sql_query);
 
-                                while ($row = $result->fetch_array()) {
-                                    // print out fiel ds from row of data
-                                    echo $row['emailAddress'] . "<br>";
-                                }
-
                                 if ($result === false) {
-                                    echo("You are not signed in");
+                                    echo("Incorrect email address or password");
                                 }
 
                                 if ($result !== false){
                                     echo("You have signed in!");
                                 }
+
+                                while ($row = $result->fetch_array()) {
+                                    // print out fiel ds from row of data
+                                    echo $row['name'] . "<br>";
+                                    echo $row['password'] . "<br>";
+                                    echo $row['emailAddress'] . "<br>";
+                                    echo $row['displayName'] . "<br>";
+                                }
+
+
 
                                 $result->close();
                                 // cl ose connection to database
