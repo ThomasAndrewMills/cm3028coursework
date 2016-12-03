@@ -229,51 +229,6 @@
 <!-- /HEADER -->
 
 
-<!-- SLIDER -->
-<section id="slider">
-    <div id="home-carousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="item active" style="background-image: url(cluster/images/slider/01.jpg)">
-                <div class="carousel-caption container">
-                    <div class="row">
-                        <div class="col-sm-7">
-                            <h1>Discover</h1>
-                            <h2>North Kincardineshire</h2>
-                            <p>Discover new places and plan your routes around Portlethen</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item" style="background-image: url(cluster/images/slider/02.jpg)">
-                <div class="carousel-caption container">
-                    <div class="row">
-                        <div class="col-sm-7">
-                            <h1>Sports in your area</h1>
-                            <h2>stay active</h2>
-                            <p>Discover sports and clubs in the Portlethen Community</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item" style="background-image: url(cluster/images/slider/03.jpg)">
-                <div class="carousel-caption container">
-                    <div class="row">
-                        <div class="col-sm-7">
-                            <h1>health and wellbeing</h1>
-                            <h2>be healthy</h2>
-                            <p>Discover the latest news and information to ensure a healthy lifestyle</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="home-carousel-left" href="#home-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-            <a class="home-carousel-right" href="#home-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
-        </div>
-    </div> <!--/#home-carousel-->
-</section>
-<!-- /SLIDER -->
-
-
 <!-- SERVICES -->
 <section id="map-canvas">
 </section>
