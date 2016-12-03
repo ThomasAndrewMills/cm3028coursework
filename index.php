@@ -108,7 +108,6 @@
 
                         }
                         echo($email . $password);
-                        echo($email);
                         if(isset($email)) {
 
                             // connect to server and select database
@@ -122,9 +121,19 @@
                             if ($db->connect_errno) {
                                 die('Connectfailed[' . $db->connect_error . ']');
                             }
+                            // create a SQL query as a string
+                            $sql_query = "SELECT * FROM users WHERE emailAddress = '$email' AND password = '$password'";
+                            // execute the SQL query
+                            $result = $db->query($sql_query);
 
+                            while($row = $result->fetch_array()){
+                                // print out fiel ds from row of data
+                                echo "<p>' ' . $row['userid' ] . ' '</p>";
+                            }
 
-                            $db->close();
+                            $result->close();
+                             // cl ose connection to database
+                             $db->close();
 
                         }
 
