@@ -128,7 +128,7 @@
                                 // execute the SQL query
                                 $result = $db->query($sql_query);
 
-                                $rowsFound = $result->num_rows);
+                                $rowsFound = $result->num_rows;
 
 
                                 if ($rowsFound === 1) {
