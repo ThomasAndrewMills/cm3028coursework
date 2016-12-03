@@ -99,7 +99,7 @@
 
                         <?php
 
-                        start_session();
+                        session_start();
                         if(isset($_SESSION[username])){
 
                             // connect to server and select database
@@ -150,8 +150,8 @@
                             $_SESSION['emailAddress'] = $_POST["emailAddress"];
                             $_SESSION['password'] = $_POST["password"];
 
-                            $email = $_SESSION['emailAddress']
-                            $password = $_SESSION['password']
+                            $email = $_SESSION['emailAddress'];
+                            $password = $_SESSION['password'];
 
                             //-------------------------
 
@@ -162,7 +162,7 @@
 
 
                         } //-------------------------
-                        else if (isset($_POST["signup"])) {
+                        if (isset($_POST["signup"])) {
                             $name = $_POST["name"];
                             $password = $_POST["password"];
                             $emailAddress = $_POST["emailAddress"];
