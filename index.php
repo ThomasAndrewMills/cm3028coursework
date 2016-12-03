@@ -128,7 +128,7 @@
                                 // execute the SQL query
                                 $result = $db->query($sql_query);
 
-                                print($result);
+                                print($result->num_rows);
 
 
                                 /*if ($result === 1) {
