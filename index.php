@@ -131,11 +131,11 @@
                                 $result = $db->query($sql_query);
 
                                 if ($result === 1) {
-                                    echo("Incorrect email address or password");
+                                    echo("You have signed in!");
                                 }
 
-                                if ($result !== 1){
-                                    echo("You have signed in!");
+                                if ($result !== 0){
+                                    echo("Incorrect email address or password");
                                 }
 
 
