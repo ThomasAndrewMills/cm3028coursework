@@ -109,7 +109,7 @@
                             $password = $_SESSION['password'];
                         }
 
-                        if(isset($email){
+                        if(isset($email)){
                             echo("test");
                             // connect to server and select database
                             $db = new mysqli(
