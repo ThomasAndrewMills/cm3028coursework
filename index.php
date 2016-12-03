@@ -109,7 +109,7 @@
                         }
                         echo($email . $password);
                         echo($email);
-                        if(isset($email)){
+                        if(isset($email)) {
 
                             // connect to server and select database
                             $db = new mysqli(
@@ -122,32 +122,11 @@
                             if ($db->connect_errno) {
                                 die('Connectfailed[' . $db->connect_error . ']');
                             }
-                            // create a SQL query as a string
-                            $sql_query = "SELECT EXISTS (
-                                          SELECT * FROM users WHERE emailAddress = $email AND password = $password)";
 
-                            // execute the SQL query
-                            $result = $db->query($sql_query);
-/*
-                            echo($result);
-                            if ($result===TRUE) {
-                                $loggedIn = true;
-                            } else {
-                                $loggedIn = false;
-                            }
 
-*/
-                            // iterate over $result obj ect one $row at a time
-                            // use fetch_array() to return an associative array
-                            while ($row = $result->fetch_array()) {
-                                // print out fiel ds from row of data
-                                //echo "<p>' ' . $row['$displayName'] . ' '</p>";
-                        }
-                            $result->close();
-                            // cl ose connection to database
                             $db->close();
 
-
+                        }
 
 
 
