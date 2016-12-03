@@ -106,7 +106,9 @@
                         error_reporting(E_ALL);
 
 
-
+                        if(isset($_POST["logout"])) {
+                            session_destroy();
+                        }
 
 
                         if(isset($_POST["signin"])) {
@@ -208,8 +210,8 @@
                             <?php
                                 if($_SESSION['loginStatus'] === TRUE){
                             ?>
-                                    <form action="#" style="margin-top:10px;">
-                                        <input style="font-weight: 600;border-radius: 5px;background-color: lightgray;" type="submit" value="LOGOUT">
+                                    <form action="index.php" method="post" style="margin-top:10px;">
+                                        <input style="font-weight: 600;border-radius: 5px;background-color: lightgray;" type="submit" value="LOGOUT" name="logout">
                                     </form>
                             <?php
                                 }
