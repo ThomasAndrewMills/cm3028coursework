@@ -110,8 +110,6 @@
                             $email = $_POST["email"];
                             $password = $_POST["password"];
 
-
-                            echo($email . $password);
                             if (isset($email)) {
 
                                 // connect to server and select database
@@ -137,12 +135,6 @@
                                 if ($result !== 0){
                                     echo("Incorrect email address or password");
                                 }
-
-
-                                    echo '$result';
-
-
-
 
                                 $result->close();
                                 // cl ose connection to database

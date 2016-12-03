@@ -105,10 +105,10 @@
 
                         <form action="index.php" method="post">
                             <b>Email:</b><br>
-                            <input type="text" name="email" value="email"><br>
+                            <input type="text" name="email" placeholder="email"><br>
 
                             <b>Password:</b><br>
-                            <input type="password" name="password" value="password"><br><br>
+                            <input type="password" name="password" placeholder="password"><br><br>
 
                             <b><input name="signin" type="submit" value="Sign in"></b>
                         </form>
@@ -124,16 +124,16 @@
                         <!--------------------------------------------------------------------------------------------->
                         <form action="index.php" method="post">
                             <b>Name:</b><br>
-                            <input type="text" name="name" value="name"><br>
+                            <input type="text" name="name" placeholder="name"><br>
 
                             <b>Email Address</b><br>
-                            <input type="text" name="emailAddress" value="emailAddress"><br><br>
+                            <input type="text" name="emailAddress" placeholder="emailAddress"><br><br>
 
                             <b>Display name:</b><br>
-                            <input type="text" name="displayName" value="displayName"><br><br>
+                            <input type="text" name="displayName" placeholder="displayName"><br><br>
 
                             <b>Password:</b><br>
-                            <input type="text" name="password" value="password"><br><br>
+                            <input type="text" name="password" placeholder="password"><br><br>
 
                             <b><input name="signup" type="submit" value="Create Account"></b>
                         </form>
