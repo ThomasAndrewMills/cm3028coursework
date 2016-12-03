@@ -103,10 +103,11 @@
 
 
                         if(isset($_POST["signin"])) {
-                            $name = $_POST["email"];
+                            $email = $_POST["email"];
+                            $password = $_POST["password"];
 
                         }
-                        print($name);
+                        print({$name}{$password});
                         /*echo($email);
                         if(isset($email)){
 
