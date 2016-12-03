@@ -101,16 +101,17 @@
 
                         session_start();
 
-                        $email="";
-                        $password="";
-                        if (isset($_POST["signin"])) {
+
+                        if(isset($_POST["signin"])) {
                             $_SESSION['emailAddress'] = $_POST["emailAddress"];
                             $_SESSION['password'] = $_POST["password"];
 
                             $email = $_SESSION['emailAddress'];
                             $password = $_SESSION['password'];
+                            echo($email);
                         }
-                        echo($email);
+
+                        /*echo($email);
                         if(isset($email)){
 
                             // connect to server and select database
@@ -147,7 +148,7 @@
                         }
                             $result->close();
                             // cl ose connection to database
-                            $db->close();
+                            $db->close();*/
 
 
 
@@ -166,7 +167,7 @@
 
 
 
-                        } //-------------------------
+                         //-------------------------
                         if (isset($_POST["signup"])) {
                             $name = $_POST["name"];
                             $password = $_POST["password"];
