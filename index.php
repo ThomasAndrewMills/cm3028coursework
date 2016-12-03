@@ -104,15 +104,12 @@
                             $sql_query = "INSERT INTO users (name, password, emailAddress,displayName)
                                           VALUES ($userID,$name,$password,$emailAddress,$displayName)";
                             // execute the SQL query
-                            $result = $db->query($sql_query);
-                            // iterate over $result object one $row at a time
-                            // use fetch_array() to return an associative array
-                            while ($row = $result->fetch_array()) {
-                                // print out fields from row of data
-                                echo "<p>" . $row['superheroName'] . "</p>";
+                            if ($db->query($sql_query) === TRUE) {
+                                echo "New record created successfully";
+                            } else {
+                                echo "Error: " . $sql_query . "<br>" . $db->error;
                             }
-                            $result->close();
-                            // close connection to database
+
                             $db->close();
                         }
                         ?>
