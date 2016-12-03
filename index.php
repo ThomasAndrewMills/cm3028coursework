@@ -73,7 +73,7 @@
 
 
             <div style="text-align:center; font-size:30px;font-family: "Raleway";>
-                <a class="logo"  href="index.php"><b>GO PORTLETHEN</b></a>
+                <a class="logo"  href="index.php"><b>GOPORTLETHEN</b></a>
             </div>
 
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#st-navbar-collapse">
@@ -124,7 +124,7 @@
                                     die('Connectfailed[' . $db->connect_error . ']');
                                 }
                                 // create a SQL query as a string
-                                $sql_query = "SELECT 1 FROM users WHERE emailAddress='tomandrewmills@gmail.com' AND password='mypassword' LIMIT 1";
+                                $sql_query = "SELECT 1 FROM users WHERE emailAddress='$email' AND password='$password' LIMIT 1";
                                 // execute the SQL query
                                 $result = $db->query($sql_query);
 
