@@ -57,14 +57,14 @@
 <body>
 
 	<!-- PRELOADER -->
-	<div id="st-preloader">
+	<!--<div id="st-preloader">
 		<div id="pre-status">
 			<div class="preload-placeholder"></div>
 		</div>
-	</div>
+	</div>-->
 	<!-- /PRELOADER -->
 
-	
+
 	<!-- HEADER -->
 	<header id="header">
 
