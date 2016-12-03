@@ -107,7 +107,7 @@
                             $password = $_POST["password"];
 
                         }
-                        print({$name}{$password});
+                        print($name . $password);
                         /*echo($email);
                         if(isset($email)){
 
