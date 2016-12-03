@@ -80,9 +80,6 @@
                         if(isset($_POST["signin"]))
                             echo "sign in has been submitted";
                         else if(isset($_POST["signup"])) {
-                            echo "sign up has been submitted";
-
-
                             $name = $_POST["name"];
                             $password = $_POST["password"];
                             $emailAddress = $_POST["emailAddress"];
@@ -105,7 +102,7 @@
                                     VALUES ('$name', '$password', '$emailAddress','$displayName')";
                             // execute the SQL query
                             if ($db->query($sql_query) === TRUE) {
-                                echo "New record created successfully";
+                                echo "Signup successful!";
                             } else {
                                 echo "Error: " . $sql_query . "<br>" . $db->error;
                             }
