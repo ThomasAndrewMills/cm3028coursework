@@ -128,6 +128,8 @@
                                 // execute the SQL query
                                 $result = $db->query($sql_query);
 
+                                echo gettype($result);
+
                                 if ($result === 1) {
                                     echo("You have signed in!");
                                 }
