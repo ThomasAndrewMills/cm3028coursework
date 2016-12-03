@@ -7,12 +7,14 @@
     <title>Go Portlethen</title>
 
     <!-- Main CSS file -->
+    <link rel="stylesheet" href="discover.css" />
     <link rel="stylesheet" href="cluster/css/bootstrap.min.css" />
     <link rel="stylesheet" href="cluster/css/owl.carousel.css" />
     <link rel="stylesheet" href="cluster/css/magnific-popup.css" />
     <link rel="stylesheet" href="cluster/css/font-awesome.css" />
     <link rel="stylesheet" href="cluster/css/style.css" />
     <link rel="stylesheet" href="cluster/css/responsive.css" />
+
 
     @import url("http://fonts.googleapis.com/css?family=Raleway:200,300,600,700&subset=latin,latin-ext");
 
