@@ -128,7 +128,7 @@
                                 // execute the SQL query
                                 $result = $db->query($sql_query);
                                 if ($row = $result->fetch_assoc()) {
-                                    echo($row);
+                                    echo($row[0]);
                                 }
 
 //                                if ($result === 1) {
