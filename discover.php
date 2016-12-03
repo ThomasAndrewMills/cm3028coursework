@@ -57,6 +57,15 @@
     </script>
     @import url("http://fonts.googleapis.com/css?family=Raleway:200,300,600,700&subset=latin,latin-ext");
 
+    <!--Linking the Google maps API to the website-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.20"></script>
+
+    <!--Linking jQuery file in order to load the Google map and trends-->
+    <script type="text/javascript" src="jquery.js"></script>
+
+    <!--Linking the website to to the jQuery library-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
 </head>
 <body>
 
@@ -229,8 +238,30 @@
 <!-- /HEADER -->
 
 
+
+
+
 <!-- SERVICES -->
-<section id="map-canvas">
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h1>What is Go Portlethen?</h1>
+                    <span class="st-border"></span>
+                    <section id="map-canvas">
+                    </section>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+    </div>
 </section>
 <!-- /SERVICES -->
 
