@@ -135,6 +135,10 @@
                                     echo $row['emailAddress'];
                                 }
 
+                                if($result === true){
+                                    echo("you have signed in!");
+                                }
+
                                 $result->close();
                                 // cl ose connection to database
                                 $db->close();
