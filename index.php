@@ -127,7 +127,10 @@
                                 $sql_query = "SELECT EXISTS(SELECT 1 FROM users WHERE emailAddress = '$email' AND password = '$password')";
                                 // execute the SQL query
                                 $result = $db->query($sql_query);
-                                echo($result);
+                                if ($row = $result->fetch_assoc()) {
+                                    echo($row);
+                                }
+
 //                                if ($result === 1) {
 //                                    echo("You have signed in!");
 //                                }
