@@ -99,6 +99,7 @@
 
                         <?php
                         session_start();
+                        $_SESSION['loginStatus'] = FALSE;
 
                         ini_set('display_errors', 1);
                         ini_set('display_startup_errors', 1);
@@ -139,7 +140,7 @@
 
                                 if ($rowsFound === 1) {
                                     echo("Logged in as " . $displayName);
-                                    $_SESSION[loginStatus] = TRUE;
+                                    $_SESSION['loginStatus'] = TRUE;
                                 }
 
 
