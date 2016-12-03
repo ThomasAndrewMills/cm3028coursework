@@ -98,7 +98,9 @@
 
 
                         <?php
-
+                        ini_set('display_errors', 1);
+                        ini_set('display_startup_errors', 1);
+                        error_reporting(E_ALL);
 
 
 
@@ -125,7 +127,7 @@
                                 $sql_query = "SELECT EXISTS(SELECT 1 FROM users WHERE emailAddress = '$email' AND password = '$password')";
                                 // execute the SQL query
                                 $result = $db->query($sql_query);
-                                echo($result);
+                                //echo($result);
 //                                if ($result === 1) {
 //                                    echo("You have signed in!");
 //                                }
