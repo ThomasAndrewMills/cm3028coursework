@@ -98,10 +98,10 @@
 
 
                         <?php
-                        echo("test");
+
                         session_start();
                         if(isset($_SESSION[username])){
-
+                            echo("test");
                             // connect to server and select database
                             $db = new mysqli(
                                 "eu-cdbr-azure-west-a.cloudapp.net",
