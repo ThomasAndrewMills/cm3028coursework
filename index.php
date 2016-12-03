@@ -102,7 +102,7 @@
                             }
                             // create a SQL query as a string
                             $sql_query = "INSERT INTO users (name, password, emailAddress,displayName)
-                                          VALUES ($userID,$name,$password,$emailAddress,$displayName)";
+                                          VALUES ($name,$password,$emailAddress,$displayName)";
                             // execute the SQL query
                             if ($db->query($sql_query) === TRUE) {
                                 echo "New record created successfully";
