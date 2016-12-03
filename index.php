@@ -132,7 +132,7 @@
                             // use fetch_array() to return an associative array
                             while ($row = $result->fetch_array()) {
                                 // print out fiel ds from row of data
-                                echo "<p>' ' . $row['$displayName'] . ' '</p>";
+                                //echo "<p>' ' . $row['$displayName'] . ' '</p>";
                         }
                             $result->close();
                             // cl ose connection to database
