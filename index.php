@@ -130,9 +130,13 @@
 
                                 $rowsFound = $result->num_rows;
 
+                                while($row = $result->fetch_array()){
+                                    // print out fields from row of data
+                                    $displayName = $row['displayName'];
+                                }
 
                                 if ($rowsFound === 1) {
-                                    echo("Logged in as " . $result['displayName']);
+                                    echo("Logged in as " . $displayName);
                                 }
 
 
