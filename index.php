@@ -98,7 +98,7 @@
 
 
                         <?php
-
+                        echo("test");
                         session_start();
                         if(isset($_SESSION[username])){
 
