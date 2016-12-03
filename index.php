@@ -126,9 +126,9 @@
                             $sql_query = "SELECT EXISTS (
                                           SELECT * FROM users WHERE emailAddress = $email AND password = $password)";
 
-                            /*// execute the SQL query
+                            // execute the SQL query
                             $result = $db->query($sql_query);
-
+/*
                             echo($result);
                             if ($result===TRUE) {
                                 $loggedIn = true;
@@ -136,7 +136,7 @@
                                 $loggedIn = false;
                             }
 
-
+*/
                             // iterate over $result obj ect one $row at a time
                             // use fetch_array() to return an associative array
                             while ($row = $result->fetch_array()) {
@@ -145,7 +145,7 @@
                         }
                             $result->close();
                             // cl ose connection to database
-                            $db->close();*/
+                            $db->close();
 
 
 
