@@ -94,7 +94,7 @@
                                 "eu-cdbr-azure-west-a.cloudapp.net",
                                 "bd2505ec24d031",
                                 "a0a7a671",
-                                "db_name"
+                                "goportlethendb"
                             );
                             // test if connection was established, and print any errors
                             if ($db->connect_errno) {
