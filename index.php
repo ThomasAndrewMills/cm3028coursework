@@ -110,8 +110,6 @@
                             $email = $_POST["email"];
                             $password = $_POST["password"];
 
-
-                            echo($email . $password);
                             if (isset($email)) {
 
                                 // connect to server and select database
@@ -126,7 +124,7 @@
                                     die('Connectfailed[' . $db->connect_error . ']');
                                 }
                                 // create a SQL query as a string
-                                $sql_query = "SELECT * FROM users WHERE emailAddress = '$email' AND password = '$password'";
+                                $sql_query = "SELECT * FROM users WHERE emailAddress = 'emailAddress' AND password = 'password'";
                                 // execute the SQL query
                                 $result = $db->query($sql_query);
 
