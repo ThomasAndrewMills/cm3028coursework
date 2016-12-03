@@ -126,7 +126,7 @@
                             $sql_query = "SELECT EXISTS (
                                           SELECT * FROM users WHERE emailAddress = $email AND password = $password)";
 
-                            // execute the SQL query
+                            /*// execute the SQL query
                             $result = $db->query($sql_query);
 
                             echo($result);
@@ -145,7 +145,7 @@
                         }
                             $result->close();
                             // cl ose connection to database
-                            $db->close();
+                            $db->close();*/
 
 
 
