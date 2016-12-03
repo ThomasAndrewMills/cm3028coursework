@@ -102,12 +102,12 @@
                         session_start();
 
                         if (isset($_POST["signin"])) {
-                            session_start();
                             $_SESSION['emailAddress'] = $_POST["emailAddress"];
                             $_SESSION['password'] = $_POST["password"];
 
                             $email = $_SESSION['emailAddress'];
                             $password = $_SESSION['password'];
+                        }
 
                         if(isset($_SESSION[emailAddress])){
                             echo("test");
@@ -149,7 +149,7 @@
 
 
 
-                        }
+
 
 
 
