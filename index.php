@@ -106,7 +106,7 @@
                             $_SESSION['emailAddress'] = $_POST["emailAddress"];
                             $_SESSION['password'] = $_POST["password"];
 
-                            echo($_SESSION['emailAddress']);
+                            echo($_POST["emailAddress"]);
                         }
 
                         /*echo($email);
