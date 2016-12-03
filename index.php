@@ -73,7 +73,7 @@
 
 
             <div style="text-align:center; font-size:30px;font-family: "Raleway";>
-                <a class="logo"  href="index.php"><b>GOPORTLETHE N</b></a>
+                <a class="logo"  href="index.php"><b>GOPORTLETHEN</b></a>
             </div>
 
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#st-navbar-collapse">
@@ -129,21 +129,19 @@
                                 $result = $db->query($sql_query);
 
                                 while($row = $result->fetch_array()){
-                                    // print out fiel ds from row of data
-                                    echo "$row[emailAddress]";
-                                    echo "$row[displayName]";
-                                    echo "$row[password]";
-                                }
+                                    // print out fields from row of data
+                                    echo "<p>" . $row['userID'] . "</p>";
+}
 
 
-                                if ($result === 1) {
+                                /*if ($result === 1) {
                                     echo("You have signed in!");
                                 }
 
 
                                 if ($result !== 0){
                                     echo("Incorrect email address or password");
-                                }
+                                }*/
 
                                 $result->close();
                                 // cl ose connection to database
