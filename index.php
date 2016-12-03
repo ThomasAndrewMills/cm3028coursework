@@ -110,37 +110,37 @@
                             $email = $_POST["email"];
                             $password = $_POST["password"];
 
-                        }
-                        echo($email . $password);
-                        if(isset($email)) {
 
-                            // connect to server and select database
-                            $db = new mysqli(
-                                "eu-cdbr-azure-west-a.cloudapp.net",
-                                "bd2505ec24d031",
-                                "a0a7a671",
-                                "goportlethendb"
-                            );
-                            // test if connection was established, and print any errors
-                            if ($db->connect_errno) {
-                                die('Connectfailed[' . $db->connect_error . ']');
+                            echo($email . $password);
+                            if (isset($email)) {
+
+                                // connect to server and select database
+                                $db = new mysqli(
+                                    "eu-cdbr-azure-west-a.cloudapp.net",
+                                    "bd2505ec24d031",
+                                    "a0a7a671",
+                                    "goportlethendb"
+                                );
+                                // test if connection was established, and print any errors
+                                if ($db->connect_errno) {
+                                    die('Connectfailed[' . $db->connect_error . ']');
+                                }
+                                // create a SQL query as a string
+                                $sql_query = "SELECT * FROM users WHERE emailAddress = '$email' AND password = '$password'";
+                                // execute the SQL query
+                                $result = $db->query($sql_query);
+
+                                while ($row = $result->fetch_array()) {
+                                    // print out fiel ds from row of data
+                                    //echo "<p>' ' . $row['userid' ] . ' '</p>";
+                                }
+
+                                $result->close();
+                                // cl ose connection to database
+                                $db->close();
+
                             }
-                            // create a SQL query as a string
-                            $sql_query = "SELECT * FROM users WHERE emailAddress = '$email' AND password = '$password'";
-                            // execute the SQL query
-                            $result = $db->query($sql_query);
-
-                            while($row = $result->fetch_array()){
-                                // print out fiel ds from row of data
-                                //echo "<p>' ' . $row['userid' ] . ' '</p>";
-                            }
-
-                            $result->close();
-                             // cl ose connection to database
-                             $db->close();
-
                         }
-
 
 
 
