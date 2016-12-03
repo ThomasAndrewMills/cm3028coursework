@@ -124,7 +124,7 @@
                                     die('Connectfailed[' . $db->connect_error . ']');
                                 }
                                 // create a SQL query as a string
-                                $sql_query = "SELECT EXISTS (SELECT 1 FROM users WHERE emailAddress = 'tomandrewmills@gmail.com' AND password = 'mypassword')";
+                                $sql_query = "SELECT 1 FROM users WHERE emailAddress='tomandrewmills@gmail.com' AND password='mypassword' LIMIT 1";
                                 // execute the SQL query
                                 $result = $db->query($sql_query);
 
