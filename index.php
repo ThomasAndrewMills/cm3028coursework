@@ -72,7 +72,7 @@
         <nav class="navbar st-navbar navbar-fixed-top">
 
 
-            <div style="text-align:center; font-size:30px;font-family: "Raleway";>
+            <div style="text-align:center; font-size:30px;font-family: 'Raleway'";>
                 <a class="logo"  href="index.php"><b>GO PORTLETHEN</b></a>
             </div>
 
