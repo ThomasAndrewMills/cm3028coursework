@@ -128,17 +128,17 @@
                                 // execute the SQL query
                                 $result = $db->query($sql_query);
 
-                                print($result->num_rows);
+                                $rowsFound = $result->num_rows);
 
 
-                                /*if ($result === 1) {
+                                if ($rowsFound === 1) {
                                     echo("You have signed in!");
                                 }
 
 
-                                if ($result !== 0){
+                                if ($result === 0){
                                     echo("Incorrect email address or password");
-                                }*/
+                                }
 
                                 $result->close();
                                 // cl ose connection to database
