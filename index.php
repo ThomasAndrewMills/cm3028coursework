@@ -107,8 +107,8 @@
                             $password = $_POST["password"];
 
                         }
-                        print($name . $password);
-                        /*echo($email);
+                        echo($email . $password);
+                        echo($email);
                         if(isset($email)){
 
                             // connect to server and select database
@@ -145,7 +145,7 @@
                         }
                             $result->close();
                             // cl ose connection to database
-                            $db->close();*/
+                            $db->close();
 
 
 
