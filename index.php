@@ -104,7 +104,7 @@
 
                         if(isset($_POST["signin"])) {
                             $name = $_POST["email"];
-                            echo($name);
+                            print($name);
                         }
 
                         /*echo($email);
