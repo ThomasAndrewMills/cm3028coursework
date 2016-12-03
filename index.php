@@ -103,10 +103,8 @@
 
 
                         if(isset($_POST["signin"])) {
-                            $_SESSION['emailAddress'] = $_POST["emailAddress"];
-                            $_SESSION['password'] = $_POST["password"];
 
-                            echo($_POST["emailAddress"]);
+                            echo("test!");
                         }
 
                         /*echo($email);
