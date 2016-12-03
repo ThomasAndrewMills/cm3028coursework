@@ -125,15 +125,15 @@
                                 $sql_query = "SELECT EXISTS(SELECT 1 FROM users WHERE emailAddress = '$email' AND password = '$password')";
                                 // execute the SQL query
                                 $result = $db->query($sql_query);
-
-                                if ($result === 1) {
-                                    echo("You have signed in!");
-                                }
-
                                 echo($result);
-                                if ($result !== 0){
-                                    echo("Incorrect email address or password");
-                                }
+//                                if ($result === 1) {
+//                                    echo("You have signed in!");
+//                                }
+
+
+//                                if ($result !== 0){
+//                                    echo("Incorrect email address or password");
+//                                }
 
                                 $result->close();
                                 // cl ose connection to database
