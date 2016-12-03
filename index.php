@@ -102,7 +102,7 @@
                         session_start();
 
                         $email="";
-                        $password=""
+                        $password="";
                         if (isset($_POST["signin"])) {
                             $_SESSION['emailAddress'] = $_POST["emailAddress"];
                             $_SESSION['password'] = $_POST["password"];
