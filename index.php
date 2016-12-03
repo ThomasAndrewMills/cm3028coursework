@@ -53,6 +53,8 @@
                 }
             })});
     </script>
+    @import url("http://fonts.googleapis.com/css?family=Raleway:200,300,600,700&subset=latin,latin-ext");
+
 </head>
 <body>
 
@@ -146,8 +148,8 @@
                                 }
 
 
-                                if ($result === 0){
-                                    echo("Incorrect email address or password");
+                                if ($rowsFound === 0){
+                                    echo('<b>' . "Incorrect email address or password" . '</b>');
                                 }
 
                                 $result->close();
