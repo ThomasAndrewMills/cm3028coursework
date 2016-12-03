@@ -130,8 +130,8 @@
 
                                 while($row = $result->fetch_array()){
                                     // print out fields from row of data
-                                    echo "<p>" . $row['userID'] . "</p>";
-}
+                                    echo $row['userID'];
+                                }
 
 
                                 /*if ($result === 1) {
