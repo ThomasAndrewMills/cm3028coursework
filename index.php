@@ -139,7 +139,7 @@
                                     echo("You are not signed in");
                                 }
 
-                                if ($result !== false)
+                                if ($result !== false){
                                     echo("You have signed in!");
                                 }
 
