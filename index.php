@@ -97,13 +97,72 @@
                     <ul class="nav navbar-nav navbar-right">
 
 
-
-
                         <?php
 
-                        if(isset($_POST["signin"]))
-                            echo "sign in has been submitted";
-                        else if(isset($_POST["signup"])) {
+                        start_session();
+                        if(isset($_SESSION[username])){
+
+                            // connect to server and select database
+                            $db = new mysqli(
+                                "eu-cdbr-azure-west-a.cloudapp.net",
+                                "bd2505ec24d031",
+                                "a0a7a671",
+                                "goportlethendb"
+                            );
+                            // test if connection was established, and print any errors
+                            if ($db->connect_errno) {
+                                die('Connectfailed[' . $db->connect_error . ']');
+                            }
+                            // create a SQL query as a string
+                            $sql_query = "SELECT EXISTS (
+                                          SELECT * FROM users WHERE emailAddress = $emailAddress AND password = $password)";
+
+                            // execute the SQL query
+                            $result = $db->query($sql_query);
+
+                            echo($result);
+                            if ($result===TRUE) {
+                                $loggedIn = true;
+                            } else {
+                                $loggedIn = false;
+                            }
+
+
+                            // iterate over $result obj ect one $row at a time
+                            // use fetch_array() to return an associative array
+                            while ($row = $result->fetch_array()) {
+                                // print out fiel ds from row of data
+                                echo "<p>' ' . $row['$displayName'] . ' '</p>";
+                        }
+                            $result->close();
+                            // cl ose connection to database
+                            $db->close();
+
+
+
+                        }
+
+
+
+
+                        if (isset($_POST["signin"])) {
+                            session_start();
+                            $_SESSION['emailAddress'] = $_POST["emailAddress"];
+                            $_SESSION['password'] = $_POST["password"];
+
+                            $email = $_SESSION['emailAddress']
+                            $password = $_SESSION['password']
+
+                            //-------------------------
+
+
+
+
+
+
+
+                        } //-------------------------
+                        else if (isset($_POST["signup"])) {
                             $name = $_POST["name"];
                             $password = $_POST["password"];
                             $emailAddress = $_POST["emailAddress"];
@@ -123,7 +182,7 @@
                             }
                             // create a SQL query as a string
                             $sql_query = "INSERT INTO users (name, password, emailAddress,displayName)
-                                    VALUES ('$name', '$password', '$emailAddress','$displayName')";
+                                          VALUES ('$name', '$password', '$emailAddress','$displayName')";
                             // execute the SQL query
                             if ($db->query($sql_query) === TRUE) {
                                 echo "Signup successful!";
@@ -339,7 +398,6 @@
 				</div>
                 <div style="margin-bottom: 100px;">
                     <a href="club.php"style="color:#5b5b5b;"><h2>Click here to view more clubs!</h2></a>
-                    <span class="st-border"></span>
                 </div>
 			</div>
 		</div>
