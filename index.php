@@ -135,8 +135,10 @@
                                     echo $row['emailAddress'];
                                 }
 
-                                if($result === TRUE){
+                                if (!$result) {
                                     echo("you have signed in!");
+                                }else{
+                                    echo("You are not signed in");
                                 }
 
                                 $result->close();
