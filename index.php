@@ -205,6 +205,15 @@
                             <form action="createUser.php" style="margin-top:10px;">
                                     <input style="font-weight: 600;border-radius: 5px;background-color: lightgray;" type="submit" value="SIGN IN/SIGN UP">
                             </form>
+                            <?php
+                                if($_SESSION['loginStatus'] === TRUE){
+                            ?>
+                                    <form action="createUser.php" style="margin-top:10px;">
+                                        <input style="font-weight: 600;border-radius: 5px;background-color: lightgray;" type="submit" value="SIGN IN/SIGN UP">
+                                    </form>
+                            <?php
+                                }
+                            ?>
                         </li>
                     </ul>
 				</div><!-- /.navbar-collapse -->
