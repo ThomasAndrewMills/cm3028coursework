@@ -138,13 +138,9 @@
                                     echo("You have signed in!");
                                 }
 
-                                while ($row = $result->fetch_array()) {
-                                    // print out fiel ds from row of data
-                                    echo $row['name'] . "<br>";
-                                    echo $row['password'] . "<br>";
-                                    echo $row['emailAddress'] . "<br>";
-                                    echo $row['displayName'] . "<br>";
-                                }
+
+                                    echo '$result';
+
 
 
 
