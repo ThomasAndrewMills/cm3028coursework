@@ -135,7 +135,7 @@
                                     echo $row['emailAddress'];
                                 }
 
-                                if($result === true){
+                                if($result === TRUE){
                                     echo("you have signed in!");
                                 }
 
