@@ -85,7 +85,7 @@
 
                             $name = $_POST["name"];
                             $password = $_POST["password"];
-                            $emailAddress = $_POST["email"];
+                            $emailAddress = $_POST["emailAddress"];
                             $displayName = $_POST["displayName"];
 
 

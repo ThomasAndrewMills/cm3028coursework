@@ -127,7 +127,7 @@
                             <input type="text" name="name" value="name"><br>
 
                             <b>Email Address</b><br>
-                            <input type="text" name="email" value="email"><br><br>
+                            <input type="text" name="emailAddress" value="emailAddress"><br><br>
 
                             <b>Display name:</b><br>
                             <input type="text" name="displayName" value="displayName"><br><br>
