@@ -130,7 +130,7 @@
                                     echo("You have signed in!");
                                 }
 
-                                //print($result);
+                                print($result);
                                 if ($result !== 0){
                                     echo("Incorrect email address or password");
                                 }
