@@ -100,7 +100,16 @@
                         <?php
 
                         session_start();
-                        if(isset($_SESSION[username])){
+
+                        if (isset($_POST["signin"])) {
+                            session_start();
+                            $_SESSION['emailAddress'] = $_POST["emailAddress"];
+                            $_SESSION['password'] = $_POST["password"];
+
+                            $email = $_SESSION['emailAddress'];
+                            $password = $_SESSION['password'];
+
+                        if(isset($_SESSION[emailAddress])){
                             echo("test");
                             // connect to server and select database
                             $db = new mysqli(
@@ -115,7 +124,7 @@
                             }
                             // create a SQL query as a string
                             $sql_query = "SELECT EXISTS (
-                                          SELECT * FROM users WHERE emailAddress = $emailAddress AND password = $password)";
+                                          SELECT * FROM users WHERE emailAddress = $email AND password = $password)";
 
                             // execute the SQL query
                             $result = $db->query($sql_query);
@@ -145,13 +154,7 @@
 
 
 
-                        if (isset($_POST["signin"])) {
-                            session_start();
-                            $_SESSION['emailAddress'] = $_POST["emailAddress"];
-                            $_SESSION['password'] = $_POST["password"];
 
-                            $email = $_SESSION['emailAddress'];
-                            $password = $_SESSION['password'];
 
                             //-------------------------
 
