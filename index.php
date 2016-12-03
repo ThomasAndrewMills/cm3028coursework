@@ -124,11 +124,17 @@
                                     die('Connectfailed[' . $db->connect_error . ']');
                                 }
                                 // create a SQL query as a string
-                                $sql_query = "SELECT EXISTS(SELECT 1 FROM users WHERE emailAddress = '$email' AND password = '$password')";
+                                $sql_query = "SELECT * FROM users WHERE emailAddress = '$email' AND password = '$password')";
                                 // execute the SQL query
                                 $result = $db->query($sql_query);
 
-                                echo gettype($result);
+                                while($row = $result->fetch_array()){
+                                    // print out fiel ds from row of data
+                                    echo "<p>' ' . $row[emailAddress] . ' '</p>";
+                                    echo "<p>' ' . $row[displayName] . ' '</p>";
+                                    echo "<p>' ' . $row[password] . ' '</p>";
+                                }
+
 
                                 if ($result === 1) {
                                     echo("You have signed in!");
