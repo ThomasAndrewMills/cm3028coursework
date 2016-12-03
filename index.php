@@ -208,8 +208,8 @@
                             <?php
                                 if($_SESSION['loginStatus'] === TRUE){
                             ?>
-                                    <form action="createUser.php" style="margin-top:10px;">
-                                        <input style="font-weight: 600;border-radius: 5px;background-color: lightgray;" type="submit" value="SIGN IN/SIGN UP">
+                                    <form action="#" style="margin-top:10px;">
+                                        <input style="font-weight: 600;border-radius: 5px;background-color: lightgray;" type="submit" value="LOGOUT">
                                     </form>
                             <?php
                                 }
