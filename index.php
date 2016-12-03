@@ -101,6 +101,8 @@
 
                         session_start();
 
+                        $email="";
+                        $password=""
                         if (isset($_POST["signin"])) {
                             $_SESSION['emailAddress'] = $_POST["emailAddress"];
                             $_SESSION['password'] = $_POST["password"];
@@ -108,9 +110,9 @@
                             $email = $_SESSION['emailAddress'];
                             $password = $_SESSION['password'];
                         }
-
+                        echo($email);
                         if(isset($email)){
-                            echo("test");
+
                             // connect to server and select database
                             $db = new mysqli(
                                 "eu-cdbr-azure-west-a.cloudapp.net",
