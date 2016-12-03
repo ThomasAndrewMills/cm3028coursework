@@ -132,7 +132,7 @@
 
                                 while ($row = $result->fetch_array()) {
                                     // print out fiel ds from row of data
-                                    //echo "<p>' ' . $row['userid' ] . ' '</p>";
+                                    echo "<p>' ' . $row['userid' ] . ' '</p>";
                                 }
 
                                 $result->close();
