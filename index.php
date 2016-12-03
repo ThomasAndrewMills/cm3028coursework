@@ -79,39 +79,42 @@
 
                         if(isset($_POST["signin"]))
                             echo "sign in has been submitted";
-                        else if(isset($_POST["signup"]))
+                        else if(isset($_POST["signup"])) {
                             echo "sign up has been submitted";
 
-                            //$email = $_POST["email"];
-                            //$password = $_POST["password"];
-                            //print("<li><p>Hello {$email} {$password}</p></li>");
-                        ?>
 
-                        <?php
+                            $name = $_POST["name"];
+                            $password = $_POST["password"];
+                            $emailAddress = $_POST["email"];
+                            $displayName = $_POST["displayName"];
+
+
                             // connect to server and select database
                             $db = new mysqli(
-                            "eu-cdbr-azure-west-a.cloudapp.net",
-                            "bd2505ec24d031",
-                            "a0a7a671",
-                            "db_name"
+                                "eu-cdbr-azure-west-a.cloudapp.net",
+                                "bd2505ec24d031",
+                                "a0a7a671",
+                                "db_name"
                             );
                             // test if connection was established, and print any errors
-                            if($db->connect_errno){
-                                die('Connectfailed['.$db->connect_error.']');
+                            if ($db->connect_errno) {
+                                die('Connectfailed[' . $db->connect_error . ']');
                             }
                             // create a SQL query as a string
-                            $sql_query = "INSERT INTO users";
+                            $sql_query = "INSERT INTO users (name, password, emailAddress,displayName)
+                                          VALUES ($userID,$name,$password,$emailAddress,$displayName)";
                             // execute the SQL query
                             $result = $db->query($sql_query);
                             // iterate over $result object one $row at a time
                             // use fetch_array() to return an associative array
-                            while($row = $result->fetch_array()){
-                             // print out fields from row of data
-                             echo "<p>" . $row['superheroName'] . "</p>";
+                            while ($row = $result->fetch_array()) {
+                                // print out fields from row of data
+                                echo "<p>" . $row['superheroName'] . "</p>";
                             }
                             $result->close();
-                             // close connection to database
-                             $db->close();
+                            // close connection to database
+                            $db->close();
+                        }
                         ?>
                         <li>
                             <form action="createUser.php" style="margin-top:10px;">
