@@ -130,11 +130,11 @@
                                 // execute the SQL query
                                 $result = $db->query($sql_query);
 
-                                if ($result === false) {
+                                if ($result === 1) {
                                     echo("Incorrect email address or password");
                                 }
 
-                                if ($result !== false){
+                                if ($result !== 1){
                                     echo("You have signed in!");
                                 }
 
