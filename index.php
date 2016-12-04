@@ -105,9 +105,8 @@
 
                     <?php
                     session_start();
-                    if(isset($_SESSION['loginStatus'])){
-                        $_SESSION['loginStatus'] = FALSE;
-                    }
+
+                    $_SESSION['loginStatus'] = FALSE;
 
 
                     if (isset($_POST["signin"])) {
