@@ -149,10 +149,13 @@
                         }
 
                         //if login status has been initialised
-                        if(isset($_SESSION['loginStatus'])) {
+                        if (isset($_SESSION['loginStatus'])) {
                             echo("Logged in as " . $_SESSION['displayName']);
-                        }else{
-                            echo('<b>' . "Incorrect email address or password" . '</b>');
+                        } else {
+                            if (isset($_POST["signin"])) {
+                                echo('<b>' . "Incorrect email address or password" . '</b>');
+                            }
+                            echo('<b>' . "YOU ARE NOT LOGGED IN" . '</b>');
                             $_SESSION['loginStatus'] = FALSE;
                         }
 
