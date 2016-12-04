@@ -58,7 +58,6 @@
             })
         });
     </script>
-    @import url("http://fonts.googleapis.com/css?family=Raleway:200,300,600,700&subset=latin,latin-ext");
 
 </head>
 <body>
@@ -106,7 +105,7 @@
 
                     <?php
                     session_start();
-                    echo $_SESSION['loginStatus'];
+                    echo $_SESSION['loginStatus'] . "TESTING";
 
                     if (isset($_POST["signin"])) {
                         $email = $_POST["email"];
