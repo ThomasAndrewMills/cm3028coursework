@@ -149,14 +149,12 @@
                         }
 
                         //if login status has been initialised
-                        if (isset($_SESSION['loginStatus'])) {
+                        if ($_SESSION['loginStatus'] === TRUE) {
                             echo("Logged in as " . $_SESSION['displayName']);
-                        } else {
-                            if (isset($_POST["signin"])) {
-                                echo('<b>' . "Incorrect email address or password" . '</b>');
-                            }
+                        }else if(isset($_SESSION['loginStatus'])=== FALSE){
                             echo('<b>' . "YOU ARE NOT LOGGED IN" . '</b>');
-                            $_SESSION['loginStatus'] = FALSE;
+                        } else {
+                            echo('<b>' . "INCORRECT USERNAME OR PASSWORD" . '</b>');
                         }
 
                         ini_set('display_errors', 1);
@@ -164,7 +162,7 @@
                         error_reporting(E_ALL);
 
 
-                        if(isset($_POST["logout"])) {
+                        if (isset($_POST["logout"])) {
                             session_destroy();
                         }
 
