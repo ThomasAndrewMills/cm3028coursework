@@ -79,7 +79,7 @@
 
 
         <div style="text-align:center; font-size:30px;font-family: 'Raleway'" ;>
-            <a class="logo" href="index.php"><b>GOPORTLETHEN</b></a>
+            <a class="logo" href="index.php"><b>GO PORTLETHEN</b></a>
         </div>
 
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#st-navbar-collapse">
@@ -104,6 +104,9 @@
 
 
                     <?php
+                    ini_set('display_errors', 1);
+                    ini_set('display_startup_errors', 1);
+                    error_reporting(E_ALL);
                     session_start();
                     if (isset($_POST["signin"])) {
 
@@ -166,9 +169,7 @@
                         echo('<b>' . "YOU ARE NOT LOGGED IN" . '</b>');
                     }
 
-                    ini_set('display_errors', 1);
-                    ini_set('display_startup_errors', 1);
-                    error_reporting(E_ALL);
+
 
 
                     if (isset($_POST["logout"])) {
