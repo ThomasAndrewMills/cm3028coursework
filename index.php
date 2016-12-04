@@ -75,7 +75,7 @@
 
 
             <div style="text-align:center; font-size:30px;font-family: 'Raleway'";>
-                <a class="logo"  href="index.php"><b>GO PORTLETHEN</b></a>
+                <a class="logo"  href="index.php"><b>GOPORTLETHEN</b></a>
             </div>
 
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#st-navbar-collapse">
@@ -104,9 +104,7 @@
 
                         //if login status has been initialised
                         if(isset($_SESSION['loginStatus'])) {
-                            echo("LOGGED");
-                        }else{
-                            echo("You are not logged in.");
+
                             $_SESSION['loginStatus'] = FALSE;
                         }
 
@@ -162,7 +160,6 @@
                                 $result->close();
                                 // cl ose connection to database
                                 $db->close();
-
                             }
                         }
 
