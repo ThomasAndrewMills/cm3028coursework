@@ -75,7 +75,7 @@
 
 
             <div style="text-align:center; font-size:30px;font-family: 'Raleway'";>
-                <a class="logo"  href="index.php"><b>GOPORTLETHEN</b></a>
+                <a class="logo"  href="index.php"><b>GO PORTLETHEN</b></a>
             </div>
 
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#st-navbar-collapse">
