@@ -105,7 +105,10 @@
 
                     <?php
                     session_start();
-                    echo $_SESSION['loginStatus'] . "TESTING";
+                    if(isset($_SESSION['loginStatus'])){
+                        $_SESSION['loginStatus'] = FALSE;
+                    }
+
 
                     if (isset($_POST["signin"])) {
                         $email = $_POST["email"];
