@@ -106,52 +106,53 @@
                     <?php
                     session_start();
 
-                    $_SESSION['loginStatus'] = FALSE;
 
+                    echo $_SESSION['loginStatus'];
 
                     if (isset($_POST["signin"])) {
-                        $email = $_POST["email"];
-                        $password = $_POST["password"];
 
-                        if (isset($email)) {
+                        $_SESSION['emailAddress'] = $_POST["email"];
+                        $_SESSION['password'] = $_POST["password"];;
 
-                            // connect to server and select database
-                            $db = new mysqli(
-                                "eu-cdbr-azure-west-a.cloudapp.net",
-                                "bd2505ec24d031",
-                                "a0a7a671",
-                                "goportlethendb"
-                            );
-                            // test if connection was established, and print any errors
-                            if ($db->connect_errno) {
-                                die('Connectfailed[' . $db->connect_error . ']');
-                            }
-                            // create a SQL query as a string
-                            $sql_query = "SELECT * FROM users WHERE emailAddress='$email' AND password='$password' LIMIT 1";
-                            // execute the SQL query
-                            $result = $db->query($sql_query);
+                        //if (isset($email)) {
 
-                            $rowsFound = $result->num_rows;
-
-                            while ($row = $result->fetch_array()) {
-                                // print out fields from row of data
-                                $_SESSION['displayName'] = $row['displayName'];
-                            }
-
-                            if ($rowsFound === 1) {
-
-                                $_SESSION['loginStatus'] = TRUE;
-                            }
-
-
-                            if ($rowsFound === 0) {
-                                $_SESSION['loginStatus'] = FALSE;
-                            }
-
-                            $result->close();
-                            // cl ose connection to database
-                            $db->close();
+                        // connect to server and select database
+                        $db = new mysqli(
+                            "eu-cdbr-azure-west-a.cloudapp.net",
+                            "bd2505ec24d031",
+                            "a0a7a671",
+                            "goportlethendb"
+                        );
+                        // test if connection was established, and print any errors
+                        if ($db->connect_errno) {
+                            die('Connectfailed[' . $db->connect_error . ']');
                         }
+                        // create a SQL query as a string
+                        $sql_query = 'SELECT * FROM users WHERE emailAddress="$_SESSION[\'emailAddress\']" AND password="$_SESSION[\'password\']" LIMIT 1';
+                        // execute the SQL query
+                        $result = $db->query($sql_query);
+
+                        $rowsFound = $result->num_rows;
+
+                        while ($row = $result->fetch_array()) {
+                            // print out fields from row of data
+                            $_SESSION['displayName'] = $row['displayName'];
+                        }
+
+                        if ($rowsFound === 1) {
+
+                            $_SESSION['loginStatus'] = TRUE;
+                        }
+
+
+                        if ($rowsFound === 0) {
+                            $_SESSION['loginStatus'] = FALSE;
+                        }
+
+                        $result->close();
+                        // cl ose connection to database
+                        $db->close();
+                        //}
                     }
 
                     //if user is logged in display username
@@ -224,7 +225,7 @@
                             </form>
                             <?php
                         }
-                        echo $_SESSION['loginStatus'];
+
                         ?>
                     </li>
                 </ul>
