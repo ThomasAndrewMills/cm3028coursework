@@ -106,7 +106,7 @@
 
                     <?php
                     session_start();
-
+                    echo $_SESSION['loginStatus'];
 
                     if (isset($_POST["signin"])) {
                         $email = $_POST["email"];

@@ -76,6 +76,9 @@
                             <input style="font-weight: 600;border-radius: 5px;background-color: lightgray;" type="submit" value="SIGN IN/SIGN UP">
                         </form>
                     </li>
+                    <?php
+                    session_start();
+                    ?>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
