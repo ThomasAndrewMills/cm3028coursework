@@ -151,10 +151,13 @@
                         //if login status has been initialised
                         if ($_SESSION['loginStatus'] === TRUE) {
                             echo("Logged in as " . $_SESSION['displayName']);
-                        }else if(isset($_SESSION['loginStatus'])=== FALSE){
-                            echo('<b>' . "YOU ARE NOT LOGGED IN" . '</b>');
-                        } else {
+                        }
+
+
+                        if(isset($_SESSION['loginStatus']) && isset($_POST["signin"])){
                             echo('<b>' . "INCORRECT USERNAME OR PASSWORD" . '</b>');
+                        }else{
+                            echo('<b>' . "YOU ARE NOT LOGGED IN" . '</b>');
                         }
 
                         ini_set('display_errors', 1);
