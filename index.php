@@ -158,7 +158,7 @@
                     if ($_SESSION['loginStatus'] === TRUE) {
                         echo("Logged in as " . $_SESSION['displayName']);
                         //if user login was false
-                    } elseif ($_SESSION['loginStatus'] === FALSE && isset($_POST["signin"]) {
+                    } elseif ($_SESSION['loginStatus'] === FALSE && isset($_POST["signin"])) {
                         echo('<b>' . "INCORRECT USERNAME OR PASSWORD" . '</b>');
                     } else if (!isset($_SESSION['loginStatus'])) {
                         echo('<b>' . "YOU ARE NOT LOGGED IN" . '</b>');
