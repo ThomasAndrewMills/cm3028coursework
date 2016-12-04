@@ -75,7 +75,7 @@
 
 
             <div style="text-align:center; font-size:30px;font-family: 'Raleway'";>
-                <a class="logo"  href="index.php"><b>GO PORTLETHEN</b></a>
+                <a class="logo"  href="index.php"><b>GOPORTLETHEN</b></a>
             </div>
 
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#st-navbar-collapse">
@@ -139,7 +139,7 @@
 
 
                                 if ($rowsFound === 0){
-                                    echo('<b>' . "Incorrect email address or password" . '</b>');
+                                    //echo('<b>' . "Incorrect email address or password" . '</b>');
                                 }
 
                                 $result->close();
@@ -152,7 +152,7 @@
                         if(isset($_SESSION['loginStatus'])) {
                             echo("Logged in as " . $_SESSION['displayName']);
                         }else{
-                            echo("YOU ARE NOT LOGGED IN");
+                            echo('<b>' . "Incorrect email address or password" . '</b>');
                             $_SESSION['loginStatus'] = FALSE;
                         }
 
