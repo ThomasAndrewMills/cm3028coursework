@@ -222,6 +222,7 @@
                             </form>
                             <?php
                         }
+                        echo $_SESSION['loginStatus'];
                         ?>
                     </li>
                 </ul>
