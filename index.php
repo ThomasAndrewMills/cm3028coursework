@@ -104,8 +104,9 @@
 
                         //if login status has been initialised
                         if(isset($_SESSION['loginStatus'])) {
-                            echo("You are not logged in.");
+                            echo("LOGGED");
                         }else{
+                            echo("You are not logged in.");
                             $_SESSION['loginStatus'] = FALSE;
                         }
 
