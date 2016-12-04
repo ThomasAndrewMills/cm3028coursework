@@ -105,17 +105,16 @@
 
                     <?php
                     session_start();
-
-
-                    echo $_SESSION['loginStatus'];
-
                     if (isset($_POST["signin"])) {
 
                         $_SESSION['emailAddress'] = $_POST["email"];
-                        $_SESSION['password'] = $_POST["password"];;
+                        $_SESSION['password'] = $_POST["password"];
+                    }
+                    if (isset($_SESSION['loginStatus'])) {
 
-                        //if (isset($email)) {
 
+
+                        //check the email and password
                         // connect to server and select database
                         $db = new mysqli(
                             "eu-cdbr-azure-west-a.cloudapp.net",
@@ -128,7 +127,7 @@
                             die('Connectfailed[' . $db->connect_error . ']');
                         }
                         // create a SQL query as a string
-                        $sql_query = 'SELECT * FROM users WHERE emailAddress="$_SESSION[\'emailAddress\']" AND password="$_SESSION[\'password\']" LIMIT 1';
+                        $sql_query = "SELECT * FROM users WHERE emailAddress='" . $_SESSION['emailAddress'] . "' AND password='" . $_SESSION['password'] . "' LIMIT 1";
                         // execute the SQL query
                         $result = $db->query($sql_query);
 
@@ -152,8 +151,10 @@
                         $result->close();
                         // cl ose connection to database
                         $db->close();
-                        //}
                     }
+
+                    echo $_SESSION['loginStatus'];
+
 
                     //if user is logged in display username
                     if ($_SESSION['loginStatus'] === TRUE) {
