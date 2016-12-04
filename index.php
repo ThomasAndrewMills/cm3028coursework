@@ -102,21 +102,6 @@
                         <?php
                         session_start();
 
-                        //if login status has been initialised
-                        if(isset($_SESSION['loginStatus'])) {
-
-                            $_SESSION['loginStatus'] = FALSE;
-                        }
-
-                        ini_set('display_errors', 1);
-                        ini_set('display_startup_errors', 1);
-                        error_reporting(E_ALL);
-
-
-                        if(isset($_POST["logout"])) {
-                            session_destroy();
-                        }
-
 
                         if(isset($_POST["signin"])) {
                             $email = $_POST["email"];
@@ -144,11 +129,11 @@
 
                                 while($row = $result->fetch_array()){
                                     // print out fields from row of data
-                                    $displayName = $row['displayName'];
+                                    $_SESSION['displayName'] = $row['displayName'];
                                 }
 
                                 if ($rowsFound === 1) {
-                                    echo("Logged in as " . $displayName);
+
                                     $_SESSION['loginStatus'] = TRUE;
                                 }
 
@@ -162,6 +147,26 @@
                                 $db->close();
                             }
                         }
+
+                        //if login status has been initialised
+                        if(isset($_SESSION['loginStatus'])) {
+                            echo("Logged in as " . $_SESSION['displayName']);
+                        }else{
+                            echo("YOU ARE NOT LOGGED IN");
+                            $_SESSION['loginStatus'] = FALSE;
+                        }
+
+                        ini_set('display_errors', 1);
+                        ini_set('display_startup_errors', 1);
+                        error_reporting(E_ALL);
+
+
+                        if(isset($_POST["logout"])) {
+                            session_destroy();
+                        }
+
+
+
 
                         //if the signup form in submitted from createUser.php
                         if (isset($_POST["signup"])) {
