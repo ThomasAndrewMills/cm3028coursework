@@ -109,14 +109,52 @@
                     ini_set('display_startup_errors', 1);
                     error_reporting(E_ALL);
 
+
+                    if ($_SESSION['loginStatus'] === TRUE) {
+                        //check the email and password
+                        // connect to server and select database
+                        $db = new mysqli(
+                            "eu-cdbr-azure-west-a.cloudapp.net",
+                            "bd2505ec24d031",
+                            "a0a7a671",
+                            "goportlethendb"
+                        );
+                        // test if connection was established, and print any errors
+                        if ($db->connect_errno) {
+                            die('Connectfailed[' . $db->connect_error . ']');
+                        }
+                        // create a SQL query as a string
+                        $sql_query = "SELECT * FROM users WHERE emailAddress='" . $_SESSION['emailAddress'] . "' AND password='" . $_SESSION['password'] . "' LIMIT 1";
+                        // execute the SQL query
+                        $result = $db->query($sql_query);
+
+                        $rowsFound = $result->num_rows;
+
+                        while ($row = $result->fetch_array()) {
+                            // print out fields from row of data
+                            $_SESSION['displayName'] = $row['displayName'];
+                        }
+
+                        if ($rowsFound === 1) {
+
+                            $_SESSION['loginStatus'] = TRUE;
+                        }
+
+                        if ($rowsFound === 0) {
+                            $_SESSION['loginStatus'] = FALSE;
+                        }
+
+                        $result->close();
+                        // close connection to database
+                        $db->close();
+                    }
+
+
                     if (isset($_POST["signin"])) {
+
 
                         $_SESSION['emailAddress'] = $_POST["email"];
                         $_SESSION['password'] = $_POST["password"];
-                    }
-                    if (isset($_SESSION['loginStatus'])) {
-
-
 
                         //check the email and password
                         // connect to server and select database
@@ -155,6 +193,7 @@
                         $result->close();
                         // cl ose connection to database
                         $db->close();
+
                     }
 
                     echo $_SESSION['loginStatus'];
