@@ -109,6 +109,10 @@
                     ini_set('display_startup_errors', 1);
                     error_reporting(E_ALL);
 
+                    if (isset($_POST["logout"])) {
+                        session_destroy();
+                    }
+
                     if (isset($_SESSION['loginStatus'])) {
                         if ($_SESSION['loginStatus'] === TRUE) {
                             //check the email and password
@@ -208,9 +212,7 @@
                     }
 
 
-                    if (isset($_POST["logout"])) {
-                        session_destroy();
-                    }
+
 
 
                     //if the signup form in submitted from createUser.php
