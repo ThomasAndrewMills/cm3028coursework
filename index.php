@@ -139,7 +139,7 @@
 
 
                                 if ($rowsFound === 0){
-                                    //echo('<b>' . "Incorrect email address or password" . '</b>');
+                                    $_SESSION['loginStatus'] = FALSE;
                                 }
 
                                 $result->close();
@@ -149,12 +149,12 @@
                         }
 
                         //if login status has been initialised
-                        if ($_SESSION['loginStatus'] === TRUE) {
+
+
+
+                        if( isset($_SESSION['loginStatus']) && isset($_POST["signin"])) {
                             echo("Logged in as " . $_SESSION['displayName']);
-                        }
-
-
-                        if(isset($_SESSION['loginStatus']) && isset($_POST["signin"])){
+                        }elseif($_SESSION['loginStatus']===FALSE){
                             echo('<b>' . "INCORRECT USERNAME OR PASSWORD" . '</b>');
                         }else{
                             echo('<b>' . "YOU ARE NOT LOGGED IN" . '</b>');
