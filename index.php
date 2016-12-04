@@ -101,7 +101,13 @@
 
                         <?php
                         session_start();
-                        $_SESSION['loginStatus'] = FALSE;
+
+                        //if login status has been initialised
+                        if(isset($_SESSION['loginStatus'])) {
+                            echo("You are not logged in.");
+                        }else{
+                            $_SESSION['loginStatus'] = FALSE;
+                        }
 
                         ini_set('display_errors', 1);
                         ini_set('display_startup_errors', 1);
@@ -159,21 +165,7 @@
                             }
                         }
 
-
-
-
-
-
-
-                            //-------------------------
-
-
-
-
-
-
-
-                         //-------------------------
+                        //if the signup form in submitted from createUser.php
                         if (isset($_POST["signup"])) {
                             $name = $_POST["name"];
                             $password = $_POST["password"];
