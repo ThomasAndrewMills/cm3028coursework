@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="cluster/css/style.css"/>
     <link rel="stylesheet" href="cluster/css/responsive.css"/>
 
-    @import url("http://fonts.googleapis.com/css?family=Raleway:200,300,600,700&subset=latin,latin-ext");
-
     <!-- Favicon -->
     <link rel="shortcut icon" href="cluster/images/icon/favicon.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144"
@@ -100,14 +98,15 @@
             </div>
             <div class="collapse navbar-collapse" id="st-navbar-collapse">
                 <ul class="nav navbar-nav navbar-left">
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#clubs">Clubs</a></li>
                     <li><a href="#our-team">Team</a></li>
                     <li><a href="discover.php">Discover</a></li>
                     <li><a href="healthNews.php">healthy living blog</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    
 
                     <?php
                     session_start();
