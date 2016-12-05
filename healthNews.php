@@ -212,8 +212,7 @@
                 <div class="single-blog">
                     <article>
                         <div class="post-video">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/0vrdgDdPApQ"
-                                    frameborder="0" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/0vrdgDdPApQ" frameborder="0" allowfullscreen></iframe>
                         </div>
                         <h4 class="post-title"><a href="">Kpsum dolor sit amet, consectetur adipisicing elit.</a></h4>
                         <div class="post-meta text-uppercase">
