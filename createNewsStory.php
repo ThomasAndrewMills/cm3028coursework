@@ -107,7 +107,7 @@
                         <span class="st-border"></span>
 
                         <form action="healthNews.php" method="post">
-                            First name:<br>
+                            <br>
                             <textarea rows="4" cols="50">
                                 Write your article here!
                             </textarea>
