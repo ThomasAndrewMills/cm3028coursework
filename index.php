@@ -110,8 +110,7 @@
                     error_reporting(E_ALL);
 
                     if (isset($_POST["logout"])) {
-                        session_destroy();
-                        header("Refresh:0");
+                        include 'logout.php';
                     }
 
                     if (isset($_SESSION['loginStatus'])) {
