@@ -7,6 +7,15 @@
 
     <title>Go Portlethen</title>
 
+
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="cluster/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="cluster/css/owl.carousel.css" />
+    <link rel="stylesheet" href="cluster/css/magnific-popup.css" />
+    <link rel="stylesheet" href="cluster/css/font-awesome.css" />
+    <link rel="stylesheet" href="cluster/css/style.css" />
+    <link rel="stylesheet" href="cluster/css/responsive.css" />
+
     <style>
         /* Always set the map height explicitly to define the size of the div
          * element that contains the map. */
@@ -33,15 +42,7 @@
             padding-left: 10px;
         }
     </style>
-
-    <!-- Main CSS file -->
-    <link rel="stylesheet" href="cluster/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="cluster/css/owl.carousel.css" />
-    <link rel="stylesheet" href="cluster/css/magnific-popup.css" />
-    <link rel="stylesheet" href="cluster/css/font-awesome.css" />
-    <link rel="stylesheet" href="cluster/css/style.css" />
-    <link rel="stylesheet" href="cluster/css/responsive.css" />
-
+    
     <!-- Favicon -->
     <link rel="shortcut icon" href="cluster/images/icon/favicon.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="cluster/images/icon/apple-touch-icon-144-precomposed.png">
