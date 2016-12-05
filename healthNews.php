@@ -158,7 +158,7 @@
                     <hr style="border-top: 1px solid #646464;">
 					<div class="single-blog">
 						<article>
-							<div class="post-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/uQBL7pSAXR8" frameborder="0" allowfullscreen></iframe></div>
+							<div class="post-video"><iframe width="560" height="315" src="https://www.youtube.com/watch?v=0vrdgDdPApQ" frameborder="0" allowfullscreen></iframe></div>
 							<h4 class="post-title"><a href="">Kpsum dolor sit amet, consectetur adipisicing elit.</a></h4>
 							<div class="post-meta text-uppercase">
 								<span>Appril 3, 2014</span>
