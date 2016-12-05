@@ -431,6 +431,7 @@
 	#our-works{
 		padding-top: 130px;
 		padding-bottom: 120px;
+		background-color: #ffff00;
 	}
 
 	.portfolio-wrapper ul.filter{
@@ -498,7 +499,7 @@
 	}
 
 	.portfolio-wrapper .portfolio-overlay a{
-		color: #c75656;;
+		color: #fff;
 		font-size: 35px;
 	}
 	.portfolio-wrapper .portfolio-overlay a:hover{
