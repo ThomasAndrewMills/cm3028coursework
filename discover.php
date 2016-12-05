@@ -25,8 +25,8 @@
         /* Optional: Makes the sample page fill the window. */
         html, body {
             height: 50%;
-            margin: 10px;
-            padding: 10px;
+            margin: 0;
+            padding: 0;
         }
         #floating-panel {
             position: absolute;
