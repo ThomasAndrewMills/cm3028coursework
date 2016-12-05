@@ -579,12 +579,10 @@
                 <div class="st-testimonials">
 
                     <div class="item active text-center">
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolore nesciunt natus ullam
-                            possimus quas obcaecati suscipit voluptate facilis cum"</p>
+                        <p>"Today is your day! Your mountain is waiting. So… get on your way."</p>
                         <div class="st-border"></div>
                         <div class="client-info">
-                            <h5>Tom Roof</h5>
-                            <span>CEO of Domain.com</span>
+                            <h5>Dr. Seuss</h5>
                         </div>
                     </div>
 
