@@ -118,10 +118,10 @@
             <br>
             <div class="collapse navbar-collapse" id="st-navbar-collapse">
                 <ul class="nav navbar-nav navbar-left">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#clubs">Clubs</a></li>
-                    <li><a href="#our-team">Team</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="index.php #about">About</a></li>
+                    <li><a href="club.php">Clubs</a></li>
+                    <li><a href="index.php">Team</a></li>
                     <li><a href="discover.php">Discover</a></li>
                     <li><a href="healthNews.php">healthy living blog</a></li>
                 </ul>
