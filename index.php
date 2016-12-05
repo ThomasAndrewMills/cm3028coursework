@@ -437,7 +437,7 @@
                             <img class="img-responsive" src="cluster/images/works/football.jpg" alt="">
                             <div class="portfolio-overlay">
                                 <a href="cluster/images/works/football.jpg"><i class="fa fa-camera-retro"></i></a>
-                                <a href="club.php?clubID=3"><h5>Footbal Club</h5></a>
+                                <a href="club.php?clubID=3"><h5>Football Club</h5></a>
                                 <p>Join our Football Club!</p>
                             </div>
                         </div>
