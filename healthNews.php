@@ -122,7 +122,7 @@
 
 						</article>
 					</div>
-					<hr>
+                    <hr style="border-top: 1px solid #646464;">
 					<div class="single-blog">
 						<article>
 							<div class="post-slider">
@@ -155,23 +155,7 @@
 
 						</article>
 					</div>
-					<hr>
-					<div class="single-blog">
-						<article>
-							<div class="post-quote">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti minus quasi temporibus reiciendis veniam reprehenderit, consequuntur. At blanditiis”</div>
-							<h4 class="post-title"><a href="">Kpsum dolor sit amet, consectetur adipisicing elit.</a></h4>
-							<div class="post-meta text-uppercase">
-								<span>Appril 3, 2014</span>
-								<span>In <a href="">Design</a></span>
-								<span>By <a href="">Admin</a></span>
-							</div>
-							<div class="post-article">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis, eveniet esse molestiae eum minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis, eveniet esse molestiae
-							</div>
-
-						</article>
-					</div>
-					<hr>
+                    <hr style="border-top: 1px solid #646464;">
 					<div class="single-blog">
 						<article>
 							<div class="post-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/uQBL7pSAXR8" frameborder="0" allowfullscreen></iframe></div>
@@ -187,7 +171,7 @@
 
 						</article>
 					</div>
-					<hr>
+                    <hr style="border-top: 1px solid #646464;">
 				</div>
 				<div class="col-md-3">
 					<div class="sidebar-widget">
