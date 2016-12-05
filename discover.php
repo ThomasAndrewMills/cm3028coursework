@@ -14,13 +14,6 @@
     <link rel="stylesheet" href="cluster/css/style.css" />
     <link rel="stylesheet" href="cluster/css/responsive.css" />
 
-    <!--Linking the Google maps API to the website-->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNFmvcb0OHazggHIXed3RKuJ7S29VY-kE&callback=initialize"
-            type="text/javascript"></script>
-
-
-    @import url("http://fonts.googleapis.com/css?family=Raleway:200,300,600,700&subset=latin,latin-ext");
-
     <!-- Favicon -->
     <link rel="shortcut icon" href="cluster/images/icon/favicon.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="cluster/images/icon/apple-touch-icon-144-precomposed.png">
@@ -59,8 +52,6 @@
             })});
     </script>
 
-    <!--Linking jQuery file in order to load the Google map and trends-->
-    <script type="text/javascript" src="jquery.js"></script>
 
     <!--Linking the website to to the jQuery library-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
@@ -252,8 +243,12 @@
                     <br>
                     <h1>What is Go Portlethen?</h1>
                     <span class="st-border"></span>
-                    <section id="map-canvas">
-                    </section>
+                    <iframe
+                        width="600"
+                        height="450"
+                        frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDTqzcRfqGoZ0ejMDzGJX73DFyy7a1LACw&q=Space+Needle,Seattle+WA" allowfullscreen>
+                    </iframe>
                 </div>
             </div>
         </div>
