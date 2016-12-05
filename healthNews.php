@@ -189,54 +189,6 @@
                         <a href="createNewsStory.php">Click here to post a new article.</a>
                     </ul>
                 </div>
-                <div class="sidebar-widget">
-                    <h4 class="sidebar-title">sidebar</h4>
-                    <ul class="content-flickr">
-                        <li>
-                            <a href="#" title="">
-                                <img class="img-responsive" src="cluster/images/img1.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img class="img-responsive" src="cluster/images/img2.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img class="img-responsive" src="cluster/images/img3.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img class="img-responsive" src="cluster/images/img4.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img class="img-responsive" src="cluster/images/img5.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img class="img-responsive" src="cluster/images/img6.png" alt="">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="sidebar-widget">
-                    <h4 class="sidebar-title">sidebar</h4>
-                    <div class="tagcloud">
-                        <a href="">design</a>
-                        <a href="">html</a>
-                        <a href="">php</a>
-                        <a href="">wordpress</a>
-                        <a href="">css</a>
-                        <a href="">development</a>
-                        <a href="">theme</a>
-                        <a href="">plugin</a>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
