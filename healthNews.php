@@ -91,6 +91,38 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-9">
+
+
+
+
+                    <?php
+                    // connect to server and select database
+                    $db = new mysqli(
+                        "eu-cdbr-azure-west-a.cloudapp.net",
+                        "bd2505ec24d031",
+                        "a0a7a671",
+                        "goportlethendb"
+                    );
+                    // test if connection was established, and print any errors
+                    if ($db->connect_errno) {
+                        die('Connectfailed[' . $db->connect_error . ']');
+                    }
+                    // create a SQL query as a string
+                    $sql_query = "SELECT * FROM healthnews LIMIT 20";
+                    // execute the SQL query
+                    $result = $db->query($sql_query);
+
+                    //$rowsFound = $result->num_rows;
+
+                    while ($row = $result->fetch_array()) {
+                        // print out fields from row of data
+                        echo $row['content'];
+                    }
+
+                    $result->close();
+                    // close connection to database
+                    $db->close();
+                    ?>
 					<div class="single-blog">
 						<article>
 							<div class="post-thumb"><img class="img-responsive" src="cluster/images/blog/01.jpg" alt=""></div>
@@ -107,6 +139,31 @@
 						</article>
 					</div>
 					<hr style="border-top: 1px solid #646464;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 					<div class="single-blog">
 						<article>
 							<div class="post-link"><a href="">www.yourdomain.com</a></div>
