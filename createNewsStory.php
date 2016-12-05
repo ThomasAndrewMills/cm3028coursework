@@ -105,9 +105,16 @@
                     <div class="section-title">
                         <h1>Post an Article</h1>
                         <span class="st-border"></span>
-                        <textarea rows="4" cols="50">
-                            Write your article here!
-                        </textarea>
+
+                        <form action="healthNews.php" method="post">
+                            First name:<br>
+                            <textarea rows="4" cols="50">
+                                Write your article here!
+                            </textarea>
+                            <input type="submit" value="Submit">
+                        </form>
+
+
                     </div>
 
                 </div>
