@@ -58,7 +58,6 @@
                 }
             })});
     </script>
-    @import url("http://fonts.googleapis.com/css?family=Raleway:200,300,600,700&subset=latin,latin-ext");
 
     <!--Linking jQuery file in order to load the Google map and trends-->
     <script type="text/javascript" src="jquery.js"></script>
