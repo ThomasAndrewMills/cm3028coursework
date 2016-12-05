@@ -373,7 +373,7 @@
 /* 6. SERVICES */
 
 	#services{
-		background-color: #FFD324;
+		background-color: #fff;
 		padding-top: 130px;
 		padding-bottom: 120px;
 	}
@@ -405,6 +405,10 @@
 
 
 /* 7. OUR WORKS */
+
+	#clubs{
+		background-color: #3F3F3F;
+	}
 
 	.isotope-item {
 	    z-index: 2;
@@ -510,7 +514,7 @@
 /* 8. PRICING */
 	
 	#pricing{
-		background-color: #FFD324;
+		background-color: #fff;
 		padding-top: 130px;
 		padding-bottom: 120px;
 	}
