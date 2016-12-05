@@ -421,44 +421,12 @@
                     // print out fields from row of data
                     echo("
                     <div style=\"display: inline-block;width: 150px;height: 75px;margin: 10px;border: 3px solid #73AD21;\">
-                    
+                        $row(clubID)<br>
+                        $row(name)<br>
+                        $row(description)<br>
+                        $row(genre)<br>
                     </div>
                     
-                    <div style=\"display: inline-block;width: 150px;height: 75px;margin: 10px;border: 3px solid #73AD21;\">
-                    
-                    </div>
-                    
-                    <div style=\"display: inline-block;width: 150px;height: 75px;margin: 10px;border: 3px solid #73AD21;\">
-                    
-                    </div>
-                    
-                    <div style=\"display: inline-block;width: 150px;height: 75px;margin: 10px;border: 3px solid #73AD21;\">
-                    
-                    </div>
-                    
-                    <div style=\"display: inline-block;width: 150px;height: 75px;margin: 10px;border: 3px solid #73AD21;\">
-                    
-                    </div>
-                    
-                    <div style=\"display: inline-block;width: 150px;height: 75px;margin: 10px;border: 3px solid #73AD21;\">
-                    
-                    </div>
-                    
-                    <div style=\"display: inline-block;width: 150px;height: 75px;margin: 10px;border: 3px solid #73AD21;\">
-                    
-                    </div>
-                    
-                    <div style=\"display: inline-block;width: 150px;height: 75px;margin: 10px;border: 3px solid #73AD21;\">
-                    
-                    </div>
-                    
-                    <div style=\"display: inline-block;width: 150px;height: 75px;margin: 10px;border: 3px solid #73AD21;\">
-                    
-                    </div>
-                    
-                    <div style=\"display: inline-block;width: 150px;height: 75px;margin: 10px;border: 3px solid #73AD21;\">
-                    
-                    </div>
 ");
                 }
                 ?>
