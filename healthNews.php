@@ -193,7 +193,7 @@
                     </ul>
                 </div>
                 <div class="sidebar-widget">
-                    <h4 class="sidebar-title">Flickr</h4>
+                    <h4 class="sidebar-title">sidebar</h4>
                     <ul class="content-flickr">
                         <li>
                             <a href="#" title="">
@@ -228,7 +228,7 @@
                     </ul>
                 </div>
                 <div class="sidebar-widget">
-                    <h4 class="sidebar-title">Tags</h4>
+                    <h4 class="sidebar-title">sidebar</h4>
                     <div class="tagcloud">
                         <a href="">design</a>
                         <a href="">html</a>
