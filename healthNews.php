@@ -189,7 +189,7 @@
                 <div class="sidebar-widget">
                     <h4 class="sidebar-title">Post an Article</h4>
                     <ul>
-                        <a href="createNewsStory.php"></a>
+                        <a href="createNewsStory.php">Click here to post a new article.</a>
                     </ul>
                 </div>
                 <div class="sidebar-widget">
