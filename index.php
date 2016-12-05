@@ -210,12 +210,12 @@
                             echo("Logged in as " . $_SESSION['displayName']);
                             //if user login was false
                         } elseif ($_SESSION['loginStatus'] === FALSE && isset($_POST["signin"])) {
-                            echo('<li><b>' . "INCORRECT USERNAME OR PASSWORD" . '</b></li>');
+                            echo('<li style="margin: 14px;"><b>' . "INCORRECT USERNAME OR PASSWORD" . '</b></li>');
                         }elseif($_SESSION['loginStatus'] === FALSE){
-                            echo('<li><b>' . "YOU ARE NOT LOGGED IN" . '</b></li>');
+                            echo('<li style="margin: 14px;"><b>' . "YOU ARE NOT LOGGED IN" . '</b></li>');
                         }
                     }else{
-                        echo('<li><b>' . "YOU ARE NOT LOGGED IN" . '</b></li>');
+                        echo('<li style="margin: 14px;"><b>' . "YOU ARE NOT LOGGED IN" . '</b></li>');
                     }
 
 
