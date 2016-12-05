@@ -241,12 +241,9 @@
                           ?key=AIzaSyAfZtkEmnH2Ro-LnCIbwAloI05vWO53jjw
                           &origin=Oslo+Norway
                           &destination=Telemark+Norway
-                          &avoid=tolls|highways"
-                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    <h1>What is Go Portlethen?</h1>
-                    <span class="st-border"></span>
-
-                    
+                          &avoid=tolls|highways" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+                        
+                    </iframe>
                 </div>
             </div>
         </div>
