@@ -517,10 +517,10 @@
                     <div class="member-image">
                         <img class="img-responsive" src="cluster/images/members/profile2.jpg" alt="">
                         <div class="member-social">
-                            <a href=""><i class="fa fa-facebook"></i></a>
-                            <a href=""><i class="fa fa-twitter"></i></a>
-                            <a href=""><i class="fa fa-google-plus"></i></a>
-                            <a href=""><i class="fa fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+                            <a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a>
+                            <a href="https://gb.linkedin.com/"><i class="fa fa-linkedin"></i></a>
                         </div>
                     </div>
                     <div class="member-info">
@@ -535,10 +535,10 @@
                     <div class="member-image">
                         <img class="img-responsive" src="cluster/images/members/profile3.jpg" alt="">
                         <div class="member-social">
-                            <a href=""><i class="fa fa-facebook"></i></a>
-                            <a href=""><i class="fa fa-twitter"></i></a>
-                            <a href=""><i class="fa fa-google-plus"></i></a>
-                            <a href=""><i class="fa fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+                            <a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a>
+                            <a href="https://gb.linkedin.com/"><i class="fa fa-linkedin"></i></a>
                         </div>
                     </div>
                     <div class="member-info">
@@ -553,10 +553,10 @@
                     <div class="member-image">
                         <img class="img-responsive" src="cluster/images/members/profile4.jpg" alt="">
                         <div class="member-social">
-                            <a href=""><i class="fa fa-facebook"></i></a>
-                            <a href=""><i class="fa fa-twitter"></i></a>
-                            <a href=""><i class="fa fa-google-plus"></i></a>
-                            <a href=""><i class="fa fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+                            <a href="https://plus.google.com/><i class="fa fa-google-plus"></i></a>
+                            <a href="https://gb.linkedin.com/"><i class="fa fa-linkedin"></i></a>
                         </div>
                     </div>
                     <div class="member-info">
@@ -710,9 +710,9 @@
             <!-- SOCIAL ICONS -->
             <div class="col-sm-6 col-sm-push-6 footer-social-icons">
                 <span>Follow us:</span>
-                <a href="https://www.facebook.com/Portlethen-Sports-Club-703745156314817/"><i
+                <a href="https://www.facebook.com/"><i
                             class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
             </div>
             <!-- /SOCIAL ICONS -->
             <div class="col-sm-6 col-sm-pull-6 copyright">
