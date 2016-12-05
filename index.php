@@ -96,7 +96,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="logo" href="index.php"><img src="logo.png" style="width: 50%; height: 50%"></a>
+                <a class="logo" href="index.php"><img src="logo.png" style="width:50%;height:50%;" alt=""></a>
             </div>
             <div class="collapse navbar-collapse" id="st-navbar-collapse">
                 <ul class="nav navbar-nav navbar-left">
