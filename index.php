@@ -411,7 +411,8 @@
                 <div class="portfolio-items">
 
                     <div class="col-md-4 col-sm-6 work-grid wordpress graphic">
-                        <div class="portfolio-content" href="club.php?clubID=1">
+                        <a href="club.php?clubID=1">
+                        <div class="portfolio-content">
                             <img class="img-responsive" src="cluster/images/works/tennis.jpg" alt="">
                             <div class="portfolio-overlay">
                                 <a href="cluster/images/works/tennis.jpg"><i class="fa fa-camera-retro"></i></a>
@@ -419,6 +420,7 @@
                                 <p>Join our tennis Club!</p>
                             </div>
                         </div>
+                        </a>
                     </div>
 
                     <div class="col-md-4 col-sm-6 work-grid html php bootstrap">
