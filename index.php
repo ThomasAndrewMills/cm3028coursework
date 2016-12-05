@@ -630,19 +630,19 @@
             </div>
             <div class="col-sm-6 col-md-3">
                 <div class="fun-fact text-center">
-                    <h3><i class="fa fa-briefcase fa-6"></i> <span class="st-counter">50</span></h3>
+                    <h3> <span class="st-counter">50</span></h3>
                     <p>Members</p>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3">
                 <div class="fun-fact text-center">
-                    <h3><i class="fa fa-coffee"></i> <span class="st-counter">5</span></h3>
+                    <h3> <span class="st-counter">5</span></h3>
                     <p>Club Genres</p>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3">
                 <div class="fun-fact text-center">
-                    <h3><i class="fa fa-code"></i> <span class="st-counter">22</span></h3>
+                    <h3> <span class="st-counter">22</span></h3>
                     <p>Locations of Interest</p>
                 </div>
             </div>
