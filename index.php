@@ -624,7 +624,7 @@
         <div class="row">
             <div class="col-sm-6 col-md-3">
                 <div class="fun-fact text-center">
-                    <h3><i class="fa fa-thumbs-o-up"></i> <span class="st-counter">10</span></h3>
+                    <h3><span class="st-counter">10</span></h3>
                     <p>Clubs</p>
                 </div>
             </div>
