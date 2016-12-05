@@ -410,11 +410,12 @@
                         <a href="discover.php">k
                             <div class="portfolio-content">
                                 <img class="img-responsive" src="cluster/images/works/tennis.jpg" alt="">
-                                <h5>Tennis Club</h5>
-                                <p>Join our tennis Club!</p>
+
                                 <div class="portfolio-overlay">
 
                                 </div>
+                                <h5>Tennis Club</h5>
+                                <p>Join our tennis Club!</p>
                             </div>
                         </a>
                     </div>
