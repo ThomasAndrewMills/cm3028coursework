@@ -407,13 +407,13 @@
                 <div class="portfolio-items">
 
                     <div class="col-md-4 col-sm-6 work-grid wordpress graphic">
-                        <a href="#">k
+                        <a href="discover.php">k
                             <div class="portfolio-content">
                                 <img class="img-responsive" src="cluster/images/works/tennis.jpg" alt="">
-
+                                <h5>Tennis Club</h5>
+                                <p>Join our tennis Club!</p>
                                 <div class="portfolio-overlay">
-                                    <h5>Tennis Club</h5>
-                                    <p>Join our tennis Club!</p>
+
                                 </div>
                             </div>
                         </a>
