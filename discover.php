@@ -239,11 +239,7 @@
                 width="450"
                 height="250"
                 frameborder="0" style="border:0"
-                src="https://www.google.com/maps/embed/v1/directions
-                  ?key=AIzaSyAfZtkEmnH2Ro-LnCIbwAloI05vWO53jjw
-                  &origin=Oslo+Norway
-                  &destination=Telemark+Norway
-                  &avoid=tolls|highways" allowfullscreen>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5159.7335384570515!2d-2.130873476068666!3d57.061793554337626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4884054c1e2ebe05%3A0x77d31b6b1dc3ebde!2sPortlethen%2C+Aberdeen!5e0!3m2!1sen!2suk!4v1480954826701" allowfullscreen>
             </iframe>
         </div>
     </div>
