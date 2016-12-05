@@ -555,7 +555,7 @@
                         <div class="member-social">
                             <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
                             <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
-                            <a href="https://plus.google.com/><i class="fa fa-google-plus"></i></a>
+                            <a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a>
                             <a href="https://gb.linkedin.com/"><i class="fa fa-linkedin"></i></a>
                         </div>
                     </div>
