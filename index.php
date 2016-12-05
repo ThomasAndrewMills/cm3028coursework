@@ -96,11 +96,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="logo" href="index.php"><img src="logo.png" alt=""></a>
+                <a class="logo" href="index.php">GOPORTLETHEN</a>
             </div>
             <div class="collapse navbar-collapse" id="st-navbar-collapse">
                 <ul class="nav navbar-nav navbar-left">
-
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#header">Home</a></li>
