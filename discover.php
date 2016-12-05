@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="cluster/css/responsive.css" />
 
     <!--Linking the Google maps API to the website-->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNFmvcb0OHazggHIXed3RKuJ7S29VY-kE&callback=initMap"
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNFmvcb0OHazggHIXed3RKuJ7S29VY-kE&callback=initialize"
             type="text/javascript"></script>
 
 
