@@ -105,9 +105,9 @@
 
                     <?php
                     if (isset($_POST["logout"])) {
-                    session_destroy();
-                    }else{
                         session_start();
+                        session_destroy();
+
                     }
 
                     ini_set('display_errors', 1);
