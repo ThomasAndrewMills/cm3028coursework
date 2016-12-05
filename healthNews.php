@@ -51,18 +51,17 @@
 				    	<span class="icon-bar"></span>
 				    	<span class="icon-bar"></span>
 					</button>
-<!--					<a class="logo" href="index.php"><img src="logo.png" style="width:90%;height:90%;" alt=""></a>-->
+					<a class="logo" href="index.php">GOPORTLETHEN</a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="st-navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
-				    	<li><a href="#header">Home</a></li>
-				    	<li><a href="#services">Services</a></li>
-				    	<li><a href="#our-works">Works</a></li>
-				    	<li><a href="#pricing">Pricing</a></li>
-				    	<li><a href="#our-team">Team</a></li>
-				    	<li><a href="#contact">Contact</a></li>
-				    	<li><a href="healthNews.php">Blog</a></li>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="index.php#about">About</a></li>
+                        <li><a href="index.php#clubs">Clubs</a></li>
+                        <li><a href="index.php#our-team">Team</a></li>
+                        <li><a href="discover.php">Discover</a></li>
+                        <li><a href="healthNews.php">healthy living blog</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container -->
