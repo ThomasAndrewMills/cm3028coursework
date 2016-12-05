@@ -506,8 +506,8 @@
                                     </div>
                                 </div>
                                 <div class="member-info">
-                                    <h4>Bob Smith</h4>
-                                    <span>Lead Developer</span>
+                                    <h4>john Smith</h4>
+                                    <span>Co-ordinator</span>
                                 </div>
                             </div>
                         </div>
