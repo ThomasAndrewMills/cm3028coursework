@@ -411,15 +411,13 @@
                 <div class="portfolio-items">
 
                     <div class="col-md-4 col-sm-6 work-grid wordpress graphic">
-                        <div class="portfolio-content">
+                        <div class="portfolio-content" href="club.php?clubID=1">
                             <img class="img-responsive" src="cluster/images/works/tennis.jpg" alt="">
-                            <a href="club.php?clubID=1">
-                                <div class="portfolio-overlay">
-                                    <a href="cluster/images/works/tennis.jpg"><i class="fa fa-camera-retro"></i></a>
-                                    <h5>Tennis Club</h5>
-                                    <p>Join our tennis Club!</p>
-                                </div>
-                            </a>
+                            <div class="portfolio-overlay">
+                                <a href="cluster/images/works/tennis.jpg"><i class="fa fa-camera-retro"></i></a>
+                                <h5>Tennis Club</h5>
+                                <p>Join our tennis Club!</p>
+                            </div>
                         </div>
                     </div>
 
