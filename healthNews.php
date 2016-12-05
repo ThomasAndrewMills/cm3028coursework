@@ -148,26 +148,6 @@
                 ?>
 
 
-                <div class="single-blog">
-                    <article>
-                        <div class="post-link"><a href="">www.yourdomain.com</a></div>
-                        <h4 class="post-title"><a href="">Kpsum dolor sit amet, consectetur adipisicing elit.</a></h4>
-                        <div class="post-meta text-uppercase">
-                            <span>Appril 3, 2014</span>
-                            <span>In <a href="">Design</a></span>
-                            <span>By <a href="">Admin</a></span>
-                        </div>
-                        <div class="post-article">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae
-                            tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque
-                            debitis id perferendis, eveniet esse molestiae eum minus. Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente
-                            inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis,
-                            eveniet esse molestiae
-                        </div>
-
-                    </article>
-                </div>
                 <hr style="border-top: 1px solid #646464;">
                 <div class="single-blog">
                     <article>
@@ -198,35 +178,7 @@
                             <span>By <a href="">Admin</a></span>
                         </div>
                         <div class="post-article">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae
-                            tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque
-                            debitis id perferendis, eveniet esse molestiae eum minus. Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente
-                            inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis,
-                            eveniet esse molestiae
-                        </div>
-
-                    </article>
-                </div>
-                <hr style="border-top: 1px solid #646464;">
-                <div class="single-blog">
-                    <article>
-                        <div class="post-video">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/0vrdgDdPApQ" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <h4 class="post-title"><a href="">Kpsum dolor sit amet, consectetur adipisicing elit.</a></h4>
-                        <div class="post-meta text-uppercase">
-                            <span>Appril 3, 2014</span>
-                            <span>In <a href="">Design</a></span>
-                            <span>By <a href="">Admin</a></span>
-                        </div>
-                        <div class="post-article">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae
-                            tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque
-                            debitis id perferendis, eveniet esse molestiae eum minus. Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente
-                            inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis,
-                            eveniet esse molestiae
+                            this article is not from the database but is here to use as template in the future.
                         </div>
 
                     </article>
@@ -235,13 +187,9 @@
             </div>
             <div class="col-md-3">
                 <div class="sidebar-widget">
-                    <h4 class="sidebar-title">Categories</h4>
+                    <h4 class="sidebar-title">Post an Article</h4>
                     <ul>
-                        <li><a href="">Web Design</a></li>
-                        <li><a href="">Web Development</a></li>
-                        <li><a href="">Video</a></li>
-                        <li><a href="">HTML</a></li>
-                        <li><a href="">CSS</a></li>
+                        <a href="createNewsStory.php"></a>
                     </ul>
                 </div>
                 <div class="sidebar-widget">
