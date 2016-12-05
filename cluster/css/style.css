@@ -431,6 +431,7 @@
 	#our-works{
 		padding-top: 130px;
 		padding-bottom: 120px;
+		background-color: #c75656;
 	}
 
 	.portfolio-wrapper ul.filter{
@@ -469,7 +470,7 @@
 	.portfolio-wrapper .portfolio-overlay{
 		position: absolute;
 		background-color: rgba(0, 0, 0, 0.7);
-		color: #c75656;
+		color: #fff;
 		left: 0;
 		bottom: 0;
 		width: 100%;
