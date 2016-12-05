@@ -106,7 +106,7 @@
 
 						</article>
 					</div>
-					<hr>
+					<hr style="border-top: 1px solid #646464;">
 					<div class="single-blog">
 						<article>
 							<div class="post-link"><a href="">www.yourdomain.com</a></div>
