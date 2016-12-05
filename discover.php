@@ -16,7 +16,9 @@
     <link rel="stylesheet" href="cluster/css/responsive.css" />
 
     <!--Linking the Google maps API to the website-->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNFmvcb0OHazggHIXed3RKuJ7S29VY-kE&v=3.20"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAfjokdj-gg7yLiIwdrdFe_f0oCkvcm4E&callback=initMap">
+    </script>
 
     @import url("http://fonts.googleapis.com/css?family=Raleway:200,300,600,700&subset=latin,latin-ext");
 
