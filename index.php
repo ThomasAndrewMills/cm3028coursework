@@ -405,17 +405,19 @@
                 </div>
 
                 <div class="portfolio-items">
-                    <a href="#" >
-                        <div class="col-md-4 col-sm-6 work-grid wordpress graphic">
+
+                    <div class="col-md-4 col-sm-6 work-grid wordpress graphic">
+                        <a href="#">
                             <div class="portfolio-content">
-                                <img class="img-responsive" src="cluster/images/works/tennis.jpg" alt="" href="club.php?clubID=1">
+                                <img class="img-responsive" src="cluster/images/works/tennis.jpg" alt="">
                                 <div class="portfolio-overlay">
                                     <h5>Tennis Club</h5>
                                     <p>Join our tennis Club!</p>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
+
 
                     <div class="col-md-4 col-sm-6 work-grid html php bootstrap">
                         <div class="portfolio-content">
