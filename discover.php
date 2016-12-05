@@ -231,11 +231,10 @@
 
 
 
-<!-- SERVICES -->
-<section id="about">
+<!-- map -->
+<section id="map">
     <div class="container">
         <div class="row">
-            <span>map:</span>
             <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d5159.784833468939!2d-2.138763790380598!3d57.06142452334523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x48841ab90acc3fe1%3A0xb0453db6dd8efa82!2sBurnside+Park!3m2!1d57.0647538!2d-2.1301532!4m5!1s0x48841adafc0e618b%3A0x9a05970434f4edd!2sPortlethen+Swimming+Pool%2C+Oak+Dr%2C+Portlethen%2C+Aberdeen+AB12+4UR!3m2!1d57.05667!2d-2.1344160999999997!5e0!3m2!1sen!2suk!4v1480949772901" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
             <div class="col-md-12">
                 <div class="section-title">
@@ -244,7 +243,7 @@
         </div>
     </div>
 </section>
-<!-- /SERVICES -->
+<!-- /map -->
 
 
 <!-- CONTACT -->
