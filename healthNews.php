@@ -52,8 +52,6 @@
                         data-target="#st-navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
                 </button>
                 <a class="logo" href="index.php">GOPORTLETHEN</a>
             </div>
