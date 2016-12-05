@@ -146,7 +146,6 @@
                 ?>
 
 
-                <hr style="border-top: 1px solid #646464;">
                 <div class="single-blog">
                     <article>
                         <div class="post-slider">
