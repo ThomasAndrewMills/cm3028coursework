@@ -106,7 +106,7 @@
                     <li><a href="healthNews.php">healthy living blog</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    
+
 
                     <?php
                     session_start();
@@ -210,12 +210,12 @@
                             echo("Logged in as " . $_SESSION['displayName']);
                             //if user login was false
                         } elseif ($_SESSION['loginStatus'] === FALSE && isset($_POST["signin"])) {
-                            echo('<b>' . "INCORRECT USERNAME OR PASSWORD" . '</b>');
+                            echo('<li><b>' . "INCORRECT USERNAME OR PASSWORD" . '</b></li>');
                         }elseif($_SESSION['loginStatus'] === FALSE){
-                            echo('<b>' . "YOU ARE NOT LOGGED IN" . '</b>');
+                            echo('<li><b>' . "YOU ARE NOT LOGGED IN" . '</b></li>');
                         }
                     }else{
-                        echo('<b>' . "YOU ARE NOT LOGGED IN" . '</b>');
+                        echo('<li><b>' . "YOU ARE NOT LOGGED IN" . '</b></li>');
                     }
 
 
