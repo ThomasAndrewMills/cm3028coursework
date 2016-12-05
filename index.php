@@ -415,7 +415,7 @@
                             <img class="img-responsive" src="cluster/images/works/tennis.jpg" alt="">
                             <div class="portfolio-overlay">
                                 <a href="cluster/images/works/tennis.jpg"><i class="fa fa-camera-retro"></i></a>
-                                <a href="club.php?clubID=1"><h5>Tennis Club</h5></a>
+                                <h5><a href="club.php?clubID=1">Tennis Club</a></h5>
                                 <p>Join our tennis Club!</p>
                             </div>
                         </div>
