@@ -405,6 +405,7 @@
                 </div>
 
                 <div class="portfolio-items">
+                    <a href="#" >
                         <div class="col-md-4 col-sm-6 work-grid wordpress graphic">
                             <div class="portfolio-content">
                                 <img class="img-responsive" src="cluster/images/works/tennis.jpg" alt="" href="club.php?clubID=1">
@@ -414,6 +415,8 @@
                                 </div>
                             </div>
                         </div>
+                    </a>
+
                     <div class="col-md-4 col-sm-6 work-grid html php bootstrap">
                         <div class="portfolio-content">
                             <img class="img-responsive" src="cluster/images/works/hockey.jpg" alt="">
