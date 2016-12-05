@@ -497,7 +497,7 @@
             <div class="col-md-3 col-sm-6">
                             <div class="team-member">
                                 <div class="member-image">
-                                    <img class="img-responsive" src="cluster/images/members/profile2.jpg" alt="">
+                                    <img class="img-responsive" src="cluster/images/members/profile1.jpg" alt="">
                                     <div class="member-social">
                                         <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
                                         <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
