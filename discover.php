@@ -236,15 +236,16 @@
     <div class="container">
         <div class="row">
             <iframe
-                width="100"
-                height="100"
+                width="500"
+                height="400"
                 frameborder="0" style="border:0"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5159.7335384570515!2d-2.130873476068666!3d57.061793554337626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4884054c1e2ebe05%3A0x77d31b6b1dc3ebde!2sPortlethen%2C+Aberdeen!5e0!3m2!1sen!2suk!4v1480954826701" allowfullscreen>
 
             </iframe>
 
-            <a class="twitter-timeline"  href="https://twitter.com/search?q=portlethen" data-widget-id="805812191752495109">Tweets about portlethen</a>
+            <a class="twitter-timeline"  href="https://twitter.com/search?q=portlethen" data-widget-id="805814773048807424">Tweets about portlethen</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
         </div>
     </div>
 </section>
