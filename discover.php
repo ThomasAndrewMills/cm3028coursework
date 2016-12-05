@@ -237,8 +237,11 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title">
-                    <iframe src="https://www.google.com/maps
-                        /embed?pb=!1m14!1m12!1m3!1d8663.379810480727!2d-2.13698145!3d57.1226152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1480948917056"
+                    <iframe src="https://www.google.com/maps/embed/v1/directions
+                          ?key=AIzaSyAfZtkEmnH2Ro-LnCIbwAloI05vWO53jjw
+                          &origin=Oslo+Norway
+                          &destination=Telemark+Norway
+                          &avoid=tolls|highways"
                         width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     <h1>What is Go Portlethen?</h1>
                     <span class="st-border"></span>
