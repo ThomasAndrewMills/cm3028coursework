@@ -235,7 +235,7 @@
 <section id="map">
     <div class="container">
         <div class="row">
-            <head>
+            <div class="map_head">
                 <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
                 <meta charset="utf-8">
                 <title>Directions service</title>
@@ -265,8 +265,9 @@
                         padding-left: 10px;
                     }
                 </style>
-            </head>
-            <body>
+            </div>
+
+            <div class="map_body"">
             <div id="floating-panel">
                 <b>Start: </b>
                 <select id="start">
@@ -334,7 +335,7 @@
             <script async defer
                     src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
             </script>
-            </body>
+            </div>
         </div>
     </div>
 </section>
