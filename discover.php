@@ -235,11 +235,13 @@
 <section id="map">
     <div class="container">
         <div class="row">
-            <iframe src="https://www.google.com/maps/embed/v1/directions
-              ?key=AIzaSyAfZtkEmnH2Ro-LnCIbwAloI05vWO53jjw
-              &origin=Oslo+Norway
-              &destination=Telemark+Norway
-              &avoid=tolls|highways" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe
+                width="600"
+                height="450"
+                frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY
+                    &q=Space+Needle,Seattle+WA" allowfullscreen>
+            </iframe>
         </div>
     </div>
 </section>
