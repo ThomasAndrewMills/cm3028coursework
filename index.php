@@ -111,10 +111,9 @@
 
 
                     <?php
+                    session_start();
                     if (isset($_POST["logout"])) {
-                        session_start();
                         session_destroy();
-
                     }
 
                     ini_set('display_errors', 1);
