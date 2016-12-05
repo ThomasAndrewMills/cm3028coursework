@@ -103,7 +103,7 @@
 							<div class="post-article">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis, eveniet esse molestiae eum minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis, eveniet esse molestiae
 							</div>
-							<a href="" class="btn btn-readmore">Read More</a>
+
 						</article>
 					</div>
 					<hr>
@@ -119,7 +119,7 @@
 							<div class="post-article">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis, eveniet esse molestiae eum minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis, eveniet esse molestiae
 							</div>
-							<a href="" class="btn btn-readmore">Read More</a>
+
 						</article>
 					</div>
 					<hr>
@@ -152,7 +152,7 @@
 							<div class="post-article">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis, eveniet esse molestiae eum minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis, eveniet esse molestiae
 							</div>
-							<a href="" class="btn btn-readmore">Read More</a>
+
 						</article>
 					</div>
 					<hr>
@@ -168,7 +168,7 @@
 							<div class="post-article">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis, eveniet esse molestiae eum minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis, eveniet esse molestiae
 							</div>
-							<a href="" class="btn btn-readmore">Read More</a>
+
 						</article>
 					</div>
 					<hr>
@@ -184,24 +184,12 @@
 							<div class="post-article">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis, eveniet esse molestiae eum minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus, repudiandae tenetur itaque rem sapiente inventore vel deserunt officiis, facilis veritatis doloremque debitis id perferendis, eveniet esse molestiae
 							</div>
-							<a href="" class="btn btn-readmore">Read More</a>
+
 						</article>
 					</div>
 					<hr>
 				</div>
 				<div class="col-md-3">
-					<div class="sidebar-widget">
-						<div class="blog-search">
-                            <form>
-                                <input type="text" name="search">
-                                <span>
-                                	<button id="submit_btn" class="search-submit" type="submit">
-                                    <i class="fa fa-search"></i>
-                                    </button>
-                                </span>
-                            </form>
-                        </div>
-					</div>
 					<div class="sidebar-widget">
 						<h4 class="sidebar-title">Categories</h4>
 						<ul>
