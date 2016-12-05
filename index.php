@@ -495,22 +495,22 @@
             </div>
 
             <div class="col-md-3 col-sm-6">
-                <div class="team-member">
-                    <div class="member-image">
-                        <img class="img-responsive" src="cluster/images/members/profile1.jpg" alt="">
-                        <div class="member-social">
-                            <a href=""><i class="fa fa-facebook"></i></a>
-                            <a href=""><i class="fa fa-twitter"></i></a>
-                            <a href=""><i class="fa fa-google-plus"></i></a>
-                            <a href=""><i class="fa fa-linkedin"></i></a>
+                            <div class="team-member">
+                                <div class="member-image">
+                                    <img class="img-responsive" src="cluster/images/members/profile2.jpg" alt="">
+                                    <div class="member-social">
+                                        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                                        <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+                                        <a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a>
+                                        <a href="https://gb.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Bob Smith</h4>
+                                    <span>Lead Developer</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="member-info">
-                        <h4>John Smith</h4>
-                        <span>Co-ordinator</span>
-                    </div>
-                </div>
-            </div>
 
             <div class="col-md-3 col-sm-6">
                 <div class="team-member">
