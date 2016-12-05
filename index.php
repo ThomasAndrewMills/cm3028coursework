@@ -78,9 +78,9 @@
     <nav class="navbar st-navbar navbar-fixed-top">
 
 
-        <div style="text-align:center; font-size:30px;font-family: 'Raleway'" ;>
+        <!--<div style="text-align:center; font-size:30px;font-family: 'Raleway'" ;>
             <a class="logo" href="index.php"><b>GO PORTLETHEN</b></a>
-        </div>
+        </div>-->
 
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#st-navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
