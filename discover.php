@@ -243,12 +243,8 @@
                     <br>
                     <h1>What is Go Portlethen?</h1>
                     <span class="st-border"></span>
-                    <iframe
-                        width="600"
-                        height="450"
-                        frameborder="0" style="border:0"
-                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDTqzcRfqGoZ0ejMDzGJX73DFyy7a1LACw&q=Space+Needle,Seattle+WA" allowfullscreen>
-                    </iframe>
+
+                    
                 </div>
             </div>
         </div>

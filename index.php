@@ -415,7 +415,7 @@
                             <img class="img-responsive" src="cluster/images/works/tennis.jpg" alt="">
                             <div class="portfolio-overlay">
                                 <a href="cluster/images/works/tennis.jpg"><i class="fa fa-camera-retro"></i></a>
-                                <h5>Tennis Club</h5>
+                                <a href="club.php?clubID=1"><h5>Tennis Club</h5></a>
                                 <p>Join our tennis Club!</p>
                             </div>
                         </div>
@@ -426,7 +426,7 @@
                             <img class="img-responsive" src="cluster/images/works/hockey.jpg" alt="">
                             <div class="portfolio-overlay">
                                 <a href="cluster/images/works/hockey.jpg"><i class="fa fa-camera-retro"></i></a>
-                                <h5>Hockey Club</h5>
+                                <a href="club.php?clubID=2"><h5>Hockey Club</h5></a>
                                 <p>Join our Hockey Club!</p>
                             </div>
                         </div>
@@ -437,7 +437,7 @@
                             <img class="img-responsive" src="cluster/images/works/football.jpg" alt="">
                             <div class="portfolio-overlay">
                                 <a href="cluster/images/works/football.jpg"><i class="fa fa-camera-retro"></i></a>
-                                <h5>Footbal Club</h5>
+                                <a href="club.php?clubID=3"><h5>Footbal Club</h5></a>
                                 <p>Join our Football Club!</p>
                             </div>
                         </div>
@@ -448,7 +448,7 @@
                             <img class="img-responsive" src="cluster/images/works/martialArts.jpg" alt="">
                             <div class="portfolio-overlay">
                                 <a href="cluster/images/works/martialArts.jpg"><i class="fa fa-camera-retro"></i></a>
-                                <h5>Martial Arts</h5>
+                                <a href="club.php?clubID=4"><h5>Martial Arts></h5></a>
                                 <p>Join our Martial Arts Club!</p>
                             </div>
                         </div>
@@ -459,7 +459,7 @@
                             <img class="img-responsive" src="cluster/images/works/dance.jpg" alt="">
                             <div class="portfolio-overlay">
                                 <a href="cluster/images/works/dance.jpg"><i class="fa fa-camera-retro"></i></a>
-                                <h5>Dance Club</h5>
+                                <a href="club.php?clubID=5"><h5>Dance Club</h5></a>
                                 <p>Join our Dance Club!</p>
                             </div>
                         </div>
@@ -470,16 +470,12 @@
                             <img class="img-responsive" src="cluster/images/works/athletics.jpg" alt="">
                             <div class="portfolio-overlay">
                                 <a href="cluster/images/works/athletics.jpg"><i class="fa fa-camera-retro"></i></a>
-                                <h5>Athletics Club</h5>
+                                <a href="club.php?clubID=6"><h5>Athletics Club</h5></a>
                                 <p>Join our Athletics Club!</p>
                             </div>
                         </div>
                     </div>
-
                 </div>
-            </div>
-            <div style="margin-bottom: 100px;">
-                <a href="club.php" style="color:#5b5b5b;"><h2>Click here to view more clubs!</h2></a>
             </div>
         </div>
     </div>
