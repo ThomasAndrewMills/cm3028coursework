@@ -123,7 +123,6 @@
 
                 while ($row = $result->fetch_array()) {
                     // print out fields from row of data
-                    echo($row['title']);
                     echo (
                     '<div class="single-blog">
 						<article>
@@ -213,7 +212,7 @@
                 <div class="single-blog">
                     <article>
                         <div class="post-video">
-                            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=0vrdgDdPApQ"
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/v=0vrdgDdPApQ"
                                     frameborder="0" allowfullscreen></iframe>
                         </div>
                         <h4 class="post-title"><a href="">Kpsum dolor sit amet, consectetur adipisicing elit.</a></h4>
