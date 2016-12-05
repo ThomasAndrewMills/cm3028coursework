@@ -239,7 +239,7 @@
                 width="600"
                 height="450"
                 frameborder="0" style="border:0"
-                src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAfZtkEmnH2Ro-LnCIbwAloI05vWO53jjw
                     &q=Space+Needle,Seattle+WA" allowfullscreen>
             </iframe>
         </div>
