@@ -16,10 +16,9 @@
     <link rel="stylesheet" href="cluster/css/responsive.css" />
 
     <!--Linking the Google maps API to the website-->
-    <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAfjokdj-gg7yLiIwdrdFe_f0oCkvcm4E&callback=initMap">
-    </script>
-    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNFmvcb0OHazggHIXed3RKuJ7S29VY-kE&callback=initMap"
+            type="text/javascript"></script>
+
 
     @import url("http://fonts.googleapis.com/css?family=Raleway:200,300,600,700&subset=latin,latin-ext");
 
@@ -61,9 +60,6 @@
             })});
     </script>
     @import url("http://fonts.googleapis.com/css?family=Raleway:200,300,600,700&subset=latin,latin-ext");
-
-    <!--Linking the Google maps API to the website-->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.20"></script>
 
     <!--Linking jQuery file in order to load the Google map and trends-->
     <script type="text/javascript" src="jquery.js"></script>
