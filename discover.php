@@ -42,7 +42,7 @@
             padding-left: 10px;
         }
     </style>
-    
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="cluster/images/icon/favicon.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="cluster/images/icon/apple-touch-icon-144-precomposed.png">
@@ -324,26 +324,6 @@
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfZtkEmnH2Ro-LnCIbwAloI05vWO53jjw&callback=initMap">
 </script>
-
-
-<!-- map -->
-<section id="map">
-    <div class="container">
-        <div class="row">
-            <iframe
-                width="450"
-                height="250"
-                frameborder="0" style="border:0"
-                src="https://www.google.com/maps/embed/v1/directions
-                  ?key=AIzaSyAfZtkEmnH2Ro-LnCIbwAloI05vWO53jjw
-                  &origin=Oslo+Norway
-                  &destination=Telemark+Norway
-                  &avoid=tolls|highways" allowfullscreen>
-            </iframe>
-        </div>
-    </div>
-</section>
-<!-- /map -->
 
 
 <!-- CONTACT -->
