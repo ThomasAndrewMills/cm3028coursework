@@ -98,6 +98,11 @@
 
 
                 <?php
+                ini_set('display_errors', 1);
+                ini_set('display_startup_errors', 1);
+                error_reporting(E_ALL);
+
+
                 // connect to server and select database
                 $db = new mysqli(
                     "eu-cdbr-azure-west-a.cloudapp.net",
@@ -121,7 +126,7 @@
                     '<div class="single-blog">
 						<article>
 							<div class="post-thumb"><img class="img-responsive" src="cluster/images/blog/01.jpg" alt=""></div>
-							<h4 class="post-title"><a href="">' . $row['content'] . '</a></h4>
+							<h4 class="post-title"><a href="">' . $row['title'] . '</a></h4>
 							<div class="post-meta text-uppercase">
 								<span>A DATE</span>
 								<span>In <a href="">Design</a></span>
