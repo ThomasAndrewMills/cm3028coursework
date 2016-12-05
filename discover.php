@@ -333,7 +333,7 @@
                 }
             </script>
             <script async defer
-                    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfZtkEmnH2Ro-LnCIbwAloI05vWO53jjw&callback=initMap">
             </script>
             </div>
         </div>
