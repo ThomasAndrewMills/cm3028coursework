@@ -51,7 +51,7 @@
 				    	<span class="icon-bar"></span>
 				    	<span class="icon-bar"></span>
 					</button>
-					<a class="logo" href="index.php"><img src="logo.png" style="width:90%;height:90%;" alt=""></a>
+<!--					<a class="logo" href="index.php"><img src="logo.png" style="width:90%;height:90%;" alt=""></a>-->
 				</div>
 
 				<div class="collapse navbar-collapse" id="st-navbar-collapse">
