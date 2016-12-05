@@ -111,6 +111,7 @@
 
                     if (isset($_POST["logout"])) {
                         session_destroy();
+                        header("Refresh:0");
                     }
 
                     if (isset($_SESSION['loginStatus'])) {
