@@ -149,8 +149,8 @@
 
             while ($row = $result->fetch_array()) {
                 // print out fields from row of data
-                echo("<h1>" . $row['Title'] . "</h1>
-                      <h3>" . $row['Date'] . "</h3>
+                echo("<h4>" . $row['Title'] . "</h4>
+                      <h5>" . $row['Date'] . "</h5>
                       <p>" . $row['Description'] . "</p>
             ");
             }
