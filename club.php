@@ -115,9 +115,45 @@
                     <span class="st-border"></span>
                 </div>
             </div>
+            <h2>About the club</h2>
+
 
             <?php
+            //get and display events
+            echo("<div>" . $row['description'] . "</div>");
+            ?>
 
+            <h2>Upcoming events</h2>
+            <?php
+
+            // connect to server and select database
+            $db = new mysqli(
+                "eu-cdbr-azure-west-a.cloudapp.net",
+                "bd2505ec24d031",
+                "a0a7a671",
+                "goportlethendb"
+            );
+            // test if connection was established, and print any errors
+            if ($db->connect_errno) {
+                die('Connectfailed[' . $db->connect_error . ']');
+            }
+            // create a SQL query as a string
+            $sql_query = "SELECT * FROM events WHERE clubID = " . $clubid . "";
+            // execute the SQL query
+            $result = $db->query($sql_query);
+
+            //$rowsFound = $result->num_rows;
+
+            while ($row = $result->fetch_array()) {
+                // print out fields from row of data
+                echo("<h1>" . $row['Title'] . "</h1>
+                      <h3>" . $row['Date'] . "</h3>
+                      <p>" . $row['Description'] . "</p>
+            ");
+            }
+
+
+            echo("");
             ?>
         </div>
     </div>
