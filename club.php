@@ -155,6 +155,14 @@
 
             echo("");
             ?>
+            <div class="col-md-3">
+                <div class="sidebar-widget">
+                    <h4 class="sidebar-title">Post an Article</h4>
+                    <ul>
+                        <a href="createNewsStory.php">Click here to post a new article.</a>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </section>
