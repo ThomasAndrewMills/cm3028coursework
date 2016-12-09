@@ -606,7 +606,7 @@
 <!-- /FUN FACTS -->
 
 
-<!-- CONTACT -->
+<!-- CONTACT
 <section id="contact">
     <div class="container">
         <div class="row">
@@ -655,7 +655,7 @@
         </div>
     </div>
 </section>
-<!-- /CONTACT -->
+CONTACT -->
 
 <!-- FOOTER -->
 <footer id="footer">
