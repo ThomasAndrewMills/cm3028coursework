@@ -466,7 +466,7 @@
             </div>
             <div class="col-sm-6 col-md-3">
                 <div class="fun-fact text-center">
-                    <h3><span class="st-counter">22</span></h3>
+                    <h3><span class="st-counter">0</span></h3>
                     <p>Locations of Interest</p>
                 </div>
             </div>
@@ -523,6 +523,12 @@
                     </div></a>");
                 }
                 ?>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
             </div>
         </div>
     </div>
