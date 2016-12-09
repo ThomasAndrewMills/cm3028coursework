@@ -547,37 +547,43 @@
             <div class="col-md-8 col-md-offset-2 col-sm-12">
                 <div class="st-testimonials">
 
-                    <div class="item active text-center">
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolore nesciunt natus ullam
-                            possimus quas obcaecati suscipit voluptate facilis cum"</p>
-                        <div class="st-border"></div>
-                        <div class="client-info">
-                            <h5>Tom Roof</h5>
-                            <span>CEO of Domain.com</span>
-                        </div>
-                    </div>
+                    <?php
+                    ini_set('display_errors', 1);
+                    ini_set('display_startup_errors', 1);
+                    error_reporting(E_ALL);
 
-                    <div class="item text-center">
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolore nesciunt natus ullam
-                            possimus quas obcaecati suscipit voluptate facilis cumconsectetur adipisicing elit. Amet
-                            dolore"</p>
-                        <div class="st-border"></div>
-                        <div class="client-info">
-                            <h5>Mustafiz</h5>
-                            <span>CEO of Domain.com</span>
-                        </div>
-                    </div>
 
-                    <div class="item text-center">
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem autem possimus laborum,
-                            ducimus vel rerum asperiores delectus, suscipit voluptate mollitia, ullam perspiciatis
-                            voluptates!"</p>
-                        <div class="st-border"></div>
-                        <div class="client-info">
-                            <h5>Sean Hynes</h5>
-                            <span>CEO of Domain.com</span>
-                        </div>
-                    </div>
+                    // connect to server and select database
+                    $db = new mysqli(
+                        "eu-cdbr-azure-west-a.cloudapp.net",
+                        "bd2505ec24d031",
+                        "a0a7a671",
+                        "goportlethendb"
+                    );
+                    // test if connection was established, and print any errors
+                    if ($db->connect_errno) {
+                        die('Connectfailed[' . $db->connect_error . ']');
+                    }
+                    // create a SQL query as a string
+                    $sql_query = "SELECT * FROM testimonials";
+                    // execute the SQL query
+                    $result = $db->query($sql_query);
+
+                    //$rowsFound = $result->num_rows;
+
+                    while ($row = $result->fetch_array()) {
+                        // print out fields from row of data
+                        echo("<div class='item active text-center'>
+                                    <p>" . $row['testimonial'] ."</p>
+                                    <div class=\"st-border\"></div>
+                                    <div class=\"client-info\">
+                                        <h5>" . $row['name'] . "</h5>
+                                        <span></span>
+                                    </div>
+                            </div>");
+                    }
+                    ?>
+
 
                 </div>
             </div>
