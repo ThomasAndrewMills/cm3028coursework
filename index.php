@@ -339,36 +339,40 @@
                 </div>
             </div>
 
-            <div class="col-md-4 col-sm-6 st-service">
-                <h2>Community Engagement</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio
-                    dolor.</p>
-            </div>
+            <?php
+            ini_set('display_errors', 1);
+            ini_set('display_startup_errors', 1);
+            error_reporting(E_ALL);
 
-            <div class="col-md-4 col-sm-6 st-service">
-                <h2>Keeping Active</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio
-                    dolor.</p>
-            </div>
 
-            <div class="col-md-4 col-sm-6 st-service">
-                <h2>Discover Portlethen</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio
-                    dolor.</p>
-            </div>
+            // connect to server and select database
+            $db = new mysqli(
+                "eu-cdbr-azure-west-a.cloudapp.net",
+                "bd2505ec24d031",
+                "a0a7a671",
+                "goportlethendb"
+            );
+            // test if connection was established, and print any errors
+            if ($db->connect_errno) {
+                die('Connectfailed[' . $db->connect_error . ']');
+            }
+            // create a SQL query as a string
+            $sql_query = "SELECT * FROM introductorytext";
+            // execute the SQL query
+            $result = $db->query($sql_query);
 
-            <div class="col-md-4 col-sm-6 st-service">
-                <h2>Healthy Living</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio
-                    dolor.</p>
-            </div>
+            //$rowsFound = $result->num_rows;
 
-            <div class="col-md-4 col-sm-6 st-service">
-                <h2>Run by YOU</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio
-                    dolor.</p>
-            </div>
-
+            while ($row = $result->fetch_array()) {
+                // print out fields from row of data
+                echo("
+                    <div style='display: inline-block;width: 250px;height: 150px;'>
+                        <h2>" . $row['heading'] . "</h2>
+                        <p>" . $row['text'] . "</p>
+                    </div>");
+            }
+            ?>
+            
         </div>
         <br>
         <br>
