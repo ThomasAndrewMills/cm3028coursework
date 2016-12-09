@@ -437,6 +437,38 @@
 <!-- /OUR WORKS -->
 
 
+<!-- FUN FACTS -->
+<section id="fun-facts">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="fun-fact text-center">
+                    <h3><span class="st-counter">10</span></h3>
+                    <p>Clubs</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="fun-fact text-center">
+                    <h3><span class="st-counter">50</span></h3>
+                    <p>Members</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="fun-fact text-center">
+                    <h3><span class="st-counter">5</span></h3>
+                    <p>Club Genres</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="fun-fact text-center">
+                    <h3><span class="st-counter">22</span></h3>
+                    <p>Locations of Interest</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /FUN FACTS -->
 
 
 <!-- TESTIMONIAL -->
@@ -579,38 +611,7 @@
 
 
 
-<!-- FUN FACTS -->
-<section id="fun-facts">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-md-3">
-                <div class="fun-fact text-center">
-                    <h3><span class="st-counter">10</span></h3>
-                    <p>Clubs</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="fun-fact text-center">
-                    <h3><span class="st-counter">50</span></h3>
-                    <p>Members</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="fun-fact text-center">
-                    <h3><span class="st-counter">5</span></h3>
-                    <p>Club Genres</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="fun-fact text-center">
-                    <h3><span class="st-counter">22</span></h3>
-                    <p>Locations of Interest</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- /FUN FACTS -->
+
 
 
 <!-- CONTACT
