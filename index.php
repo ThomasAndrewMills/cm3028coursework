@@ -434,7 +434,7 @@
         </div>
 
         <!-- FUN FACTS -->
-        <div class="row">
+        <div class="row" style="margin-top: 100px;margin-bottom: 100px;">
             <div class="col-sm-6 col-md-3">
                 <div class="fun-fact text-center">
                     <h3><span class="st-counter">10</span></h3>
