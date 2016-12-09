@@ -340,31 +340,31 @@
             </div>
 
             <div class="col-md-4 col-sm-6 st-service">
-                <h2><i class="fa fa-desktop"></i> Community Engagement</h2>
+                <h2>Community Engagement</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio
                     dolor.</p>
             </div>
 
             <div class="col-md-4 col-sm-6 st-service">
-                <h2><i class="fa fa-cogs"></i> Keeping Active</h2>
+                <h2>Keeping Active</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio
                     dolor.</p>
             </div>
 
             <div class="col-md-4 col-sm-6 st-service">
-                <h2><i class="fa fa-code"></i> Discover Portlethen</h2>
+                <h2>Discover Portlethen</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio
                     dolor.</p>
             </div>
 
             <div class="col-md-4 col-sm-6 st-service">
-                <h2><i class="fa fa-dashboard"></i> Healthy Living</h2>
+                <h2>Healthy Living</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio
                     dolor.</p>
             </div>
 
             <div class="col-md-4 col-sm-6 st-service">
-                <h2><i class="fa fa-life-ring"></i> Run by YOU</h2>
+                <h2>Run by YOU</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta libero autem, magni veritatis, optio
                     dolor.</p>
             </div>
