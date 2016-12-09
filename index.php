@@ -387,11 +387,6 @@
                 <div class="fun-fact text-center">
                     <!--GETTING AMOUNT OF CLUBS-->
                     <?php
-                    ini_set('display_errors', 1);
-                    ini_set('display_startup_errors', 1);
-                    error_reporting(E_ALL);
-
-
                     // connect to server and select database
                     $db = new mysqli(
                         "eu-cdbr-azure-west-a.cloudapp.net",
@@ -417,13 +412,55 @@
             </div>
             <div class="col-sm-6 col-md-3">
                 <div class="fun-fact text-center">
-                    <h3><span class="st-counter">50</span></h3>
+                    <!--GETTING AMOUNT OF USERS-->
+                    <?php
+                    // connect to server and select database
+                    $db = new mysqli(
+                        "eu-cdbr-azure-west-a.cloudapp.net",
+                        "bd2505ec24d031",
+                        "a0a7a671",
+                        "goportlethendb"
+                    );
+                    // test if connection was established, and print any errors
+                    if ($db->connect_errno) {
+                        die('Connectfailed[' . $db->connect_error . ']');
+                    }
+                    // create a SQL query as a string
+                    $sql_query = "SELECT * FROM users;";
+                    // execute the SQL query
+                    $result = $db->query($sql_query);
+
+                    $rowsFound = $result->num_rows;
+
+                    echo('<h3><span class="st-counter">' . $rowsFound . '</span></h3>');
+                    ?>
                     <p>Members</p>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3">
                 <div class="fun-fact text-center">
-                    <h3><span class="st-counter">5</span></h3>
+                    <!--GETTING AMOUNT OF GENRES-->
+                    <?php
+                    // connect to server and select database
+                    $db = new mysqli(
+                        "eu-cdbr-azure-west-a.cloudapp.net",
+                        "bd2505ec24d031",
+                        "a0a7a671",
+                        "goportlethendb"
+                    );
+                    // test if connection was established, and print any errors
+                    if ($db->connect_errno) {
+                        die('Connectfailed[' . $db->connect_error . ']');
+                    }
+                    // create a SQL query as a string
+                    $sql_query = "SELECT * FROM genre;";
+                    // execute the SQL query
+                    $result = $db->query($sql_query);
+
+                    $rowsFound = $result->num_rows;
+
+                    echo('<h3><span class="st-counter">' . $rowsFound . '</span></h3>');
+                    ?>
                     <p>Club Genres</p>
                 </div>
             </div>
