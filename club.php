@@ -103,12 +103,12 @@
                 die('Connectfailed[' . $db->connect_error . ']');
             }
             // create a SQL query as a string
-            $sql_query = "SELECT * FROM clubs WHERE id = ".$clubid."";
+            $sql_query = "SELECT * FROM clubs WHERE clubID = ".$clubid."";
             // execute the SQL query
             $result = $db->query($sql_query);
 
             //$rowsFound = $result->num_rows;
-            print($result);
+
             while ($row = $result->fetch_array()) {
                 // print out fields from row of data
                 echo("<h1>". $row['name'] . "</h1>
@@ -117,8 +117,7 @@
             ?>
 
             <?php
-                $clubid = $_GET["id"];
-                echo $clubid;
+
             ?>
         </div>
     </div>
