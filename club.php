@@ -109,18 +109,21 @@
                     while ($row = $result->fetch_array()) {
                         // print out fields from row of data
                         echo("<h1>" . $row['name'] . "</h1>
+                        <p>" . $row['name'] . "</p>
             ");
                     }
                     ?>
                     <span class="st-border"></span>
                 </div>
             </div>
-            <h2>About the club</h2>
+
 
 
             <?php
             //get and display events
-            echo("<div>" . $row['description'] . "</div>");
+
+            echo("<h2>About the club</h2>
+                    <p>" . $row['description'] . "</p>");
             ?>
 
             <h2>Upcoming events</h2>
