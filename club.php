@@ -108,7 +108,7 @@
             $result = $db->query($sql_query);
 
             //$rowsFound = $result->num_rows;
-
+            print($result);
             while ($row = $result->fetch_array()) {
                 // print out fields from row of data
                 echo("<h1>". $row['name'] . "</h1>
