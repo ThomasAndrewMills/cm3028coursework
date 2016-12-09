@@ -432,14 +432,8 @@
                 ?>
             </div>
         </div>
-    </div>
-</section>
-<!-- /OUR WORKS -->
 
-
-<!-- FUN FACTS -->
-<section id="fun-facts">
-    <div class="container">
+        <!-- FUN FACTS -->
         <div class="row">
             <div class="col-sm-6 col-md-3">
                 <div class="fun-fact text-center">
@@ -466,9 +460,14 @@
                 </div>
             </div>
         </div>
+        <!-- /FUN FACTS -->
+
     </div>
 </section>
-<!-- /FUN FACTS -->
+<!-- /OUR WORKS -->
+
+
+
 
 
 <!-- TESTIMONIAL -->
