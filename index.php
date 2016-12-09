@@ -366,8 +366,8 @@
             while ($row = $result->fetch_array()) {
                 // print out fields from row of data
                 echo("
-                    <div style='display: inline-block;width: 250px;height: 150px;'>
-                        <h2>" . $row['heading'] . "</h2>
+                    <div style='display: inline-block;width: 320px;height: 150px;'>
+                        <h5>" . $row['heading'] . "</h5>
                         <p>" . $row['text'] . "</p>
                     </div>");
             }
