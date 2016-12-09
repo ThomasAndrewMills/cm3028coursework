@@ -404,14 +404,13 @@
                         die('Connectfailed[' . $db->connect_error . ']');
                     }
                     // create a SQL query as a string
-                    $sql_query = "SELECT COUNT(*) FROM clubs;";
+                    $sql_query = "SELECT * FROM clubs;";
                     // execute the SQL query
                     $result = $db->query($sql_query);
 
-                    //$rowsFound = $result->num_rows;
+                    $rowsFound = $result->num_rows;
 
-
-                    echo('<h3><span class="st-counter">' . $result . '</span></h3>');
+                    echo('<h3><span class="st-counter">' . $rowsFound . '</span></h3>');
                     ?>
                     <p>Clubs</p>
                 </div>
