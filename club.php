@@ -77,7 +77,7 @@
 <section id="services">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12" style="float:left;width:500px;">
                 <div class="section-title">
 
                     <?php
@@ -155,13 +155,11 @@
 
             echo("");
             ?>
-            <div class="col-md-3">
-                <div class="sidebar-widget">
-                    <h4 class="sidebar-title">Post an Article</h4>
-                    <ul>
-                        <a href="createNewsStory.php">Click here to post a new article.</a>
-                    </ul>
-                </div>
+            <div style="float:right;width:200px;">
+                <h4 class="sidebar-title">Post an Article</h4>
+                <ul>
+                    <a href="createNewsStory.php">Click here to post a new article.</a>
+                </ul>
             </div>
         </div>
     </div>
