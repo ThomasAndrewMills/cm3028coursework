@@ -99,9 +99,7 @@
                 <div class="collapse navbar-collapse" id="st-navbar-collapse">
                     <ul class="nav navbar-nav navbar-left">
                         <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
                         <li><a href="#clubs">Clubs</a></li>
-                        <li><a href="#our-team">Team</a></li>
                         <li><a href="discover.php">Discover</a></li>
                         <li><a href="healthNews.php">healthy living blog</a></li>
                     </ul>
@@ -387,7 +385,34 @@
         <div class="row">
             <div class="col-sm-6 col-md-3">
                 <div class="fun-fact text-center">
-                    <h3><span class="st-counter">10</span></h3>
+                    <!--GETTING AMOUNT OF CLUBS-->
+                    <?php
+                    ini_set('display_errors', 1);
+                    ini_set('display_startup_errors', 1);
+                    error_reporting(E_ALL);
+
+
+                    // connect to server and select database
+                    $db = new mysqli(
+                        "eu-cdbr-azure-west-a.cloudapp.net",
+                        "bd2505ec24d031",
+                        "a0a7a671",
+                        "goportlethendb"
+                    );
+                    // test if connection was established, and print any errors
+                    if ($db->connect_errno) {
+                        die('Connectfailed[' . $db->connect_error . ']');
+                    }
+                    // create a SQL query as a string
+                    $sql_query = "SELECT COUNT(*) FROM clubs;";
+                    // execute the SQL query
+                    $result = $db->query($sql_query);
+
+                    //$rowsFound = $result->num_rows;
+
+
+                    echo('<h3><span class="st-counter">' . $result . '</span></h3>');
+                    ?>
                     <p>Clubs</p>
                 </div>
             </div>
