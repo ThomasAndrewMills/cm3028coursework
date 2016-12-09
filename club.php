@@ -77,84 +77,85 @@
 <section id="services">
     <div class="container">
         <div class="row">
-            <div class="col-md-12" style="float:left;width:500px;">
-                <div class="section-title">
+            <div style="float:left;width:500px;">
+                <div class="col-md-12">
+                    <div class="section-title">
 
-                    <?php
-                    ini_set('display_errors', 1);
-                    ini_set('display_startup_errors', 1);
-                    error_reporting(E_ALL);
+                        <?php
+                        ini_set('display_errors', 1);
+                        ini_set('display_startup_errors', 1);
+                        error_reporting(E_ALL);
 
-                    $clubid = $_GET["id"];
+                        $clubid = $_GET["id"];
 
 
-                    // connect to server and select database
-                    $db = new mysqli(
-                        "eu-cdbr-azure-west-a.cloudapp.net",
-                        "bd2505ec24d031",
-                        "a0a7a671",
-                        "goportlethendb"
-                    );
-                    // test if connection was established, and print any errors
-                    if ($db->connect_errno) {
-                        die('Connectfailed[' . $db->connect_error . ']');
-                    }
-                    // create a SQL query as a string
-                    $sql_query = "SELECT * FROM clubs WHERE clubID = " . $clubid . "";
-                    // execute the SQL query
-                    $result = $db->query($sql_query);
+                        // connect to server and select database
+                        $db = new mysqli(
+                            "eu-cdbr-azure-west-a.cloudapp.net",
+                            "bd2505ec24d031",
+                            "a0a7a671",
+                            "goportlethendb"
+                        );
+                        // test if connection was established, and print any errors
+                        if ($db->connect_errno) {
+                            die('Connectfailed[' . $db->connect_error . ']');
+                        }
+                        // create a SQL query as a string
+                        $sql_query = "SELECT * FROM clubs WHERE clubID = " . $clubid . "";
+                        // execute the SQL query
+                        $result = $db->query($sql_query);
 
-                    //$rowsFound = $result->num_rows;
+                        //$rowsFound = $result->num_rows;
 
-                    while ($row = $result->fetch_array()) {
-                        // print out fields from row of data
-                        echo("<h1>" . $row['name'] . "</h1>");
-                    }
-                    ?>
-                    <span class="st-border"></span>
+                        while ($row = $result->fetch_array()) {
+                            // print out fields from row of data
+                            echo("<h1>" . $row['name'] . "</h1>");
+                        }
+                        ?>
+                        <span class="st-border"></span>
+                    </div>
                 </div>
-            </div>
 
 
+                <?php
+                //get and display events
 
-            <?php
-            //get and display events
-
-            echo("<h2>About the club</h2>
+                echo("<h2>About the club</h2>
                     <p>" . $row['description'] . "</p>");
-            ?>
+                ?>
 
-            <h2>Upcoming events</h2>
-            <?php
+                <h2>Upcoming events</h2>
+                <?php
 
-            // connect to server and select database
-            $db = new mysqli(
-                "eu-cdbr-azure-west-a.cloudapp.net",
-                "bd2505ec24d031",
-                "a0a7a671",
-                "goportlethendb"
-            );
-            // test if connection was established, and print any errors
-            if ($db->connect_errno) {
-                die('Connectfailed[' . $db->connect_error . ']');
-            }
-            // create a SQL query as a string
-            $sql_query = "SELECT * FROM events WHERE clubID = " . $clubid . "";
-            // execute the SQL query
-            $result = $db->query($sql_query);
+                // connect to server and select database
+                $db = new mysqli(
+                    "eu-cdbr-azure-west-a.cloudapp.net",
+                    "bd2505ec24d031",
+                    "a0a7a671",
+                    "goportlethendb"
+                );
+                // test if connection was established, and print any errors
+                if ($db->connect_errno) {
+                    die('Connectfailed[' . $db->connect_error . ']');
+                }
+                // create a SQL query as a string
+                $sql_query = "SELECT * FROM events WHERE clubID = " . $clubid . "";
+                // execute the SQL query
+                $result = $db->query($sql_query);
 
-            //$rowsFound = $result->num_rows;
+                //$rowsFound = $result->num_rows;
 
-            while ($row = $result->fetch_array()) {
-                // print out fields from row of data
-                echo("<div style='margin-left:10px;margin-right:10px;'><h4>" . $row['Title'] . $row['Date'] . "</h4>
+                while ($row = $result->fetch_array()) {
+                    // print out fields from row of data
+                    echo("<div style='margin-left:10px;margin-right:10px;'><h4>" . $row['Title'] . $row['Date'] . "</h4>
                       <p style='font-weight:bold;color:#707070;'>" . $row['Description'] . "</p></div>
             ");
-            }
+                }
 
 
-            echo("");
-            ?>
+                echo("");
+                ?>
+            </div>
             <div style="float:right;width:200px;">
                 <h4 class="sidebar-title">Post an Article</h4>
                 <ul>
@@ -162,6 +163,7 @@
                 </ul>
             </div>
         </div>
+
     </div>
 </section>
 <!-- /SERVICES -->
