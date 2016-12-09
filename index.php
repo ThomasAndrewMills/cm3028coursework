@@ -255,14 +255,14 @@
                                 ?>
                                 <form action="index.php" method="post" style="margin-top:10px;">
                                     <input style="font-weight: 600;border-radius: 5px;background-color: lightgray;"
-                                           type="submit" value="LOGOUT" name="logout">
+                                           type="submit" value="LOGOUT" name="logout" class="button">
                                 </form>
                                 <?php
                             } else {
                                 ?>
-                                <form action="createUser.php" style="margin-top:10px;">
+                                <form action="createUser.php" style="margin-top:10px;" >
                                     <input style="font-weight: 600;border-radius: 5px;background-color: lightgray;"
-                                           type="submit" value="SIGN IN/SIGN UP">
+                                           type="submit" value="SIGN IN/SIGN UP" class="button">
                                 </form>
                                 <?php
                             }
