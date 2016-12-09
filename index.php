@@ -420,10 +420,10 @@
                 while ($row = $result->fetch_array()) {
                     // print out fields from row of data
                     echo("
-                    <div style=\"display: inline-block;width: 250px;height: 150px;margin: 10px;overflow: hidden;background-color: black; color:white;text-align: center;\"><span style=\"display: inline-block;vertical-align: middle;\">"
+                    <a href='club.php?id=". $row['clubID'] ."><div style=\"display: inline-block;width: 250px;height: 150px;margin: 10px;overflow: hidden;background-color: black; color:white;text-align: center;\">"
                         . $row['clubID'] . "<br>"
                         . $row['name'] . "<br>
-                    </span></div>");
+                    </div></a>");
                 }
                 ?>
             </div>
