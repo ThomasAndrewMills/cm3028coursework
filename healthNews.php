@@ -311,6 +311,37 @@
                 }
 
 
+                if (isset($_POST["editArticle"])) {
+                    $articleTitle = $_POST["articleTitle"];
+                    $articleText = $_POST["articleText"];
+                    $articalID = $_POST["articalID"];
+                    $articleAuthor = $_SESSION["emailAddress"];
+
+
+                    // connect to server and select database
+                    $db = new mysqli(
+                        "eu-cdbr-azure-west-a.cloudapp.net",
+                        "bd2505ec24d031",
+                        "a0a7a671",
+                        "goportlethendb"
+                    );
+                    // test if connection was established, and print any errors
+                    if ($db->connect_errno) {
+                        die('Connectfailed[' . $db->connect_error . ']');
+                    }
+                    // create a SQL query as a string
+                    $sql_query = "UPDATE healthnews SET articleTitle=" . $articleTitle . ", content=" . $articleText . " WHERE articalID=" . $articalID ."";
+                    // execute the SQL query
+                    if ($db->query($sql_query) === TRUE) {
+                        echo "Upload successful!";
+                    } else {
+                        echo "Error: " . $sql_query . "<br>" . $db->error;
+                    }
+
+                    $db->close();
+                }
+
+
                 // connect to server and select database
                 $db = new mysqli(
                     "eu-cdbr-azure-west-a.cloudapp.net",

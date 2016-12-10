@@ -302,6 +302,8 @@
                                     $articleText = $row['content'];
                                 }
                                 ?>
+
+                                <input type="hidden" name="articalID" id="hiddenField" value="<?php echo $_GET["id"] ?>" />
                                 <input type="text" name="articleName" placeholder="Article Name" value="<?php echo($articleTitle);?>">
                                 <textarea name="articleText"><?php echo($articleText);?></textarea>
                                 <input type="submit" name="editArticle" class="button">
