@@ -127,7 +127,7 @@
 							<div class="post-thumb"><img class="img-responsive" src="cluster/images/blog/01.jpg" alt=""></div>
 							
 							<div style="float:left;display:block;background-color: #5bc0de;">
-							    <h4 class="post-title" style="display:inline">' . $row['title'] . '</h4>
+							    <h4 class="post-title" style="display:inline;width:100%;">' . $row['title'] . '</h4>
                                 <form action="createNewsStory.php" style="display: inline;float:left;">
                                     <input style="font-weight: 600;border-radius: 5px;background-color: lightgray;" type="submit" value="Edit Article" class="button">
                                 </form>
