@@ -287,7 +287,7 @@
                         <div class="col-sm-7">
                             <h1>Discover</h1>
                             <h2>North Kincardineshire</h2>
-                            <p>Discover new places and plan your routes around Portlethen</p>
+                            <p style="color:white;">Discover new places and plan your routes around Portlethen</p>
                         </div>
                     </div>
                 </div>
@@ -298,7 +298,7 @@
                         <div class="col-sm-7">
                             <h1>Sports in your area</h1>
                             <h2>stay active</h2>
-                            <p>Discover sports and clubs in the Portlethen Community</p>
+                            <p style="color:white;">Discover sports and clubs in the Portlethen Community</p>
                         </div>
                     </div>
                 </div>
@@ -309,7 +309,7 @@
                         <div class="col-sm-7">
                             <h1>health and wellbeing</h1>
                             <h2>be healthy</h2>
-                            <p>Discover the latest news and information to ensure a healthy lifestyle</p>
+                            <p style="color:white;">Discover the latest news and information to ensure a healthy lifestyle</p>
                         </div>
                     </div>
                 </div>
@@ -366,7 +366,7 @@
                 echo("
                     <div style='display: inline-block;width: 320px;height: 150px;'>
                         <h5>" . $row['heading'] . "</h5>
-                        <p>" . $row['text'] . "</p>
+                        <p style=\"font-weight:normal;\">" . $row['text'] . "</p>
                     </div>");
             }
             ?>
