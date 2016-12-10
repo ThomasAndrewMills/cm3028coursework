@@ -120,10 +120,8 @@
                 <?php
                 //get and display events
 
-                echo("<div style='webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.7);
-                            -moz-box-shadow:0px 0px 20px 0px rgba(50, 50, 50, 0.7);
-                                            box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.7);'>
-                                            <h3>About the club</h3>
+                echo("<div>
+                    <h3>About the club</h3>
                     <p>" . $row['description'] . "</p></div>");
                 ?>
 
@@ -169,10 +167,7 @@
                 echo("");
                 ?>
             </div>
-            <div style="display: inline-block;width:auto;float:left;
-                webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.7);
-                            -moz-box-shadow:0px 0px 20px 0px rgba(50, 50, 50, 0.7);
-                                            box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.7);">
+            <div style="display: inline-block;width:auto;float:left;">
 
                 <h4 class="sidebar-title">Activity</h4>
                 <p>$row['activity']</p>
