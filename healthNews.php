@@ -125,32 +125,32 @@
                     '<div class="single-blog"style="display: block;">
 						<article style="-webkit-box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.75);padding:5px;">
+box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.75);">
 							<div class="post-thumb"><img class="img-responsive" src="cluster/images/blog/01.jpg" alt=""></div>
-							
-							<div style="float:left;display:block;width:100%;margin:5px;">
-                                <form action="editNewsStory.php" style="display: inline;">
-                                    <input style="font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" value="Edit Article" class="button">
-                                </form>
+							<div style="padding:5px;">
+                                <div style="float:left;display:block;width:100%;margin:5px;">
+                                    <form action="editNewsStory.php" style="display: inline;">
+                                        <input style="font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" value="Edit Article" class="button">
+                                    </form>
+                                    
+                                    <form action="#" style="display: inline;">
+                                        <input style="font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" value="Delete Article" class="button">
+                                    </form>
+                                </div>
                                 
-                                <form action="#" style="display: inline;">
-                                    <input style="font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" value="Delete Article" class="button">
-                                </form>
-                            </div>
-							
-							<div style="float:left;display:block;width:100%;">
-							    <h4 class="post-title" style="">' . $row['title'] . '</h4>
-                            </div>
-							
-							<div class="post-meta text-uppercase" style="display:block;">
-								<span>By <a href="">' . $row['emailAddress'] . '</a></span>
-								<span>' . $row['date'] . '</span>
-							</div>						
-                            
-							<div class="post-article" style="display: block;">
-							    ' . $row['content'] . '
+                                <div style="float:left;display:block;width:100%;">
+                                    <h4 class="post-title" style="">' . $row['title'] . '</h4>
+                                </div>
+                                
+                                <div class="post-meta text-uppercase" style="display:block;">
+                                    <span>By <a href="">' . $row['emailAddress'] . '</a></span>
+                                    <span>' . $row['date'] . '</span>
+                                </div>						
+                                
+                                <div class="post-article" style="display: block;">
+                                    ' . $row['content'] . '
+                                </div>
 							</div>
-							
 						</article>
 					</div>
 					<br>
