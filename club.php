@@ -120,11 +120,11 @@
                 <?php
                 //get and display events
 
-                echo("<h2>About the club</h2>
+                echo("<h3>About the club</h3>
                     <p>" . $row['description'] . "</p>");
                 ?>
 
-                <h2>Upcoming events</h2>
+                <h3>Upcoming events</h3>
                 <?php
 
                 // connect to server and select database
@@ -147,7 +147,7 @@
 
                 while ($row = $result->fetch_array()) {
                     // print out fields from row of data
-                    echo("<div style='margin-left:10px;margin-right:10px;'><h4>" . $row['Title'] . $row['Date'] . "</h4>
+                    echo("<div style='margin-left:10px;margin-right:10px;'><h5>" . $row['Title'] . $row['Date'] . "</h5>
                       <p style='font-weight:bold;color:#707070;'>" . $row['Description'] . "</p></div>
             ");
                 }
