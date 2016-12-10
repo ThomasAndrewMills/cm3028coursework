@@ -77,7 +77,7 @@
 <section id="services">
     <div class="container">
         <div class="row">
-            <div style="float:left;width:auto;background-color: #5bc0de;display: inline-block;max-width: 785px;">
+            <div style="float:left;width:auto;background-color: #5bc0de;display: inline-block;max-width: 770px;">
                 <div class="col-md-12">
                     <div class="section-title">
 
