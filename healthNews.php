@@ -147,7 +147,7 @@
 							
 						</article>
 					</div>
-					<hr style="border-top: 1px solid #646464;">');
+					<hr style="border-top: 1px solid #646464;display:block;">');
                 }
 
 
