@@ -126,7 +126,7 @@
 						<article>
 							<div class="post-thumb"><img class="img-responsive" src="cluster/images/blog/01.jpg" alt=""></div>
 							
-							<div style="float:left;display:block;width:auto;height:auto;max-width:500px;">
+							<div style="float:left;display:block;width:auto;height:auto;max-width:500px;background-color: #5bc0de;">
 							    <h4 class="post-title"><a href="">' . $row['title'] . '</a></h4>
                             </div>
 							
