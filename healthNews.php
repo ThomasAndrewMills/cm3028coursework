@@ -126,11 +126,11 @@
 						<article>
 							<div class="post-thumb"><img class="img-responsive" src="cluster/images/blog/01.jpg" alt=""></div>
 							
-							<div style="float:left;display:block;;height:auto;max-width:500px;background-color: #5bc0de;">
+							<div style="float:left;display:block;max-width:500px;background-color: #5bc0de;">
 							    <h4 class="post-title"><a href="">' . $row['title'] . '</a></h4>
                             </div>
 							
-							<div style="display: inline;float:right;width:100%;">
+							<div style="display: inline;float:left;">
                                 <form action="createNewsStory.php" style="">
                                     <input style="font-weight: 600;border-radius: 5px;background-color: lightgray;" type="submit" value="Edit Article" class="button">
                                 </form>
