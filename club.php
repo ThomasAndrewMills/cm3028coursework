@@ -149,10 +149,10 @@
                     // print out fields from row of data
                     echo("
                         <div style='margin-left:10px;margin-right:10px;'>
-                            <div style='float:left;display: inline-block;'>
+                            <div style='float:left;display: display: inline;'>
                                 <h5>" . $row['Title'] . "</h5>
                             </div>
-                            <div style='float:right;display: inline-block;'>
+                            <div style='float:right;display: display: inline;'>
                                 <h5>" . $row['Date'] . "</h5>
                             </div>
                             <div style='float:clear;'>
