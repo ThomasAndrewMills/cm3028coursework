@@ -265,7 +265,7 @@
                 <br>
                 <div style="float:left;width:570px;">
                     <div class="section-title">
-                        <h1>Post an Article</h1>
+                        <h1>Edit an Article</h1>
                         <span class="st-border"></span>
 
                         <form action="healthNews.php" method="post">
@@ -273,9 +273,38 @@
                             <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
                             <script>tinymce.init({selector: 'textarea'});</script>
                             <form action="createarticle" method="post">
-                                <input type="text" name="articleName" placeholder="Article Name">
-                                <textarea name="articleText"></textarea>
-                                <input type="submit" class="button">
+
+
+                                <!--GETTING ARTICLE INFORMATION-->
+                                <?php
+                                // connect to server and select database
+                                $db = new mysqli(
+                                    "eu-cdbr-azure-west-a.cloudapp.net",
+                                    "bd2505ec24d031",
+                                    "a0a7a671",
+                                    "goportlethendb"
+                                );
+                                // test if connection was established, and print any errors
+                                if ($db->connect_errno) {
+                                    die('Connectfailed[' . $db->connect_error . ']');
+                                }
+                                // create a SQL query as a string
+                                $sql_query = "SELECT * FROM healthnews WHERE articleID =" .  . "";
+                                // execute the SQL query
+                                $result = $db->query($sql_query);
+
+                                //$rowsFound = $result->num_rows;
+
+                                $articleTitle = "";
+                                $articleText = "";
+                                while ($row = $result->fetch_array()) {
+                                    $articleTitle = $row['title'];
+                                    $articleText = $row['content'];
+                                }
+                                ?>
+                                <input type="text" name="articleName" placeholder="Article Name" value="<?php echo($articleTitle);?>">
+                                <textarea name="articleText"><?php echo($articleText);?></textarea>
+                                <input type="submit" name="editArticle" class="button">
                             </form>
                         </form>
 
