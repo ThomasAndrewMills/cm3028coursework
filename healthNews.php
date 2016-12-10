@@ -148,9 +148,9 @@
             <div class="col-md-3">
                 <div class="sidebar-widget">
                     <h4 class="sidebar-title">Post an Article</h4>
-                    <ul>
-                        <a href="createNewsStory.php">Click here to post a new article.</a>
-                    </ul>
+                    <form action="createNewsStory.php" style="margin-top:10px;" >
+                        <input style="font-weight: 600;border-radius: 5px;background-color: lightgray;" type="submit" value="Create Article" class="button">
+                    </form>
                 </div>
             </div>
         </div>
