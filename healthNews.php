@@ -337,7 +337,7 @@
 							<div class="post-thumb"><img class="img-responsive" src="cluster/images/blog/01.jpg" alt=""></div>
 							<div style="padding:5px;">
                                 <div style="float:left;display:block;width:100%;margin:5px;">
-                                        <div href="editNewsStory.php?id=' . $row['articleID'] . '" style="display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" value="Edit Article" class="button">
+                                        <div href="editNewsStory.php?id=' . $row['articleID'] . '" style="display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" class="button">
                                             Edit Articlee
                                         </div>
                                     <form action="#" style="display: inline;">
