@@ -166,7 +166,11 @@
                 echo("");
                 ?>
             </div>
-            <div style="display: inline-block;width:auto;float:left;">
+            <div style="display: inline-block;width:auto;float:left;
+                webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.7);
+                            -moz-box-shadow:0px 0px 20px 0px rgba(50, 50, 50, 0.7);
+                                            box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.7);">
+
                 <h4 class="sidebar-title">Activity</h4>
                 <p>$row['activity']</p>
                 <h4 class="sidebar-title">Genre</h4>
