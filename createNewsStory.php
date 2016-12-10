@@ -275,6 +275,8 @@
                             <form action="createarticle" method="post">
                                 <input type="text" name="articleName" placeholder="Article Name">
                                 <textarea name="articleText"></textarea>
+                                Select image to upload:
+                                <input type="file" name="fileToUpload" id="fileToUpload">
                                 <input type="submit" class="button">
                             </form>
                         </form>
@@ -282,12 +284,6 @@
 
                     </div>
 
-                </div>
-                <div style="float:right;width:490px;">
-                    <div class="section-title">
-                        <h1>heading</h1>
-                        <span class="st-border"></span>
-                    </div>
                 </div>
             </div>
         </div>
