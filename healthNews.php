@@ -126,7 +126,7 @@
 						<article>
 							<div class="post-thumb"><img class="img-responsive" src="cluster/images/blog/01.jpg" alt=""></div>
 							
-							<div style="float:right;">
+							<div style="float:left;">
 							    <h4 class="post-title"><a href="">' . $row['title'] . '</a></h4>
                             </div>
 							
@@ -136,7 +136,7 @@
                                 </form>
                             </div>
 							
-							<div class="post-meta text-uppercase" style="">
+							<div class="post-meta text-uppercase" style="float:left;">
 								<span>By <a href="">' . $row['emailAddress'] . '</a></span>
 								<span>' . $row['date'] . '</span>
 							</div>						
