@@ -106,10 +106,12 @@
                         $result = $db->query($sql_query);
 
                         //$rowsFound = $result->num_rows;
-
+                        $clubDescription = "";
                         while ($row = $result->fetch_array()) {
                             // print out fields from row of data
-                            echo("<h1>" . $row['description'] . "</h1>");
+                            echo("<h1>" . $row['description'] . "</h1>"
+                            $clubDescription = $row['description'];
+                            );
                         }
                         ?>
                         <span class="st-border"></span>
@@ -122,7 +124,7 @@
 
                 echo("<div>
                     <h3>About the club</h3>
-                    <p>" . $row['description'] . "</p></div>");
+                    <p>" . $clubDescription . "</p></div>");
                 ?>
 
                 <h3>Upcoming events</h3>
