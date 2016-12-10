@@ -135,7 +135,7 @@
                                     <input style="font-weight: 600;border-radius: 5px;background-color: lightgray;" type="submit" value="Create Article" class="button">
                                 </form>
                             </div>
-							<div class="post-article">
+							<div class="post-article" style="float:left;">
 							    ' . $row['content'] . '
 							</div>
 						</article>
