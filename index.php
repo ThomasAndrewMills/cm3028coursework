@@ -574,7 +574,7 @@
                     while ($row = $result->fetch_array()) {
                         // print out fields from row of data
                         echo("<div class='item active text-center'>
-                                    <p>" . $row['testimonial'] ."</p>
+                                    <p color:white;font-weight: normal;>" . $row['testimonial'] ."</p>
                                     <div class=\"st-border\"></div>
                                     <div class=\"client-info\">
                                         <h5>" . $row['name'] . "</h5>
