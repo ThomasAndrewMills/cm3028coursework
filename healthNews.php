@@ -234,7 +234,7 @@
                                 <?php
                             } else {
                                 ?>
-                                <form action="createUser.php" style="margin-top:10px;" >
+                                <form action="createUser.php" style="margin-top:10px;">
                                     <input style="font-weight: 600;border-radius: 5px;background-color: lightgray;"
                                            type="submit" value="SIGN IN/SIGN UP" class="button">
                                 </form>
@@ -280,8 +280,6 @@
                 error_reporting(E_ALL);
 
 
-
-
                 if (isset($_POST["createNews"])) {
                     $articleTitle = $_POST["articleTitle"];
                     $articleText = $_POST["articleText"];
@@ -313,19 +311,6 @@
                 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
                 // connect to server and select database
                 $db = new mysqli(
                     "eu-cdbr-azure-west-a.cloudapp.net",
@@ -346,16 +331,13 @@
 
                 while ($row = $result->fetch_array()) {
                     // print out fields from row of data
-                    echo (
-                    '<div class="single-blog"style="display: block;">
+                    echo(
+                        '<div class="single-blog"style="display: block;">
 						<article style="-webkit-box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.4);-moz-box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.4);box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.4);">
 							<div class="post-thumb"><img class="img-responsive" src="cluster/images/blog/01.jpg" alt=""></div>
 							<div style="padding:5px;">
                                 <div style="float:left;display:block;width:100%;margin:5px;">
-                                    <form action="editNewsStory.php?id=' . $row['articleID'] .'" style="display: inline;">
-                                        <input style="font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" value="Edit Article" class="button">
-                                    </form>
-                                    
+                                        <div style="display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" value="Edit Article" class="button"></div>
                                     <form action="#" style="display: inline;">
                                         <input style="font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" value="Delete Article" class="button">
                                     </form>
@@ -381,7 +363,6 @@
                 }
 
 
-
                 $result->close();
                 // close connection to database
                 $db->close();
@@ -391,8 +372,9 @@
             <div class="col-md-3">
                 <div class="sidebar-widget">
                     <h4 class="sidebar-title">Post an Article</h4>
-                    <form action="createNewsStory.php" style="margin-top:10px;" >
-                        <input style="font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" value="Create Article" class="button">
+                    <form action="createNewsStory.php" style="margin-top:10px;">
+                        <input style="font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit"
+                               value="Create Article" class="button">
                     </form>
                 </div>
             </div>
