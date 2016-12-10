@@ -138,7 +138,7 @@
                     <p>" . $clubDescription . "</p></div>");
                 ?>
 
-                <h3 style="margin-top: 150px;">Upcoming events</h3>
+                <h3 style="margin-top: 90px;">Upcoming events</h3>
                 <?php
 
                 // connect to server and select database
