@@ -101,7 +101,7 @@
                 <br>
                 <br>
                 <br>
-                <div style="float:left;width:470px;">
+                <div style="float:left;width:570px;">
                     <div class="section-title">
                         <h1>Post an Article</h1>
                         <span class="st-border"></span>
@@ -115,14 +115,13 @@
                                 <textarea name="articleText"></textarea>
                                 <input type="submit">
                             </form>
-                            <input type="submit" value="Submit">
                         </form>
 
 
                     </div>
 
                 </div>
-                <div style="float:right;width:590px;">
+                <div style="float:right;width:490px;">
                     <div class="section-title">
                         <h1>heading</h1>
                         <span class="st-border"></span>
