@@ -126,7 +126,7 @@
 						<article>
 							<div class="post-thumb"><img class="img-responsive" src="cluster/images/blog/01.jpg" alt=""></div>
 							
-							<div style="float:left;display:block;width:100%;">
+							<div style="float:left;display:block;width:100%;margin:5px;">
                                 <form action="editNewsStory.php" style="display: inline;">
                                     <input style="font-weight: 600;border-radius: 5px;background-color: lightgray;" type="submit" value="Edit Article" class="button">
                                 </form>
