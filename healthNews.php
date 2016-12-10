@@ -144,42 +144,6 @@
                 $db->close();
                 ?>
 
-
-                <div class="single-blog">
-                    <article>
-                        <div class="post-slider">
-                            <div id="post-carousel" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="item active">
-                                        <img src="cluster/images/blog/01.jpg" alt="">
-                                    </div>
-                                    <div class="item">
-                                        <img src="cluster/images/blog/02.jpg" alt="">
-                                    </div>
-                                    <div class="item">
-                                        <img src="cluster/images/blog/03.jpg" alt="">
-                                    </div>
-
-                                    <a class="post-carousel-left" href="#post-carousel" data-slide="prev"><i
-                                                class="fa fa-angle-left"></i></a>
-                                    <a class="post-carousel-right" href="#post-carousel" data-slide="next"><i
-                                                class="fa fa-angle-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <h4 class="post-title"><a href="">Kpsum dolor sit amet, consectetur adipisicing elit.</a></h4>
-                        <div class="post-meta text-uppercase">
-                            <span>Appril 3, 2014</span>
-                            <span>In <a href="">Design</a></span>
-                            <span>By <a href="">Admin</a></span>
-                        </div>
-                        <div class="post-article">
-                            this article is not from the database but is here to use as template in the future.
-                        </div>
-
-                    </article>
-                </div>
-                <hr style="border-top: 1px solid #646464;">
             </div>
             <div class="col-md-3">
                 <div class="sidebar-widget">
