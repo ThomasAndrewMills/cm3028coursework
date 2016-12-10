@@ -131,6 +131,14 @@
                                 <form action="editNewsStory.php" style="display: inline;">
                                     <input style="font-weight: 600;border-radius: 5px;background-color: lightgray;" type="submit" value="Edit Article" class="button">
                                 </form>
+                                
+                                <form action="#" style="display: inline;">
+                                    <input style="font-weight: 600;border-radius: 5px;background-color: lightgray;" type="submit" value="Delete Article" class="button">
+                                </form>
+                            </div>
+							
+							<div style="float:left;display:block;background-color: #5bc0de;width:100%;">
+							    <h4 class="post-title" style="">' . $row['title'] . '</h4>
                             </div>
 							
 							<div class="post-meta text-uppercase" style="display:block;">
