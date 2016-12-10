@@ -149,10 +149,15 @@
                     // print out fields from row of data
                     echo("
                         <div style='margin-left:10px;margin-right:10px;'>
-                            <div style='float:left;display: inline-block;'><h5>" . $row['Title'] . "</h5></div>
-                            <div style='float:right;display: inline-block;'><h5>" . $row['Date'] . "</h5></div>
-                            
-                            <p style='font-weight:bold;color:#707070;'>" . $row['Description'] . "</p>
+                            <div style='float:left;display: inline-block;'>
+                                <h5>" . $row['Title'] . "</h5>
+                            </div>
+                            <div style='float:right;display: inline-block;'>
+                                <h5>" . $row['Date'] . "</h5>
+                            </div>
+                            <div style='float:clear;'>
+                                <p style='font-weight:bold;color:#707070;'>" . $row['Description'] . "</p>
+                            </div>
                         </div>
                     ");
                 }
