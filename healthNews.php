@@ -167,7 +167,7 @@
                 <div class="sidebar-widget">
                     <h4 class="sidebar-title">Post an Article</h4>
                     <form action="createNewsStory.php" style="margin-top:10px;" >
-                        <input style="font-weight: 600;border-radius: 5px;background-color: lightgray;" type="submit" value="Create Article" class="button">
+                        <input style="font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" value="Create Article" class="button">
                     </form>
                 </div>
             </div>
