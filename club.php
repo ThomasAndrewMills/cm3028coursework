@@ -156,7 +156,7 @@
                 echo("");
                 ?>
             </div>
-            <div style="display: inline-block;width:585px;background-color: #de9c5f;padding:200px;">
+            <div style="display: inline-block;width:585px;background-color: #de9c5f;padding-left:100px;">
                 <h4 class="sidebar-title">Post an Article</h4>
                 <ul>
                     <a href="createNewsStory.php">Click here to post a new article.</a>
