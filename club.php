@@ -122,7 +122,7 @@
                             $meetingPlaceInfo = $row['meetingPlaceInfo'];
                             $website = $row['website'];
                             $contactName = $row['contactName'];
-                            $emailAddress = $row['emailAddress'];
+                            $emailAddress = $row['contactEmailAddress'];
                         }
                         ?>
                         <span class="st-border"></span>
