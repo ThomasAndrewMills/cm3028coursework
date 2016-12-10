@@ -147,9 +147,14 @@
 
                 while ($row = $result->fetch_array()) {
                     // print out fields from row of data
-                    echo("<div style='margin-left:10px;margin-right:10px;'><h5>" . $row['Title'] . $row['Date'] . "</h5>
-                      <p style='font-weight:bold;color:#707070;'>" . $row['Description'] . "</p></div>
-            ");
+                    echo("
+                        <div style='margin-left:10px;margin-right:10px;'>
+                            <div style='float:left;'><h5>" . $row['Title'] . "</h5></div>
+                            <div style='float:right;'><h5>" . $row['Date'] . "</h5></div>
+                            
+                            <p style='font-weight:bold;color:#707070;'>" . $row['Description'] . "</p>
+                        </div>
+                    ");
                 }
 
 
