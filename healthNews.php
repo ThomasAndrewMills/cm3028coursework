@@ -122,7 +122,7 @@
                 while ($row = $result->fetch_array()) {
                     // print out fields from row of data
                     echo (
-                    '<div class="single-blog">
+                    '<div class="single-blog"style="display: block;">
 						<article>
 							<div class="post-thumb"><img class="img-responsive" src="cluster/images/blog/01.jpg" alt=""></div>
 							
@@ -147,7 +147,7 @@
 							
 						</article>
 					</div>
-					<hr style="border-top: 1px solid #646464;">');
+					<hr style="border-top: 1px solid #646464;display: block;">');
                 }
 
 
