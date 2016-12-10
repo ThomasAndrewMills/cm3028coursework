@@ -141,7 +141,7 @@
 								<span>' . $row['date'] . '</span>
 							</div>						
                             
-							<div class="post-article" style="float:clear;">
+							<div class="post-article" style="float:left;display: block;">
 							    ' . $row['content'] . '
 							</div>
 							
