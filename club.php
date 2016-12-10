@@ -162,7 +162,7 @@
                 while ($row = $result->fetch_array()) {
                     // print out fields from row of data
                     echo("
-                        <div style='margin-left:10px;margin-right:10px;background-color: #5bc0de;'>
+                        <div style='margin-left:10px;margin-right:10px;background-color: #5bc0de;margin-top: 150px;'>
                             <div style='float:left;display: display: inline;'>
                                 <h5>" . $row['Title'] . "</h5>
                             </div>
