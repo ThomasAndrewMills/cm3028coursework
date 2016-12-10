@@ -109,7 +109,7 @@
 
                         while ($row = $result->fetch_array()) {
                             // print out fields from row of data
-                            echo("<h1>" . $row['name'] . "</h1>");
+                            echo("<h1>" . $row['description'] . "</h1>");
                         }
                         ?>
                         <span class="st-border"></span>
