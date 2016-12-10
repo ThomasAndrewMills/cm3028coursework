@@ -112,7 +112,7 @@
                         $meetingPlaceInfo = "";
                         $website = "";
                         $contactName = "";
-                        $emailAddress = "";
+                        $contactEmailAddress = "";
                         while ($row = $result->fetch_array()) {
                             // print out fields from row of data
                             echo("<h1>" . $row['name'] . "</h1>");
@@ -122,7 +122,7 @@
                             $meetingPlaceInfo = $row['meetingPlaceInfo'];
                             $website = $row['website'];
                             $contactName = $row['contactName'];
-                            $emailAddress = $row['contactEmailAddress'];
+                            $contactEmailAddress = $row['contactEmailAddress'];
                         }
                         ?>
                         <span class="st-border"></span>
@@ -191,7 +191,7 @@
                 <a><p>" . $website . "</p></a>
                 <h4 class=\"sidebar-title\">Contact Information</h4>
                 <p>" . $contactName . "</p>
-                <p>" . $emailAddress . "</p>
+                <p>" . $contactEmailAddress . "</p>
             </div>
             
         ");
