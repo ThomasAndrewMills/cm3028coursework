@@ -136,12 +136,12 @@
                                 </form>
                             </div>
 							
-							<div class="post-meta text-uppercase" style="float:left;">
+							<div class="post-meta text-uppercase" style="float:left;display:block;">
 								<span>By <a href="">' . $row['emailAddress'] . '</a></span>
 								<span>' . $row['date'] . '</span>
 							</div>						
                             
-							<div class="post-article" style="float:left;">
+							<div class="post-article" style="float:left;display:block;">
 							    ' . $row['content'] . '
 							</div>
 							
