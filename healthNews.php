@@ -78,7 +78,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title">
-                    <h1>Blog</h1>
+                    <h1>Healthy Living Blog</h1>
                     <span class="st-border"></span>
                 </div>
             </div>
@@ -127,8 +127,7 @@
 							<div class="post-thumb"><img class="img-responsive" src="cluster/images/blog/01.jpg" alt=""></div>
 							<h4 class="post-title"><a href="">' . $row['title'] . '</a></h4>
 							<div class="post-meta text-uppercase">
-								<span>A DATE</span>
-								<span>In <a href="">Design</a></span>
+								<span>' . $row['date'] . '</span>
 								<span>By <a href="">' . $row['emailAddress'] . '</a></span>
 							</div>
 							<div class="post-article">
