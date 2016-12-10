@@ -280,6 +280,52 @@
                 error_reporting(E_ALL);
 
 
+
+
+                if (isset($_POST["createNews"])) {
+                    $articleTitle = $_POST["articleTitle"];
+                    $articleText = $_POST["articleText"];
+                    $articleAuthor = $_SESSION["emailAddress"];
+
+
+                    // connect to server and select database
+                    $db = new mysqli(
+                        "eu-cdbr-azure-west-a.cloudapp.net",
+                        "bd2505ec24d031",
+                        "a0a7a671",
+                        "goportlethendb"
+                    );
+                    // test if connection was established, and print any errors
+                    if ($db->connect_errno) {
+                        die('Connectfailed[' . $db->connect_error . ']');
+                    }
+                    // create a SQL query as a string
+                    $sql_query = "INSERT INTO healthnews (title, content, emailAddress)
+                                          VALUES ('$articleTitle', '$articleText', '$articleAuthor');";
+                    // execute the SQL query
+                    if ($db->query($sql_query) === TRUE) {
+                        echo "Upload successful!";
+                    } else {
+                        echo "Error: " . $sql_query . "<br>" . $db->error;
+                    }
+
+                    $db->close();
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 // connect to server and select database
                 $db = new mysqli(
                     "eu-cdbr-azure-west-a.cloudapp.net",

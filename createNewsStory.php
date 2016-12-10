@@ -273,11 +273,11 @@
                             <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
                             <script>tinymce.init({selector: 'textarea'});</script>
                             <form action="createarticle" method="post">
-                                <input type="text" name="articleName" placeholder="Article Name">
+                                <input type="text" name="articleTitle" placeholder="Article Title">
                                 <textarea name="articleText"></textarea>
                                 Select image to upload:
-                                <input type="file" name="fileToUpload" id="fileToUpload">
-                                <input type="submit" class="button">
+                                <!--<input type="file" name="fileToUpload" id="fileToUpload">-->
+                                <input name="createNews" type="submit" class="button">
                             </form>
                         </form>
 
