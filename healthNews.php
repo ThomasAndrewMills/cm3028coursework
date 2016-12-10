@@ -133,14 +133,17 @@
 								<span>By <a href="">' . $row['emailAddress'] . '</a></span>
 								<span>' . $row['date'] . '</span>
 							</div>
+							
 							<div style="float:right;display:inline-block;min-width:100px;">
                                 <form action="createNewsStory.php" style="" >
                                     <input style="font-weight: 600;border-radius: 5px;background-color: lightgray;" type="submit" value="Edit Article" class="button">
                                 </form>
                             </div>
+                            
 							<div class="post-article" style="float:left;">
 							    ' . $row['content'] . '
 							</div>
+							
 						</article>
 					</div>
 					<hr style="border-top: 1px solid #646464;">');
