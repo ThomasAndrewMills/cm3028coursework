@@ -77,7 +77,7 @@
 <section id="services">
     <div class="container">
         <div class="row">
-            <div style="float:left;width:65%;background-color: #5bc0de;display: inline-block;">
+            <div style="float:left;width:585px;background-color: #5bc0de;display: inline-block;">
                 <div class="col-md-12">
                     <div class="section-title">
 
@@ -156,7 +156,7 @@
                 echo("");
                 ?>
             </div>
-            <div style="display: inline-block;width:380px;background-color: #de9c5f;">
+            <div style="display: inline-block;width:585px;background-color: #de9c5f;">
                 <h4 class="sidebar-title">Post an Article</h4>
                 <ul>
                     <a href="createNewsStory.php">Click here to post a new article.</a>
