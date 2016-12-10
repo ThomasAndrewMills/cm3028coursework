@@ -157,10 +157,12 @@
                 ?>
             </div>
             <div style="display: inline-block;width:auto;float:left;">
-                <h4 class="sidebar-title">Post an Article</h4>
                 <ul>
-                    <a href="createNewsStory.php">Click here to post a new article.</a>
+                    <li><h4 class="sidebar-title">Genre</h4></li>
+                    <li><h4 class="sidebar-title">Website</h4></li>
+                    <li><h4 class="sidebar-title">Contact Information</h4></li>
                 </ul>
+
             </div>
         </div>
 
