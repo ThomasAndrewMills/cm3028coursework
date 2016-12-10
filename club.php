@@ -180,7 +180,7 @@
                 echo("
                 
             </div>
-            <div style='display: inline-block;width:auto;float:left;max-width: 200px;'>
+            <div style='display: inline-block;width:auto;float:left;max-width: 550px;'>
                 <h4 class='sidebar-title'>Activity</h4>
                 <p>" . $activity . "</p>
                 <h4 class=\"sidebar-title\">Genre</h4>
