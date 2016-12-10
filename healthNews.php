@@ -125,7 +125,10 @@
                     '<div class="single-blog">
 						<article>
 							<div class="post-thumb"><img class="img-responsive" src="cluster/images/blog/01.jpg" alt=""></div>
-							<h4 class="post-title"><a href="">' . $row['title'] . '</a></h4>
+							<div style="width:100%;float:left;">
+							    <h4 class="post-title"><a href="">' . $row['title'] . '</a></h4>
+                            </div>
+							
 							<div class="post-meta text-uppercase" style="max-width: 500px;float:left;">
 								<span>By <a href="">' . $row['emailAddress'] . '</a></span>
 								<span>' . $row['date'] . '</span>
@@ -135,7 +138,7 @@
                                     <input style="font-weight: 600;border-radius: 5px;background-color: lightgray;" type="submit" value="Edit Article" class="button">
                                 </form>
                             </div>
-							<div class="post-article" style="">
+							<div class="post-article" style="float:left;">
 							    ' . $row['content'] . '
 							</div>
 						</article>
