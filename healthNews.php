@@ -127,8 +127,8 @@
 							<div class="post-thumb"><img class="img-responsive" src="cluster/images/blog/01.jpg" alt=""></div>
 							<h4 class="post-title"><a href="">' . $row['title'] . '</a></h4>
 							<div class="post-meta text-uppercase">
-								<span>' . $row['date'] . '</span>
 								<span>By <a href="">' . $row['emailAddress'] . '</a></span>
+								<span>' . $row['date'] . '</span>
 							</div>
 							<div class="post-article">
 							    ' . $row['content'] . '
