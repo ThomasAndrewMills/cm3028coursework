@@ -77,7 +77,7 @@
 <section id="services">
     <div class="container">
         <div class="row">
-            <div style="float:left;width:auto;display: inline-block;max-width: 700px;">
+            <div style="float:left;width:auto;display: inline-block;max-width: 700px;margin-right:50px;">
                 <div class="col-md-12">
                     <div class="section-title">
 
@@ -180,7 +180,7 @@
                 echo("
                 
             </div>
-            <div style='display: inline-block;width:auto;float:left;max-width: 450px;'>
+            <div style='display: inline-block;width:auto;float:left;max-width: 400px;'>
                 <h4 class='sidebar-title'>Activity</h4>
                 <p>" . $activity . "</p>
                 <h4 class=\"sidebar-title\">Genre</h4>
