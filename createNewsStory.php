@@ -113,7 +113,7 @@
                             <form action="createarticle" method="post">
                                 <input type="text" name="articleName" placeholder="Article Name">
                                 <textarea name="articleText"></textarea>
-                                <input type="submit">
+                                <input type="submit" class="button">
                             </form>
                         </form>
 
