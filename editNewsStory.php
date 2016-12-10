@@ -289,7 +289,7 @@
                                     die('Connectfailed[' . $db->connect_error . ']');
                                 }
                                 // create a SQL query as a string
-                                $sql_query = "SELECT * FROM healthnews WHERE articleID =" .  . "";
+                                $sql_query = "SELECT * FROM healthnews WHERE articleID =" . $_GET["id"] . "";
                                 // execute the SQL query
                                 $result = $db->query($sql_query);
 
