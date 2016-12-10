@@ -126,22 +126,19 @@
 						<article>
 							<div class="post-thumb"><img class="img-responsive" src="cluster/images/blog/01.jpg" alt=""></div>
 							
-							<div style="float:left;display:block;max-width:500px;background-color: #5bc0de;">
-							    <h4 class="post-title"><a href="">' . $row['title'] . '</a></h4>
-                            </div>
-							
-							<div style="display: inline;float:left;">
-                                <form action="createNewsStory.php" style="">
+							<div style="float:left;display:block;background-color: #5bc0de;">
+							    <h4 class="post-title">' . $row['title'] . '</h4>
+                                <form action="createNewsStory.php" style="display: inline;float:left;">
                                     <input style="font-weight: 600;border-radius: 5px;background-color: lightgray;" type="submit" value="Edit Article" class="button">
                                 </form>
                             </div>
 							
-							<div class="post-meta text-uppercase" style="float:clear;">
+							<div class="post-meta text-uppercase" style="display:block;">
 								<span>By <a href="">' . $row['emailAddress'] . '</a></span>
 								<span>' . $row['date'] . '</span>
 							</div>						
                             
-							<div class="post-article" style="float:left;display: block;">
+							<div class="post-article" style="display: block;">
 							    ' . $row['content'] . '
 							</div>
 							
