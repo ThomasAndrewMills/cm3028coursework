@@ -155,7 +155,7 @@
                             <div style='float:right;display: display: inline;'>
                                 <h5>" . $row['Date'] . "</h5>
                             </div>
-                            <div style='float:clear;'>
+                            <div style='float:left;'>
                                 <p style='font-weight:bold;color:#707070;'>" . $row['Description'] . "</p>
                             </div>
                         </div>
