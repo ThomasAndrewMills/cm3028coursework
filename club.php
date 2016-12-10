@@ -152,7 +152,10 @@
                     echo("
                         <div style='margin-left:10px;margin-right:10px;background-color: #5bc0de;'>
                             <div style='float:left;display: display: inline;'>
-                                <h5>" . $row['Date'] . $row['Title'] . "</h5>
+                                <h5>" . $row['Title'] . "</h5>
+                            </div>
+                            <div style='float:right;display: display: inline;'>
+                                <h5>" . $row['Date'] . "</h5>
                             </div>
                             <div style='float:left;'>
                                 <p style='font-weight:bold;color:#707070;'>" . $row['Description'] . "</p>
