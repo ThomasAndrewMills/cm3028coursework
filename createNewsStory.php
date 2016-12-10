@@ -108,9 +108,13 @@
 
                         <form action="healthNews.php" method="post">
                             <br>
-                            <textarea rows="4" cols="50">
-                                Write your article here!
-                            </textarea>
+                            <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+                            <script>tinymce.init({selector: 'textarea'});</script>
+                            <form action="createarticle" method="post">
+                                <input type="text" name="articleName" placeholder="Article Name">
+                                <textarea name="articleText"></textarea>
+                                <input type="submit">
+                            </form>
                             <input type="submit" value="Submit">
                         </form>
 
