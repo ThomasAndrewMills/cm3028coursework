@@ -315,7 +315,7 @@
                     $articleTitle = $_POST["articleTitle"];
                     $articleText = $_POST["articleText"];
                     $articalID = $_POST["articalID"];
-                    $articleAuthor = $_SESSION["emailAddress"];
+                    $articleAuthor = "AUTHOR";
 
 
                     // connect to server and select database
