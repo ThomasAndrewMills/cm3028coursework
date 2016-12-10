@@ -120,8 +120,11 @@
                 <?php
                 //get and display events
 
-                echo("<h3>About the club</h3>
-                    <p>" . $row['description'] . "</p>");
+                echo("<div style='webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.7);
+                            -moz-box-shadow:0px 0px 20px 0px rgba(50, 50, 50, 0.7);
+                                            box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.7);'>
+                                            <h3>About the club</h3>
+                    <p>" . $row['description'] . "</p></div>");
                 ?>
 
                 <h3>Upcoming events</h3>
