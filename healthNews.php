@@ -136,18 +136,18 @@
                                 </form>
                             </div>
 							
-							<div class="post-meta text-uppercase" style="float:left;display:block;">
+							<div class="post-meta text-uppercase" style="float:clear;">
 								<span>By <a href="">' . $row['emailAddress'] . '</a></span>
 								<span>' . $row['date'] . '</span>
 							</div>						
                             
-							<div class="post-article" style="float:left;display:block;">
+							<div class="post-article" style="float:clear;">
 							    ' . $row['content'] . '
 							</div>
 							
 						</article>
 					</div>
-					<hr style="border-top: 1px solid #646464;display:block;">');
+					<hr style="border-top: 1px solid #646464;">');
                 }
 
 
