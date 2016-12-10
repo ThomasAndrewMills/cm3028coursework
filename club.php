@@ -107,10 +107,22 @@
 
                         //$rowsFound = $result->num_rows;
                         $clubDescription = "";
+                        $activity = "";
+                        $genre = "";
+                        $meetingPlaceInfo = "";
+                        $website = "";
+                        $contactName = "";
+                        $emailAddress = "";
                         while ($row = $result->fetch_array()) {
                             // print out fields from row of data
                             echo("<h1>" . $row['name'] . "</h1>");
                             $clubDescription = $row['description'];
+                            $activity = $row['$activity'];
+                            $genre = $row['$genre'];
+                            $meetingPlaceInfo = $row['$meetingPlaceInfo'];
+                            $website = $row['$website'];
+                            $contactName = $row['$contactName'];
+                            $emailAddress = $row['$emailAddress'];
                         }
                         ?>
                         <span class="st-border"></span>
@@ -165,25 +177,27 @@
                 }
 
 
-                echo("");
+                echo("
+                
+            </div>
+            <div style='display: inline-block;width:auto;float:left;'>
+                <h4 class='sidebar-title'>Activity</h4>
+                <p>" . $activity . "</p>
+                <h4 class=\"sidebar-title\">Genre</h4>
+                <p>" . $genre . "</p>
+                <h4 class=\"sidebar-title\">Times & Location</h4>
+                <p>" . $meetingPlaceInfo . "</p>
+                <h4 class=\"sidebar-title\">Website</h4>
+                <a><p>" . $website . "</p></a>
+                <h4 class=\"sidebar-title\">Contact Information</h4>
+                <p>" . $contactName . "</p>
+                <p>" . $emailAddress . "</p>
+            </div>
+            
+        ");
                 ?>
             </div>
-            <div style="display: inline-block;width:auto;float:left;">
-
-                <h4 class="sidebar-title">Activity</h4>
-                <p>$row['activity']</p>
-                <h4 class="sidebar-title">Genre</h4>
-                <p>$row['genre']</p>
-                <h4 class="sidebar-title">Times & Location</h4>
-                <p>$row['where and when']</p>
-                <h4 class="sidebar-title">Website</h4>
-                <a><p>$row['website']</p></a>
-                <h4 class="sidebar-title">Contact Information</h4>
-                <p>$row['contact name']</p>
-                <p>$row['emailAddress']</p>
-            </div>
         </div>
-
     </div>
 </section>
 <!-- /SERVICES -->
