@@ -157,12 +157,17 @@
                 ?>
             </div>
             <div style="display: inline-block;width:auto;float:left;">
-                <ul>
-                    <li><h4 class="sidebar-title">Genre</h4></li>
-                    <li><h4 class="sidebar-title">Website</h4></li>
-                    <li><h4 class="sidebar-title">Contact Information</h4></li>
-                </ul>
-
+                <h4 class="sidebar-title">Activity</h4>
+                <p>$row['activity']</p>
+                <h4 class="sidebar-title">Genre</h4>
+                <p>$row['genre']</p>
+                <h4 class="sidebar-title">Times & Location</h4>
+                <p>$row['where and when']</p>
+                <h4 class="sidebar-title">Website</h4>
+                <a><p>$row['website']</p></a>
+                <h4 class="sidebar-title">Contact Information</h4>
+                <p>$row['contact name']</p>
+                <p>$row['emailAddress']</p>
             </div>
         </div>
 
