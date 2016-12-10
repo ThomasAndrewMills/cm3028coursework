@@ -53,7 +53,7 @@
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="logo" href="index.php">GOPORTLETHEN</a>
+                <a class="logo" href="index.php">GO PORTLETHEN</a>
             </div>
 
             <div class="collapse navbar-collapse" id="st-navbar-collapse">
