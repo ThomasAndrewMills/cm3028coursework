@@ -518,7 +518,7 @@
                     // print out fields from row of data
                     echo("
                     <a href='club.php?id=". $row['clubID'] ."'><div style=\"display: inline-block;width: 250px;height: 150px;margin: 10px;overflow: hidden;background-color: black; color:white;text-align: center;\">"
-                        . $row['clubID'] . "<br>"
+                        . "<br><br><br>"
                         . $row['name'] . "<br>
                     </div></a>");
                 }
