@@ -126,11 +126,11 @@
 						<article>
 							<div class="post-thumb"><img class="img-responsive" src="cluster/images/blog/01.jpg" alt=""></div>
 							<h4 class="post-title"><a href="">' . $row['title'] . '</a></h4>
-							<div class="post-meta text-uppercase" style="max-width:600px;float:left;">
+							<div class="post-meta text-uppercase" style="max-width:600px;float:left;display:inline-block;">
 								<span>By <a href="">' . $row['emailAddress'] . '</a></span>
 								<span>' . $row['date'] . '</span>
 							</div>
-							<div style="float:right;">
+							<div style="float:right;display:inline-block;">
                                 <form action="createNewsStory.php" style="margin-top:10px;" >
                                     <input style="font-weight: 600;border-radius: 5px;background-color: lightgray;" type="submit" value="Create Article" class="button">
                                 </form>
