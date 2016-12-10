@@ -117,12 +117,12 @@
                             // print out fields from row of data
                             echo("<h1>" . $row['name'] . "</h1>");
                             $clubDescription = $row['description'];
-                            $activity = $row['$activity'];
-                            $genre = $row['$genre'];
-                            $meetingPlaceInfo = $row['$meetingPlaceInfo'];
-                            $website = $row['$website'];
-                            $contactName = $row['$contactName'];
-                            $emailAddress = $row['$emailAddress'];
+                            $activity = $row['activity'];
+                            $genre = $row['genre'];
+                            $meetingPlaceInfo = $row['meetingPlaceInfo'];
+                            $website = $row['website'];
+                            $contactName = $row['contactName'];
+                            $emailAddress = $row['emailAddress'];
                         }
                         ?>
                         <span class="st-border"></span>
