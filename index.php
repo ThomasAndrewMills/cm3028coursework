@@ -525,15 +525,17 @@
                     while ($row = $result->fetch_array()) {
                         // print out fields from row of data
                         echo('
-                        <a href="club.php?id='. $row['clubID'] .'">
-                            <div class="col-md-4 col-sm-6 work-grid competitive exercise">
-                                <div class="portfolio-content">
-                                    <div style="display: inline-block;width: 250px;height: 150px;margin: 10px;overflow: hidden;background-color: black; color:white;text-align: center;">
-                                    <br><br>' . $row['name'] . '<br>
+                        
+                            <a href="club.php?id='. $row['clubID'] .'">
+                                <div class="col-md-4 col-sm-6 work-grid competitive exercise">
+                                    <div class="portfolio-content">
+                                        <div style="display: inline-block;width: 250px;height: 150px;margin: 10px;overflow: hidden;background-color: black; color:white;text-align: center;">
+                                            <br><br>' . $row['name'] . '<br>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>');
+                            </a>'
+                        );
                     }
                     ?>
                     <br>
