@@ -356,13 +356,16 @@
 
                 if (isset($_SESSION['emailAddress'])) {
                     echo('<a href="#">
-                              <div style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" class="button">
-                                   Join Club
-                              </div>
+                              <form action="club.php?id=' . $clubid . '" method="post" style="display:inline;">
+                                    <input style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" name="joinClub" class="button" value="Delete Article">
+                              </form>
+                          </a>
+                          <a href="editClub.php">
                               <div style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" class="button">
                                    Edit Club
                               </div>
-                          </a>');
+                          </a>
+                          ');
                 }
 
                 echo("
