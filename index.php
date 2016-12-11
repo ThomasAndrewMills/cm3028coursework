@@ -497,51 +497,53 @@
                         <li><a href="#" data-filter=".graphic">Fun</a></li>
                     </ul><!--/#portfolio-filter-->
                 </div>
-                <?php
-                ini_set('display_errors', 1);
-                ini_set('display_startup_errors', 1);
-                error_reporting(E_ALL);
+                <div class="portfolio-items">
+                    <?php
+                    ini_set('display_errors', 1);
+                    ini_set('display_startup_errors', 1);
+                    error_reporting(E_ALL);
 
 
-                // connect to server and select database
-                $db = new mysqli(
-                    "eu-cdbr-azure-west-a.cloudapp.net",
-                    "bd2505ec24d031",
-                    "a0a7a671",
-                    "goportlethendb"
-                );
-                // test if connection was established, and print any errors
-                if ($db->connect_errno) {
-                    die('Connectfailed[' . $db->connect_error . ']');
-                }
-                // create a SQL query as a string
-                $sql_query = "SELECT * FROM clubs";
-                // execute the SQL query
-                $result = $db->query($sql_query);
+                    // connect to server and select database
+                    $db = new mysqli(
+                        "eu-cdbr-azure-west-a.cloudapp.net",
+                        "bd2505ec24d031",
+                        "a0a7a671",
+                        "goportlethendb"
+                    );
+                    // test if connection was established, and print any errors
+                    if ($db->connect_errno) {
+                        die('Connectfailed[' . $db->connect_error . ']');
+                    }
+                    // create a SQL query as a string
+                    $sql_query = "SELECT * FROM clubs";
+                    // execute the SQL query
+                    $result = $db->query($sql_query);
 
-                //$rowsFound = $result->num_rows;
+                    //$rowsFound = $result->num_rows;
 
-                while ($row = $result->fetch_array()) {
-                    // print out fields from row of data
-                    echo("
-                    <a href='club.php?id=". $row['clubID'] ."'>
-                        <div class=\"col-md-4 col-sm-6 work-grid competitive exercise\">
-                            <div class=\"portfolio-content\">
-                                <div style=\"display: inline-block;width: 250px;height: 150px;margin: 10px;overflow: hidden;background-color: black; color:white;text-align: center;\">"
-                                    . "<br><br>"
-                                    . $row['name'] . "<br>
+                    while ($row = $result->fetch_array()) {
+                        // print out fields from row of data
+                        echo("
+                        <a href='club.php?id=". $row['clubID'] ."'>
+                            <div class=\"col-md-4 col-sm-6 work-grid competitive exercise\">
+                                <div class=\"portfolio-content\">
+                                    <div style=\"display: inline-block;width: 250px;height: 150px;margin: 10px;overflow: hidden;background-color: black; color:white;text-align: center;\">"
+                                        . "<br><br>"
+                                        . $row['name'] . "<br>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>");
-                }
-                ?>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+                        </a>");
+                    }
+                    ?>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
             </div>
         </div>
     </div>
