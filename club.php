@@ -306,15 +306,6 @@
                 </div>
 
 
-                <?php
-                //get and display events
-
-                echo("<div>
-                    <h3>About the club</h3>
-                    <p>" . $clubDescription . "</p></div>");
-                ?>
-
-
 
 
                 <?php
@@ -339,6 +330,23 @@
                     </div>
                 </div>');
                 ?>
+
+
+
+
+
+                <?php
+                //get and display events
+
+                echo("<div>
+                    <h3>About the club</h3>
+                    <p>" . $clubDescription . "</p></div>");
+                ?>
+
+
+
+
+
 
 
 
