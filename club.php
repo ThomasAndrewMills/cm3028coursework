@@ -314,6 +314,36 @@
                     <p>" . $clubDescription . "</p></div>");
                 ?>
 
+
+
+
+                <?php
+
+                echo('
+                <div id="post-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="cluster/images/blog/01.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="cluster/images/blog/02.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="cluster/images/blog/03.jpg" alt="">
+                        </div>
+
+                        <a class="post-carousel-left" href="#post-carousel" data-slide="prev"><i
+                                    class="fa fa-angle-left"></i></a>
+                        <a class="post-carousel-right" href="#post-carousel" data-slide="next"><i
+                                    class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>');
+                ?>
+
+
+
+
+
                 <h3 style="margin-top: 90px;">Upcoming events</h3>
                 <?php
 
