@@ -313,7 +313,7 @@
                     $articleText = $_POST["articleText"];
                     $fileToUpload = $_POST["fileToUpload"];
                     $articleAuthor = "AUTHOR";
-                    echo($fileToUpload);
+
 
 
                     // connect to server and select database
@@ -329,10 +329,7 @@
                     }
                     // create a SQL query as a string
                     $sql_query = "INSERT INTO healthnews (title, content, emailAddress)
-                                          VALUES ('$articleTitle', '$articleText', '$articleAuthor');
-                                  INSERT INTO media  (mediaFile, caption)
-                                         VALUES ('$fileToUpload','Image');
-                                          ";
+                                          VALUES ('$articleTitle', '$articleText', '$articleAuthor')";
                     // execute the SQL query
                     if ($db->query($sql_query) === TRUE) {
                         echo "Upload successful!";
