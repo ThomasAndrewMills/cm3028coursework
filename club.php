@@ -337,10 +337,11 @@
                 $result = $db->query($sql_query);
 
                 //$rowsFound = $result->num_rows;
+                $counter = 0;
                 while ($row = $result->fetch_array()) {
                     // print out fields from row of data
 
-                    $counter = 0;
+
                     if(counter ===0){
                         echo('<div class="item active">
                                <img src="get_image.php?mediaID=' . $row['mediaID'] .'" alt="' . $row['caption'] . '">
