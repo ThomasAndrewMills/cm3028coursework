@@ -6,22 +6,20 @@
     <title>Go Portlethen</title>
 
     <!-- Main CSS file -->
-    <link rel="stylesheet" href="cluster/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="cluster/css/owl.carousel.css"/>
-    <link rel="stylesheet" href="cluster/css/magnific-popup.css"/>
-    <link rel="stylesheet" href="cluster/css/font-awesome.css"/>
-    <link rel="stylesheet" href="cluster/css/style.css"/>
-    <link rel="stylesheet" href="cluster/css/responsive.css"/>
+    <link rel="stylesheet" href="cluster/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="cluster/css/owl.carousel.css" />
+    <link rel="stylesheet" href="cluster/css/magnific-popup.css" />
+    <link rel="stylesheet" href="cluster/css/font-awesome.css" />
+    <link rel="stylesheet" href="cluster/css/style.css" />
+    <link rel="stylesheet" href="cluster/css/responsive.css" />
 
+    @import url("http://fonts.googleapis.com/css?family=Raleway:200,300,600,700&subset=latin,latin-ext");
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="cluster/images/icon/favicon.png">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144"
-          href="cluster/images/icon/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114"
-          href="cluster/images/icon/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72"
-          href="cluster/images/icon/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="cluster/images/icon/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="cluster/images/icon/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="cluster/images/icon/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="cluster/images/icon/apple-touch-icon-57-precomposed.png">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -34,13 +32,13 @@
 </head>
 <body>
 
-<!-- PRELOADER
+<!-- PRELOADER -->
 <div id="st-preloader">
     <div id="pre-status">
         <div class="preload-placeholder"></div>
     </div>
 </div>
- /PRELOADER -->
+<!-- /PRELOADER -->
 
 
 <!-- HEADER -->
@@ -248,144 +246,84 @@
         </nav>
 </header>
 <!-- /HEADER -->
+<br>
+<br>
+<br>
+<br>
+
+
 
 <!-- SERVICES -->
-<section id="services">
+<section id="about">
     <div class="container">
         <div class="row">
-            <div style="float:left;width:auto;display: inline-block;max-width: 700px;margin-right:50px;">
-                <div class="col-md-12">
+            <div class="col-md-12">
+                <br>
+                <br>
+                <br>
+                <br>
+                <div style="float:left;width:570px;">
                     <div class="section-title">
+                        <h1>Edit an Article</h1>
+                        <span class="st-border"></span>
 
-                        <?php
-                        ini_set('display_errors', 1);
-                        ini_set('display_startup_errors', 1);
-                        error_reporting(E_ALL);
+                        <form action="healthNews.php" method="post">
+                            <br>
+                            <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+                            <script>tinymce.init({selector: 'textarea'});</script>
+                            <form action="createarticle" method="post">
 
-                        $clubid = $_GET["id"];
+
+                                <!--GETTING ARTICLE INFORMATION-->
+                                <?php
+                                // connect to server and select database
+                                $db = new mysqli(
+                                    "eu-cdbr-azure-west-a.cloudapp.net",
+                                    "bd2505ec24d031",
+                                    "a0a7a671",
+                                    "goportlethendb"
+                                );
+                                // test if connection was established, and print any errors
+                                if ($db->connect_errno) {
+                                    die('Connectfailed[' . $db->connect_error . ']');
+                                }
+                                // create a SQL query as a string
+                                $sql_query = "SELECT * FROM healthnews WHERE articleID =" . $_GET["id"] . "";
+                                // execute the SQL query
+                                $result = $db->query($sql_query);
+
+                                //$rowsFound = $result->num_rows;
+
+                                $articleTitle = "";
+                                $articleText = "";
+                                while ($row = $result->fetch_array()) {
+                                    $articleTitle = $row['title'];
+                                    $articleText = $row['content'];
+                                }
+                                ?>
+
+                                <input type="hidden" name="articalID" id="hiddenField" value="<?php echo $_GET["id"] ?>" />
+                                <input type="text" name="articleTitle" value="<?php echo($articleTitle);?>">
+                                <textarea name="articleText"><?php echo($articleText);?></textarea>
+                                <input type="submit" name="editArticle" class="button">
+                            </form>
+                        </form>
 
 
-                        // connect to server and select database
-                        $db = new mysqli(
-                            "eu-cdbr-azure-west-a.cloudapp.net",
-                            "bd2505ec24d031",
-                            "a0a7a671",
-                            "goportlethendb"
-                        );
-                        // test if connection was established, and print any errors
-                        if ($db->connect_errno) {
-                            die('Connectfailed[' . $db->connect_error . ']');
-                        }
-                        // create a SQL query as a string
-                        $sql_query = "SELECT * FROM clubs WHERE clubID = " . $clubid . "";
-                        // execute the SQL query
-                        $result = $db->query($sql_query);
+                    </div>
 
-                        //$rowsFound = $result->num_rows;
-                        $clubDescription = "";
-                        $activity = "";
-                        $genre = "";
-                        $meetingPlaceInfo = "";
-                        $website = "";
-                        $contactName = "";
-                        $contactEmailAddress = "";
-                        while ($row = $result->fetch_array()) {
-                            // print out fields from row of data
-                            echo("<h1>" . $row['name'] . "</h1>");
-                            $clubDescription = $row['description'];
-                            $activity = $row['activity'];
-                            $genre = $row['genre'];
-                            $meetingPlaceInfo = $row['meetingPlaceInfo'];
-                            $website = $row['website'];
-                            $contactName = $row['contactName'];
-                            $contactEmailAddress = $row['contactEmailAddress'];
-                        }
-                        ?>
+                </div>
+                <div style="float:right;width:490px;">
+                    <div class="section-title">
+                        <h1>heading</h1>
                         <span class="st-border"></span>
                     </div>
                 </div>
-
-
-                <?php
-                //get and display events
-
-                echo("<div>
-                    <h3>About the club</h3>
-                    <p>" . $clubDescription . "</p></div>");
-                ?>
-
-                <h3 style="margin-top: 90px;">Upcoming events</h3>
-                <?php
-
-                // connect to server and select database
-                $db = new mysqli(
-                    "eu-cdbr-azure-west-a.cloudapp.net",
-                    "bd2505ec24d031",
-                    "a0a7a671",
-                    "goportlethendb"
-                );
-                // test if connection was established, and print any errors
-                if ($db->connect_errno) {
-                    die('Connectfailed[' . $db->connect_error . ']');
-                }
-                // create a SQL query as a string
-                $sql_query = "SELECT * FROM events WHERE clubID = " . $clubid . "";
-                // execute the SQL query
-                $result = $db->query($sql_query);
-
-                //$rowsFound = $result->num_rows;
-
-                while ($row = $result->fetch_array()) {
-                    // print out fields from row of data
-                    echo("
-                        <div style='margin-left:10px;margin-right:10px;background-color: #5bc0de;'>
-                            <div style='float:left;display: display: inline;'>
-                                <h5>" . $row['Title'] . "</h5>
-                            </div>
-                            <div style='float:right;display: display: inline;'>
-                                <h5>" . $row['Date'] . "</h5>
-                            </div>
-                            <div style='float:left;'>
-                                <p style='font-weight:bold;color:#707070;'>" . $row['Description'] . "</p>
-                            </div>
-                        </div>
-                    ");
-                }
-                echo('</div>
-                    <div style=\'display: inline-block;width:auto;float:left;max-width: 400px;margin-top:150px;\'>');
-
-                if (isset($_SESSION['emailAddress'])) {
-                    echo('<a href="#">
-                              <div style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" class="button">
-                                   Join Club
-                              </div>
-                              <div style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" class="button">
-                                   Edit Club
-                              </div>
-                          </a>');
-                }
-
-                echo("
-                
-            
-            
-                <h4 class='sidebar-title'>Activity</h4>
-                <p>" . $activity . "</p>
-                <h4 class=\"sidebar-title\">Genre</h4>
-                <p>" . $genre . "</p>
-                <h4 class=\"sidebar-title\">Times & Location</h4>
-                <p>" . $meetingPlaceInfo . "</p>
-                <h4 class=\"sidebar-title\">Website</h4>
-                <a><p>" . $website . "</p></a>
-                <h4 class=\"sidebar-title\">Contact Information</h4>
-                <p>" . $contactName . "</p>
-                <p>" . $contactEmailAddress . "</p>
-            </div>
-            
-        ");
-                ?>
             </div>
         </div>
+        <br>
+        <br>
+        <br>
     </div>
 </section>
 <!-- /SERVICES -->
@@ -398,8 +336,7 @@
             <!-- SOCIAL ICONS -->
             <div class="col-sm-6 col-sm-push-6 footer-social-icons">
                 <span>Follow us:</span>
-                <a href="https://www.facebook.com/Portlethen-Sports-Club-703745156314817/club.php"><i
-                            class="fa fa-facebook"></i></a>
+                <a href="https://www.facebook.com/Portlethen-Sports-Club-703745156314817/"><i class="fa fa-facebook"></i></a>
                 <a href=""><i class="fa fa-twitter"></i></a>
             </div>
             <!-- /SOCIAL ICONS -->
@@ -414,9 +351,7 @@
 
 <!-- Scroll-up -->
 <div class="scroll-up">
-    <ul>
-        <li><a href="#header"><i class="fa fa-angle-up"></i></a></li>
-    </ul>
+    <ul><li><a href="#header"><i class="fa fa-angle-up"></i></a></li></ul>
 </div>
 
 
