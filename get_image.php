@@ -17,6 +17,6 @@
     $query = "SELECT mediaFile FROM media WHERE mediaID = '$mediaID';";
     $result = $db->query($query);
     $row = $result->fetch_array();
-    $image = $row['image'];
+    $image = $row['mediaFile'];
     echo $image;
 ?>
