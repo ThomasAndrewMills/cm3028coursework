@@ -501,72 +501,49 @@
                 </div>
 
                 <div class="portfolio-items">
+                    <?php
+                        ini_set('display_errors', 1);
+                        ini_set('display_startup_errors', 1);
+                        error_reporting(E_ALL);
 
-                    <div class="col-md-4 col-sm-6 work-grid wordpress graphic">
-                        <div class="portfolio-content">
-                            <img class="img-responsive" src="cluster/images/works/tennis.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a href="cluster/images/works/tennis.jpg"><i class="fa fa-camera-retro"></i></a>
-                                <a href="club.php?clubID=1"><h5>Tennis Club</h5></a>
-                                <p>Join our tennis Club!</p>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-md-4 col-sm-6 work-grid html php bootstrap">
-                        <div class="portfolio-content">
-                            <img class="img-responsive" src="cluster/images/works/hockey.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a href="cluster/images/works/hockey.jpg"><i class="fa fa-camera-retro"></i></a>
-                                <a href="club.php?clubID=2"><h5>Hockey Club</h5></a>
-                                <p>Join our Hockey Club!</p>
-                            </div>
-                        </div>
-                    </div>
+                        // connect to server and select database
+                        $db = new mysqli(
+                            "eu-cdbr-azure-west-a.cloudapp.net",
+                            "bd2505ec24d031",
+                            "a0a7a671",
+                            "goportlethendb"
+                        );
+                        // test if connection was established, and print any errors
+                        if ($db->connect_errno) {
+                            die('Connectfailed[' . $db->connect_error . ']');
+                        }
+                        // create a SQL query as a string
+                        $sql_query = "SELECT * FROM clubs";
+                        // execute the SQL query
+                        $result = $db->query($sql_query);
 
-                    <div class="col-md-4 col-sm-6 work-grid wordpress graphic">
-                        <div class="portfolio-content">
-                            <img class="img-responsive" src="cluster/images/works/football.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a href="cluster/images/works/football.jpg"><i class="fa fa-camera-retro"></i></a>
-                                <a href="club.php?clubID=3"><h5>Football Club</h5></a>
-                                <p>Join our Football Club!</p>
-                            </div>
-                        </div>
-                    </div>
+                        //$rowsFound = $result->num_rows;
 
-                    <div class="col-md-4 col-sm-6 work-grid html php bootstrap">
-                        <div class="portfolio-content">
-                            <img class="img-responsive" src="cluster/images/works/martialArts.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a href="cluster/images/works/martialArts.jpg"><i class="fa fa-camera-retro"></i></a>
-                                <a href="club.php?clubID=4"><h5>Martial Arts></h5></a>
-                                <p>Join our Martial Arts Club!</p>
-                            </div>
-                        </div>
-                    </div>
+                        while ($row = $result->fetch_array()) {
+                            // print out fields from row of data
+                            echo('
+                            
+                                <a href="club.php?id='. $row['clubID'] .'">
+                                    <div class="col-md-4 col-sm-6 work-grid wordpress graphic">
+                                        <div class="portfolio-content">
+                                            <img class="img-responsive" src="cluster/images/works/tennis.jpg" alt="">
+                                            <div class="portfolio-overlay">
+                                                <br><br>' . $row['name'] . '<br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            ');
+                        }
+                    ?>
 
-                    <div class="col-md-4 col-sm-6 work-grid wordpress graphic php">
-                        <div class="portfolio-content">
-                            <img class="img-responsive" src="cluster/images/works/dance.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a href="cluster/images/works/dance.jpg"><i class="fa fa-camera-retro"></i></a>
-                                <a href="club.php?clubID=5"><h5>Dance Club</h5></a>
-                                <p>Join our Dance Club!</p>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-md-4 col-sm-6 work-grid html bootstrap graphic">
-                        <div class="portfolio-content">
-                            <img class="img-responsive" src="cluster/images/works/athletics.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a href="cluster/images/works/athletics.jpg"><i class="fa fa-camera-retro"></i></a>
-                                <a href="club.php?clubID=6"><h5>Athletics Club</h5></a>
-                                <p>Join our Athletics Club!</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
