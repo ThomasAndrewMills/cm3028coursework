@@ -313,9 +313,7 @@
                 echo('
                 <div id="post-carousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="cluster/images/blog/01.jpg" alt="">
-                        </div>');
+                        ');
 
 
 
