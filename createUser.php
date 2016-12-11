@@ -68,7 +68,7 @@
                     <li><a href="index.php#clubs">Clubs</a></li>
                     <li><a href="index.php#our-team">Team</a></li>
                     <li><a href="discover.php">Discover</a></li>
-                    <li><a href="healthNews.php">healthy living blog</a></li>
+                    <li><a href="healthNews.php">healthy living</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
