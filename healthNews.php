@@ -426,6 +426,21 @@
                                         
                             ');
                             }
+                            echo('
+                                <div style="float:left;display:block;width:100%;">
+                                    <h4 class="post-title" style="">' . $row['title'] . '</h4>
+                                </div>
+                
+                                <div class="post-meta text-uppercase" style="display:block;">
+                                    <span>By <a href="">' . $row['emailAddress'] . '</a></span>
+                                    <span>' . $row['date'] . '</span>
+                                </div>
+                
+                                <div class="post-article" style="display: block;">
+                                    ' . $row['content'] . '
+                                </div>
+                            </div>');
+                            }
                             ?>
 
 
@@ -434,25 +449,12 @@
 
 
                     <?php
-                }
+
                 $result->close();
                 // close connection to database
                 $db->close();
 
-                echo('
-                    <div style="float:left;display:block;width:100%;">
-                        <h4 class="post-title" style="">' . $row['title'] . '</h4>
-                    </div>
-    
-                    <div class="post-meta text-uppercase" style="display:block;">
-                        <span>By <a href="">' . $row['emailAddress'] . '</a></span>
-                        <span>' . $row['date'] . '</span>
-                    </div>
-    
-                    <div class="post-article" style="display: block;">
-                        ' . $row['content'] . '
-                    </div>
-                </div>');
+
                 ?>
 
             </div>
