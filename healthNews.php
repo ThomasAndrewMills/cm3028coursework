@@ -400,8 +400,8 @@
                                             </div>
                                         </a>
                                         <a href="deleteArticle.php?id=' . $row['articleID'] . '">
-                                            <div style="display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" class="button">
-                                                Edit Article
+                                            <div style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" class="button">
+                                                Delete Article
                                             </div>
                                         </a>
                                 </div>
