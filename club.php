@@ -315,20 +315,49 @@
                     <div class="carousel-inner">
                         <div class="item active">
                             <img src="cluster/images/blog/01.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="cluster/images/blog/02.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="cluster/images/blog/03.jpg" alt="">
-                        </div>
+                        </div>');
 
-                        <a class="post-carousel-left" href="#post-carousel" data-slide="prev"><i
+
+
+
+
+
+                // connect to server and select database
+                $db = new mysqli(
+                    "eu-cdbr-azure-west-a.cloudapp.net",
+                    "bd2505ec24d031",
+                    "a0a7a671",
+                    "goportlethendb"
+                );
+                // test if connection was established, and print any errors
+                if ($db->connect_errno) {
+                    die('Connectfailed[' . $db->connect_error . ']');
+                }
+                // create a SQL query as a string
+                $sql_query = "SELECT * FROM media;";
+                // execute the SQL query
+                $result = $db->query($sql_query);
+
+                //$rowsFound = $result->num_rows;
+                while ($row = $result->fetch_array()) {
+                    // print out fields from row of data
+
+                    echo('<div class="item">
+                               <img src="'. $row['mediaFile'] .'.jpg" alt="' . $row['caption'] . '">
+                          </div>');
+                }
+
+
+
+                echo('  <a class="post-carousel-left" href="#post-carousel" data-slide="prev"><i
                                     class="fa fa-angle-left"></i></a>
                         <a class="post-carousel-right" href="#post-carousel" data-slide="next"><i
                                     class="fa fa-angle-right"></i></a>
                     </div>
                 </div>');
+
+
+
                 ?>
 
 
