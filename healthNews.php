@@ -393,10 +393,8 @@
 
                     ?>
                     <div class="single-blog" style="display: block;">
-                        <article
-                                style="-webkit-box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.4);-moz-box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.4);box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.4);">
-                            <div class="post-thumb"><img class="img-responsive" src="cluster/images/blog/01.jpg" alt="">
-                            </div>
+                        <article style="-webkit-box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.4);-moz-box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.4);box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.4);">
+                            <div class="post-thumb"><img class="img-responsive" src="cluster/images/blog/01.jpg" alt=""></div>
                             <div style="padding:5px;">
 
                             <?php
@@ -437,21 +435,14 @@
                                 <div class="post-article" style="display: block;">
                                     ' . $row['content'] . '
                                 </div>
-                            </div>');
-                            }
-                            ?>
-
-
+                            </div>
                         </article>
-                    </div>
-
-
-                    <?php
+                    </div>');
+                }
 
                 $result->close();
                 // close connection to database
                 $db->close();
-
 
                 ?>
 
