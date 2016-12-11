@@ -279,7 +279,7 @@
                 error_reporting(E_ALL);
 
 
-                if (isset($_POST["editArticle"])) {
+                if (isset($_POST["deleteArticle"])) {
                     $articalID = $_POST['articalID'];
 
                     // connect to server and select database
