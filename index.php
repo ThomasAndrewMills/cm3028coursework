@@ -529,7 +529,7 @@
                             // print out fields from row of data
                             echo('
                             
-                                <a href="club.php?id='. $row['clubID'] .'">
+                                
                                     <div class="col-md-4 col-sm-6 work-grid wordpress graphic">
                                         <div class="portfolio-content">
                                             <img class="img-responsive" src="cluster/images/works/tennis.jpg" alt="">
@@ -538,7 +538,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </a>
+                                
                             ');
                         }
                     ?>
