@@ -275,7 +275,7 @@
                                 <input type="text" name="articleTitle" placeholder="Article Title">
                                 <textarea name="articleText"></textarea>
                                 Select image to upload:
-                                <!--<input type="file" name="fileToUpload" id="fileToUpload">-->
+                                <input type="file" name="fileToUpload" id="fileToUpload">
                                 <input name="createNews" type="submit" class="button">
                             </form>
                         </form>

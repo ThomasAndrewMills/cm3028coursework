@@ -311,6 +311,7 @@
                 if (isset($_POST["createNews"])) {
                     $articleTitle = $_POST["articleTitle"];
                     $articleText = $_POST["articleText"];
+                    $fileToUpload = $_POST["fileToUpload"];
                     $articleAuthor = "AUTHOR";
 
 
@@ -327,7 +328,10 @@
                     }
                     // create a SQL query as a string
                     $sql_query = "INSERT INTO healthnews (title, content, emailAddress)
-                                          VALUES ('$articleTitle', '$articleText', '$articleAuthor');";
+                                          VALUES ('$articleTitle', '$articleText', '$articleAuthor');
+                                  INSERT INTO media  (mediaFile, caption)
+                                         VALUES ('$fileToUpload','Image');
+                                          ";
                     // execute the SQL query
                     if ($db->query($sql_query) === TRUE) {
                         echo "Upload successful!";
