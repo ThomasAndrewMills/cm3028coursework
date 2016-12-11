@@ -357,7 +357,7 @@
                 if (isset($_SESSION['emailAddress'])) {
                     echo('<a href="#">
                               <form action="club.php?id=' . $clubid . '" method="post" style="display:inline;">
-                                    <input style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" name="joinClub" class="button" value="Delete Article">
+                                    <input style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" name="joinClub" class="button" value="Join Club">
                               </form>
                           </a>
                           <a href="editClub.php">
