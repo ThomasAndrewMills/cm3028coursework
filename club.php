@@ -350,7 +350,7 @@
                                <img src="get_image.php?mediaID=' . $row['mediaID'] .'" alt="' . $row['caption'] . '">
                           </div>');
                     }
-                    $counter = counter + 1;
+                    $counter = $counter + 1;
                 }
 
 
