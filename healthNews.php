@@ -279,6 +279,33 @@
                 error_reporting(E_ALL);
 
 
+                if (isset($_POST["editArticle"])) {
+                    $articalID = $_POST['articalID'];
+
+                    // connect to server and select database
+                    $db = new mysqli(
+                        "eu-cdbr-azure-west-a.cloudapp.net",
+                        "bd2505ec24d031",
+                        "a0a7a671",
+                        "goportlethendb"
+                    );
+                    // test if connection was established, and print any errors
+                    if ($db->connect_errno) {
+                        die('Connectfailed[' . $db->connect_error . ']');
+                    }
+                    // create a SQL query as a string
+                    $sql_query = "DELETE FROM healthNews WHERE articalID=" . $articalID . "";
+                    // execute the SQL query
+                    if ($db->query($sql_query) === TRUE) {
+                        echo "Upload successful!";
+                    } else {
+                        echo "Error: " . $sql_query . "<br>" . $db->error;
+                    }
+
+                    $db->close();
+                }
+
+
                 if (isset($_POST["createNews"])) {
                     $articleTitle = $_POST["articleTitle"];
                     $articleText = $_POST["articleText"];
@@ -372,9 +399,11 @@
                                                 Edit Article
                                             </div>
                                         </a>
-                                    <form action="#" style="display: inline;">
-                                        <input style="font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" value="Delete Article" class="button">
-                                    </form>
+                                        <a href="deleteArticle.php?id=' . $row['articleID'] . '">
+                                            <div style="display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" class="button">
+                                                Edit Article
+                                            </div>
+                                        </a>
                                 </div>
                                 
                                 <div style="float:left;display:block;width:100%;">
