@@ -358,7 +358,7 @@
                         die('Connectfailed[' . $db->connect_error . ']');
                     }
                     // create a SQL query as a string
-                    $sql_query = "UPDATE healthnews SET title='" . $articleTitle . "', content='" . $articleText . "' WHERE articleID='" . $articalID ."';";
+                    $sql_query = "UPDATE healthnews SET title='" . $articleTitle . "', content='" . $articleText . "' WHERE articleID='" . $articalID . "';";
                     // execute the SQL query
                     if ($db->query($sql_query) === TRUE) {
                         echo "Upload successful!";
@@ -390,42 +390,44 @@
 
                 while ($row = $result->fetch_array()) {
                     // print out fields from row of data
-                    echo(
-                        '<div class="single-blog"style="display: block;">
-						<article style="-webkit-box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.4);-moz-box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.4);box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.4);">
-							<div class="post-thumb"><img class="img-responsive" src="cluster/images/blog/01.jpg" alt=""></div>
-							<div style="padding:5px;">
-                                <div style="float:left;display:block;width:100%;margin:5px;">
-                                        <a href="editNewsStory.php?id=' . $row['articleID'] . '">
-                                            <div style="display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" class="button">
-                                                Edit Article
-                                            </div>
-                                        </a>
-                                        <a href="deleteArticle.php?id=' . $row['articleID'] . '">
-                                            <div style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" class="button">
-                                                Delete Article
-                                            </div>
-                                        </a>
-                                </div>
-                                
-                                <div style="float:left;display:block;width:100%;">
-                                    <h4 class="post-title" style="">' . $row['title'] . '</h4>
-                                </div>
-                                
-                                <div class="post-meta text-uppercase" style="display:block;">
-                                    <span>By <a href="">' . $row['emailAddress'] . '</a></span>
-                                    <span>' . $row['date'] . '</span>
-                                </div>						
-                                
-                                <div class="post-article" style="display: block;">
-                                    ' . $row['content'] . '
-                                </div>
-							</div>
-						</article>
-					</div>');
+
+                    ?>
+                    <div class="single-blog" style="display: block;">
+                        <article
+                                style="-webkit-box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.4);-moz-box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.4);box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.4);">
+                            <div class="post-thumb"><img class="img-responsive" src="cluster/images/blog/01.jpg" alt="">
+                            </div>
+
+                            <?php
+                            if (isset($_SESSION["emailAddress"])) {
+
+
+                                echo('
+                                    <div style="padding:5px;">
+                                        <div style="float:left;display:block;width:100%;">
+                                            <h4 class="post-title" style="">' . $row['title'] . '</h4>
+                                        </div>
+
+                                        <div class="post-meta text-uppercase" style="display:block;">
+                                            <span>By <a href="">' . $row['emailAddress'] . '</a></span>
+                                            <span>' . $row['date'] . '</span>
+                                        </div>
+
+                                        <div class="post-article" style="display: block;">
+                                            ' . $row['content'] . '
+                                        </div>
+                                    </div>
+                            ');
+                            }
+                            ?>
+
+
+                        </article>
+                    </div>
+
+
+                    <?php
                 }
-
-
                 $result->close();
                 // close connection to database
                 $db->close();
@@ -435,11 +437,10 @@
             <div class="col-md-3">
                 <div class="sidebar-widget">
                     <?php
-                    if(isset($_SESSION['emailAddress'])){
+                    if (isset($_SESSION['emailAddress'])) {
                         echo('
                         <form action="createNewsStory.php" style="margin-top:10px;">
-                            <input style="font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit"
-                                   value="Create Article" class="button">
+                            <input style="font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" value="Create Article" class="button">
                         </form>
                         ');
                     }
