@@ -256,7 +256,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title">
-                    <h1>Healthy Living Blog</h1>
+                    <h1>Healthy Living</h1>
                     <span class="st-border"></span>
                 </div>
             </div>
