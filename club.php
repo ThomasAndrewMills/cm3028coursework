@@ -340,9 +340,17 @@
                 while ($row = $result->fetch_array()) {
                     // print out fields from row of data
 
-                    echo('<div class="item">
+                    $counter = 0;
+                    if(counter ===0){
+                        echo('<div class="item active">
                                <img src="get_image.php?mediaID=' . $row['mediaID'] .'" alt="' . $row['caption'] . '">
                           </div>');
+                    } else {
+                        echo('<div class="item">
+                               <img src="get_image.php?mediaID=' . $row['mediaID'] .'" alt="' . $row['caption'] . '">
+                          </div>');
+                    }
+                    $counter++;
                 }
 
 
