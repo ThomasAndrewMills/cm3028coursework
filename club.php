@@ -343,7 +343,7 @@
                     // print out fields from row of data
 
                     echo('<div class="item">
-                               <img src="'. $row['mediaFile'] .'.jpg" alt="' . $row['caption'] . '">
+                               <img src="'. htmlspecialchars($row['mediaFile']) .'.jpg" alt="' . $row['caption'] . '">
                           </div>');
                 }
 
