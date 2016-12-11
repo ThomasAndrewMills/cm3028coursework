@@ -313,6 +313,7 @@
                     $articleText = $_POST["articleText"];
                     $fileToUpload = $_POST["fileToUpload"];
                     $articleAuthor = "AUTHOR";
+                    echo($fileToUpload);
 
 
                     // connect to server and select database
