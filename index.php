@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8">
 
-    <title>GoPortlethen</title>
+    <title>Go Portlethen</title>
 
     <!-- Main CSS file -->
     <link rel="stylesheet" href="cluster/css/bootstrap.min.css"/>
