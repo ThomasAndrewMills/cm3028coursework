@@ -486,6 +486,14 @@
                     <h1>Clubs</h1>
                     <span class="st-border"></span>
                 </div>
+                <ul class="filter">
+                    <li><a class="active" href="#" data-filter="*">All</a></li>
+                    <li><a href="#" data-filter=".wordpress">WordPress</a></li>
+                    <li><a href="#" data-filter=".html">HTML</a></li>
+                    <li><a href="#" data-filter=".graphic">graphic</a></li>
+                    <li><a href="#" data-filter=".php">PHP</a></li>
+                    <li><a href="#" data-filter=".bootstrap">bootstrap</a></li>
+                </ul><!--/#portfolio-filter-->
             </div>
 
             <div class="portfolio-wrapper">
