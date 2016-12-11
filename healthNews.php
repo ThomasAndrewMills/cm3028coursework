@@ -295,8 +295,8 @@
                     }
                     // create a SQL query as a string
                     $sql_query = "DELETE FROM healthnews WHERE articleID='" . $articalID . "'";
+
                     // execute the SQL query
-                    echo($sql_query);
                     if ($db->query($sql_query) === TRUE) {
                         echo "Upload successful!";
                     } else {
