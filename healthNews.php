@@ -281,7 +281,7 @@
 
 
                 if (isset($_POST["deleteArticle"])) {
-                    $articalID = $_POST['articalID'];
+                    $articalID = $_GET["id"];
 
                     // connect to server and select database
                     $db = new mysqli(
@@ -413,11 +413,9 @@
                                                     Edit Article
                                                 </div>
                                             </a>
-                                            <a href="deleteArticle.php?id=' . $row['articleID'] . '">
-                                                <div style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" class="button">
-                                                    Delete Article
-                                                </div>
-                                            </a>
+                                            <form action="healthNews.php?id=' . $row['articleID'] . '" method="post">
+                                                <input style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" name="deleteArticle" class="button" value="Delete Article">
+                                            </form>
                                         </div>
 
 
