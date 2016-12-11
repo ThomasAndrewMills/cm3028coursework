@@ -133,8 +133,7 @@
 
 
                         if (isset($_POST["signin"])) {
-                            $_SESSION['emailAddress'] = $_POST["email"];
-                            $_SESSION['password'] = $_POST["password"];
+
 
                             //check the email and password
                             // connect to server and select database
@@ -149,7 +148,7 @@
                                 die('Connectfailed[' . $db->connect_error . ']');
                             }
                             // create a SQL query as a string
-                            $sql_query = "SELECT * FROM users WHERE emailAddress='" . $_SESSION['emailAddress'] . "' AND password='" . $_SESSION['password'] . "' LIMIT 1";
+                            $sql_query = "SELECT * FROM users WHERE emailAddress='" . $_POST["email"] . "' AND password='" . $_POST["password"] . "' LIMIT 1";
                             // execute the SQL query
                             $result = $db->query($sql_query);
 
@@ -163,6 +162,8 @@
                             if ($rowsFound === 1) {
 
                                 $_SESSION['loginStatus'] = TRUE;
+                                $_SESSION['emailAddress'] = $_POST["email"];
+                                $_SESSION['password'] = $_POST["password"];
                             }
 
                             if ($rowsFound === 0) {
@@ -434,7 +435,7 @@
             <div class="col-md-3">
                 <div class="sidebar-widget">
                     <?php
-                    if($_SESSION['loginStatus'] === TRUE){
+                    if(isset($_SESSION['emailAddress'])){
                         echo('
                         <form action="createNewsStory.php" style="margin-top:10px;">
                             <input style="font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit"
