@@ -342,7 +342,7 @@
                     // print out fields from row of data
 
 
-                    if(counter ===0){
+                    if($counter ===0){
                         echo('<div class="item active">
                                <img src="get_image.php?mediaID=' . $row['mediaID'] .'" alt="' . $row['caption'] . '">
                           </div>');
