@@ -397,26 +397,33 @@
                                 style="-webkit-box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.4);-moz-box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.4);box-shadow: 0px 0px 18px 5px rgba(0,0,0,0.4);">
                             <div class="post-thumb"><img class="img-responsive" src="cluster/images/blog/01.jpg" alt="">
                             </div>
+                            <div style="padding:5px;">
 
                             <?php
                             if (isset($_SESSION["emailAddress"])) {
 
 
                                 echo('
-                                    <div style="padding:5px;">
-                                        <div style="float:left;display:block;width:100%;">
-                                            <h4 class="post-title" style="">' . $row['title'] . '</h4>
+
+
+                                    
+                                        <div style="float:left;display:block;width:100%;margin:5px;">
+                                            <a href="editNewsStory.php?id=' . $row['articleID'] . '">
+                                                <div style="display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" class="button">
+                                                    Edit Article
+                                                </div>
+                                            </a>
+                                            <a href="deleteArticle.php?id=' . $row['articleID'] . '">
+                                                <div style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" class="button">
+                                                    Delete Article
+                                                </div>
+                                            </a>
                                         </div>
 
-                                        <div class="post-meta text-uppercase" style="display:block;">
-                                            <span>By <a href="">' . $row['emailAddress'] . '</a></span>
-                                            <span>' . $row['date'] . '</span>
-                                        </div>
 
-                                        <div class="post-article" style="display: block;">
-                                            ' . $row['content'] . '
-                                        </div>
-                                    </div>
+
+                                    
+                                        
                             ');
                             }
                             ?>
@@ -432,6 +439,20 @@
                 // close connection to database
                 $db->close();
                 ?>
+
+                <div style="float:left;display:block;width:100%;">
+                    <h4 class="post-title" style="">' . $row['title'] . '</h4>
+                </div>
+
+                <div class="post-meta text-uppercase" style="display:block;">
+                    <span>By <a href="">' . $row['emailAddress'] . '</a></span>
+                    <span>' . $row['date'] . '</span>
+                </div>
+
+                <div class="post-article" style="display: block;">
+                    ' . $row['content'] . '
+                </div>
+            </div>
 
             </div>
             <div class="col-md-3">
