@@ -492,11 +492,9 @@
                 <div class="col-md-12">
                     <ul class="filter">
                         <li><a class="active" href="#" data-filter="*">All</a></li>
-                        <li><a href="#" data-filter=".wordpress">WordPress</a></li>
-                        <li><a href="#" data-filter=".html">HTML</a></li>
-                        <li><a href="#" data-filter=".graphic">graphic</a></li>
-                        <li><a href="#" data-filter=".php">PHP</a></li>
-                        <li><a href="#" data-filter=".bootstrap">bootstrap</a></li>
+                        <li><a href="#" data-filter=".wordpress">Competitive</a></li>
+                        <li><a href="#" data-filter=".html">Exercise</a></li>
+                        <li><a href="#" data-filter=".graphic">Fun</a></li>
                     </ul><!--/#portfolio-filter-->
                 </div>
                 <?php
