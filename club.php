@@ -361,7 +361,7 @@
                               </form>
                           </a>
                           <a href="editClub.php">
-                              <div style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;padding-top:7px;padding-bottom:7px;" class="button">
+                              <div style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;padding-top:9px;padding-bottom:9px;" class="button">
                                    Edit Club
                               </div>
                           </a>
