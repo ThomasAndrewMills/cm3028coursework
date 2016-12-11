@@ -311,7 +311,7 @@
                 if (isset($_POST["createNews"])) {
                     $articleTitle = $_POST["articleTitle"];
                     $articleText = $_POST["articleText"];
-                    $articleAuthor = $_SESSION["emailAddress"];
+                    $articleAuthor = "AUTHOR";
 
 
                     // connect to server and select database
