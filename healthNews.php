@@ -433,10 +433,17 @@
             </div>
             <div class="col-md-3">
                 <div class="sidebar-widget">
-                    <form action="createNewsStory.php" style="margin-top:10px;">
-                        <input style="font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit"
-                               value="Create Article" class="button">
-                    </form>
+                    <?php
+                    if($_SESSION['loginStatus'] === TRUE){
+                        echo('
+                        <form action="createNewsStory.php" style="margin-top:10px;">
+                            <input style="font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit"
+                                   value="Create Article" class="button">
+                        </form>
+                        ');
+                    }
+                    ?>
+
                 </div>
             </div>
         </div>
