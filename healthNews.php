@@ -413,7 +413,7 @@
                                                     Edit Article
                                                 </div>
                                             </a>
-                                            <form action="healthNews.php?id=' . $row['articleID'] . '" method="post">
+                                            <form action="healthNews.php?id=' . $row['articleID'] . '" method="post" style="display:inline;">
                                                 <input style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" name="deleteArticle" class="button" value="Delete Article">
                                             </form>
                                         </div>
