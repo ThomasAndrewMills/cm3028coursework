@@ -351,11 +351,21 @@
                         </div>
                     ");
                 }
+                echo('</div>
+                    <div style=\'display: inline-block;width:auto;float:left;max-width: 400px;margin-top:150px;\'>');
+
+                if (isset($_SESSION['emailAddress'])) {
+                    echo('<a href="#">
+                              <div style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" class="button">
+                                   Join Club
+                              </div>
+                          </a>');
+                }
 
                 echo("
                 
-            </div>
-            <div style='display: inline-block;width:auto;float:left;max-width: 400px;margin-top:150px;'>
+            
+            
                 <h4 class='sidebar-title'>Activity</h4>
                 <p>" . $activity . "</p>
                 <h4 class=\"sidebar-title\">Genre</h4>
