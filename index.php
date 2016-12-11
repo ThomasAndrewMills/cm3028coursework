@@ -530,14 +530,16 @@
                             echo('
                             
                                 
-                                    <div class="col-md-4 col-sm-6 work-grid wordpress graphic">
-                                        <div class="portfolio-content">
-                                            <img class="img-responsive" src="cluster/images/works/tennis.jpg" alt="">
-                                            <div class="portfolio-overlay">
-                                                <br><br>' . $row['name'] . '<br>
-                                            </div>
+                                <div class="col-md-4 col-sm-6 work-grid wordpress graphic">
+                                    <a href="club.php?id='. $row['clubID'] .'">
+                                    <div class="portfolio-content">
+                                        <img class="img-responsive" src="cluster/images/works/tennis.jpg" alt="">
+                                        <div class="portfolio-overlay">
+                                            <br><br>' . $row['name'] . '<br>
                                         </div>
                                     </div>
+                                    </a>
+                                </div>
                                 
                             ');
                         }
