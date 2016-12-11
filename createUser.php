@@ -63,7 +63,6 @@
             <br>
             <div class="collapse navbar-collapse" id="st-navbar-collapse">
                 <ul class="nav navbar-nav navbar-left">
-                    <li><a href="index.php">Home</a></li>
                     <li><a href="index.php#about">About</a></li>
                     <li><a href="index.php#clubs">Clubs</a></li>
                     <li><a href="index.php#our-team">Team</a></li>

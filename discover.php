@@ -97,7 +97,6 @@
                 </div>
                 <div class="collapse navbar-collapse" id="st-navbar-collapse">
                     <ul class="nav navbar-nav navbar-left">
-                        <li><a href="#header">Home</a></li>
                         <li><a href="#clubs">Clubs</a></li>
                         <li><a href="discover.php">Discover</a></li>
                         <li><a href="healthNews.php">healthy living</a></li>
