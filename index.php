@@ -492,8 +492,8 @@
                 <div class="col-md-12">
                     <ul class="filter">
                         <li><a class="active" href="#" data-filter="*">All</a></li>
-                        <li><a href="#" data-filter=".wordpress">Competitive</a></li>
-                        <li><a href="#" data-filter=".html">Exercise</a></li>
+                        <li><a href="#" data-filter=".competitive">Competitive</a></li>
+                        <li><a href="#" data-filter=".exercise">Exercise</a></li>
                         <li><a href="#" data-filter=".graphic">Fun</a></li>
                     </ul><!--/#portfolio-filter-->
                 </div>
@@ -524,10 +524,16 @@
                 while ($row = $result->fetch_array()) {
                     // print out fields from row of data
                     echo("
-                    <a href='club.php?id=". $row['clubID'] ."'><div style=\"display: inline-block;width: 250px;height: 150px;margin: 10px;overflow: hidden;background-color: black; color:white;text-align: center;\">"
-                        . "<br><br>"
-                        . $row['name'] . "<br>
-                    </div></a>");
+                    <a href='club.php?id=". $row['clubID'] ."'>
+                        <div class=\"col-md-4 col-sm-6 work-grid competitive exercise\">
+                            <div class=\"portfolio-content\">
+                                <div style=\"display: inline-block;width: 250px;height: 150px;margin: 10px;overflow: hidden;background-color: black; color:white;text-align: center;\">"
+                                    . "<br><br>"
+                                    . $row['name'] . "<br>
+                                </div>
+                            </div>
+                        </div>
+                    </a>");
                 }
                 ?>
                 <br>
