@@ -279,17 +279,58 @@
 
 
 <!-- map -->
-<section id="map">
+<section id="map" style="height:700px;">
     <div class="container">
         <div class="row">
-            <iframe
-                width="1000"
-                height="600"
-                frameborder="0" style="border:0"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5159.7335384570515!2d-2.130873476068666!3d57.061793554337626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4884054c1e2ebe05%3A0x77d31b6b1dc3ebde!2sPortlethen%2C+Aberdeen!5e0!3m2!1sen!2suk!4v1480954826701" allowfullscreen>
+            <body>
+                <div id="floating-panel">
+                <b>Start: </b>
+                <select id="start">
+                    <option value="chicago, il">Chicagoo</option>
+                    <option value="st louis, mo">St Louiss</option>
+                </select>
+                <b>End: </b>
+                <select id="end">
+                    <option value="chicago, il">Chicago</option>
+                    <option value="st louis, mo">St Louiss</option>
+                </select>
+                </div>
+                <div id="maptwo"></div>
+                <script>
+                function initMap()  {
+                    var directionsService = new google.maps.DirectionsService;
+                    var directionsDisplay = new google.maps.DirectionsRenderer;
+                    var map = new google.maps.Map(document.getElementById('map'),   {
+                        zoom: 7,
+                        center: {lat: 41.85, lng: -87.65}
+                    });
+                    directionsDisplay.setMap(map);
 
-            </iframe>
+                    var onChangeHandler = function()    {
+                        calculateAndDisplayRoute(directionsService, directionsDisplay);
+                    };
+                    document.getElementById('start').addEventListener('change', onChangeHandler);
+                    document.getElementById('end').addEventListener('change', onChangeHandler);
+                }
 
+                function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+                    directionsService.route({
+                        origin: document.getElementById('start').value,
+                        destination: document.getElementById('end').value,
+                        travelMode: 'DRIVING'
+                    },  function(response, status)  {
+                        if(status ==='OK')   {
+                            directionsDisplay.setDirections(response);
+                        } else  {
+                            window.alert('Directions request failed due to ' + status);
+                        }
+                    });
+                }
+                </script>
+                <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF5a7_Ocmo66Y7fVALFlbUovbS2I_LeJ4&callback=initMap">
+                </script>
+            </body>
         </div>
     </div>
 </section>
@@ -307,7 +348,7 @@
                 </div>
             </div>
             <div class="col-sm-4 contact-info">
-                <p class="contact-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae voluptatum dolorum, possimus tenetur pariatur officia, quo commodi autem doloribus vero rerum aspernatur quidem temporibus.</p>
+                <p class="contact-content">Lorem ipssum doldor sit amet, consectetur adipisicing elit. Quae voluptatum dolorum, possimus tenetur pariatur officia, quo commodi autem doloribus vero rerum aspernatur quidem temporibus.</p>
                 <p class="st-address"><i class="fa fa-map-marker"></i> <strong>E71 8th Ave, New York NY 21001, US</strong></p>
                 <p class="st-phone"><i class="fa fa-mobile"></i> <strong>+00 123-456-789</strong></p>
                 <p class="st-email"><i class="fa fa-envelope-o"></i> <strong>email@yourdomain.com</strong></p>
