@@ -277,7 +277,7 @@
 <section id="panel">
     <div class="container">
         <div class="row">
-            <div id="floating-panel" style="">
+            <div id="floating-panel" style="position:relative">
             <body>
                 <b>Start: </b>
                 <select id="start">
