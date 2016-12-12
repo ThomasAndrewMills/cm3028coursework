@@ -274,7 +274,7 @@
 </header>
 <!-- /HEADER -->
 
-<section id="panel" style="position: relative">
+<section id="panel" style="position: relative;">
     <div class="container">
         <div class="row">
             <div id="floating-panel" style="">
