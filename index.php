@@ -293,7 +293,7 @@
                     <div class="row">
                         <div class="col-sm-7">
                             <h1>Discover</h1>
-                            <h2>North Kincardineshire</h2>
+                            <h2>North Kincardineshireohtrughtrsuhgjdog</h2>
                             <p style="color:white;font-weight: normal;">Discover new places and plan your routes around Portlethen</p>
                         </div>
                     </div>
