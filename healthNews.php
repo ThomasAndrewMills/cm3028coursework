@@ -72,7 +72,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="st-navbar-collapse">
                     <ul class="nav navbar-nav navbar-left">
-                        <li><a href="#clubs">Clubs</a></li>
+                        <li><a href="index.php#clubs">Clubs</a></li>
                         <li><a href="discover.php">Discover</a></li>
                         <li><a href="healthNews.php">healthy living</a></li>
                     </ul>
@@ -171,7 +171,7 @@
                             }
 
                             $result->close();
-                            // cl ose connection to database
+                            // close connection to database
                             $db->close();
                         }
 
@@ -467,17 +467,33 @@
 </section>
 <!-- /BLOG -->
 
+<!-- CONTACT -->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title">
+                    <h1>Contact us</h1>
+                    <span class="st-border"></span>
+                </div>
+            </div>
+            <div class="col-sm-4 contact-info">
+                <p class="st-phone"><i class="fa fa-mobile"></i> <strong>+00 123-456-789</strong></p>
+                <p class="st-email"><i class="fa fa-envelope-o"></i> <strong>goportlethen@email.com</strong></p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /CONTACT -->
+
 <!-- FOOTER -->
 <footer id="footer">
     <div class="container">
         <div class="row">
             <!-- SOCIAL ICONS -->
             <div class="col-sm-6 col-sm-push-6 footer-social-icons">
-                <span>Follow us:</span>
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-twitter"></i></a>
-                <a href=""><i class="fa fa-google-plus"></i></a>
-                <a href=""><i class="fa fa-pinterest-p"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
             </div>
             <!-- /SOCIAL ICONS -->
             <div class="col-sm-6 col-sm-pull-6 copyright">
