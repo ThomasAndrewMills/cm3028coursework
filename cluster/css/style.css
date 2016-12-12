@@ -1100,13 +1100,13 @@
 #panel	{
 	width: 100%;
 	padding-top: 5%;
-	padding-bottom: 3%;
+	padding-bottom: 1%;
 }
 
 #map{
 	background-color: #DCDCDC;
 	width: 100%;
-	padding-top: 5%;
+	padding-top: 1%;
 	padding-bottom: 3%;
 }
 
