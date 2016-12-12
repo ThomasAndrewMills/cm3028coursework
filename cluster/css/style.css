@@ -184,7 +184,7 @@
 	#floating-panel	{
 		padding-left: 10%;
 		padding-right: 10%;
-		padding-bottom: 0%;
+		padding-bottom: 5px;
 		padding-top: 0px;
 	}
 
