@@ -109,8 +109,7 @@
                         session_start();
                         if (isset($_POST["logout"])) {
                             session_destroy();
-                            header("Refresh: 2");
-                            exit;
+                            header("Location: index.php");
                         }
                         ini_set('display_errors', 1);
                         ini_set('display_startup_errors', 1);
