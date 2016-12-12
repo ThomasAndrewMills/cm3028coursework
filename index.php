@@ -550,7 +550,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title">
-                    <h1>Clubs Test</h1>
+                    <h1>Clubs</h1>
                     <span class="st-border"></span>
                     <form action="createClub.php" style="margin-top:10px;">
                         <input style="font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" value="Create Club" class="button">
