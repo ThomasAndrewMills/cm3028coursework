@@ -275,15 +275,7 @@
 <!-- /HEADER -->
 
 
-
-
-
-<!-- map -->
-<section id="map" style="height:700px;">
-    <div class="container">
-        <div class="row">
-            <body>
-                <div id="floating-panel">
+<div id="floating-panel">
                 <b>Start: </b>
                 <select id="start">
                     <option value="chicago, il">Chicagoo</option>
@@ -295,6 +287,13 @@
                     <option value="st louis, mo">St Louiss</option>
                 </select>
                 </div>
+
+
+<!-- map -->
+<section id="map" style="height:700px;margin-top:200px;">
+    <div class="container">
+        <div class="row">
+            <body>
                 <div id="maptwo"></div>
                 <script>
                 function initMap()  {
