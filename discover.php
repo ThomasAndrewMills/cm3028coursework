@@ -274,10 +274,10 @@
 </header>
 <!-- /HEADER -->
 
-<section id="panel">
+<section id="panel" style="position: relative">
     <div class="container">
         <div class="row">
-            <div id="floating-panel" style="position:relative">
+            <div id="floating-panel" style="">
             <body>
                 <b>Start: </b>
                 <select id="start">
