@@ -286,7 +286,7 @@
                 <div id="floating-panel">
                 <b>Start: </b>
                 <select id="start">
-                    <option value="chicago, il">Chicago</option>
+                    <option value="chicago, il">Chicagoo</option>
                     <option value="st louis, mo">St Louiss</option>
                 </select>
                 <b>End: </b>
