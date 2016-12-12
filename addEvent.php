@@ -267,9 +267,9 @@
                         <h1>Add an event</h1>
                         <span class="st-border"></span>
 
-                        
+
                         <?php
-                        $clubID = $_POST[''];
+                        $clubID = $_POST['clubID'];
                         ?>
                         <form action="healthNews.php" method="post">
                             <br>
@@ -277,15 +277,13 @@
                             <script>tinymce.init({selector: 'textarea'});</script>
                             <form action="club.php?" method="post">
                                 <input type="hidden" name="clubID" id="hiddenField" value="<?php $clubID ?>" />
-                                <input type="text" name="eventTitle" placeholder="Article Title">
-                                <textarea name="articleText"></textarea>
-                                <input name="createNews" type="submit" class="button">
+                                <input type="text" name="eventTitle">
+                                <input type="date" name="date">
+                                <textarea name="description"></textarea>
+                                <input name="addEvent" type="submit" class="button" value="Submit">
                             </form>
                         </form>
-
-
                     </div>
-
                 </div>
             </div>
         </div>

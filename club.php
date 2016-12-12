@@ -264,6 +264,37 @@
 
 
 
+                        if (isset($_POST["addEvent"])) {
+                            $clubID = $_GET["id"];
+                            $eventDate = $_POST["date"];
+                            $eventTitle = $_POST["title"];
+                            $eventDescription = $_POST["description"];
+
+                            // connect to server and select database
+                            $db = new mysqli(
+                                "eu-cdbr-azure-west-a.cloudapp.net",
+                                "bd2505ec24d031",
+                                "a0a7a671",
+                                "goportlethendb"
+                            );
+                            // test if connection was established, and print any errors
+                            if ($db->connect_errno) {
+                                die('Connectfailed[' . $db->connect_error . ']');
+                            }
+                            // create a SQL query as a string
+                            $sql_query = "INSERT INTO events (date, title, description, clubID) VALUES
+                                                          VALUES ('$eventDate','$eventTitle','$eventDescription','$clubID')";
+
+                            // execute the SQL query
+                            if ($db->query($sql_query) === TRUE) {
+                                echo "Upload successful!";
+                            } else {
+                                echo "Error: " . $sql_query . "<br>" . $db->error;
+                            }
+
+                            $db->close();
+                        }
+
                         if (isset($_POST["deleteEvent"])) {
                             $clubID = $_GET["id"];
                             $eventID = $_GET["eventID"];
@@ -475,7 +506,8 @@
                               </div>
                           </a>
                           <form action="addEvent.php?id=' . $clubid . '" method="post" style="display:inline;">
-                                <input type="hidden" name="articalID" id="hiddenField" value="' . $_GET["id"] . '" />
+                                <input type="hidden" name="clubID" id="hiddenField" value="' . $_GET["id"] . '" />
+                                <input style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" name="addEvent" class="button" value="Join Club">
                           </form>
                           ');
                 }
