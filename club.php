@@ -282,7 +282,7 @@
                                 die('Connectfailed[' . $db->connect_error . ']');
                             }
                             // create a SQL query as a string
-                            $sql_query = "INSERT INTO events (date, title, description, clubID) VALUES
+                            $sql_query = "INSERT INTO events (date, title, description, clubID)
                                                           VALUES ('$eventDate','$eventTitle','$eventDescription','$clubID')";
 
                             // execute the SQL query
