@@ -297,7 +297,7 @@
 
                         if (isset($_POST["deleteEvent"])) {
                             $clubID = $_GET["id"];
-                            $eventID = $_GET["eventID"];
+                            $eventID = $_POST['eventID'];
                             // connect to server and select database
                             $db = new mysqli(
                                 "eu-cdbr-azure-west-a.cloudapp.net",
@@ -486,7 +486,7 @@
                                 <p style='font-weight:bold;color:#707070;'>" . $row['description'] . "</p>
                             </div>
                             <form action=\"club.php?id=" . $clubid . "&eventID=" . $row['eventID'] . "'\" method=\"post\" style=\"display:inline;\">
-                                    <input style=\"margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;\" type=\"submit\" name=\"deleteEvent\" class=\"button\" value=\"Delete Event\">
+                                    <input style=\"margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;\" type=\"submit\" name=\"deleteEvent\" class=\"button\" value=\"deleteEvent\">
                             </form>
                         </div>
                     ");
