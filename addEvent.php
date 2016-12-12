@@ -267,6 +267,7 @@
                         <h1>Add an event</h1>
                         <span class="st-border"></span>
 
+                        
                         <?php
                         $clubID = $_POST[''];
                         ?>
