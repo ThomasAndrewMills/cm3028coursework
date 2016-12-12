@@ -295,7 +295,7 @@
                     <option value="st louis, mo">St Louiss</option>
                 </select>
                 </div>
-                <div id="maptwo"></div>
+                <div id="map"></div>
                 <script>
                 function initMap()  {
                     var directionsService = new google.maps.DirectionsService;
