@@ -182,7 +182,10 @@
 	}
 
 	#floating-panel	{
-
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-bottom: 10%;
+		padding-top: 10%;
 	}
 
 
@@ -1103,6 +1106,10 @@
 	padding-right: 15%;
 	padding-top: 10%;
 	padding-bottom: 3%;
+}
+
+#maptwo	{
+	height: 100%;
 }
 
 #about .about-us{
