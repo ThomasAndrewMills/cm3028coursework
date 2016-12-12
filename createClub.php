@@ -276,7 +276,7 @@
                                 <b>Club name:</b>
                                 <input type="text" name="clubName" placeholder="Club name">
 
-                                <b>About the club:</b>
+                                <br><br><b>About the club:</b>
                                 <textarea name="aboutClub"></textarea>
 
                                 <!--
@@ -287,31 +287,31 @@
                                 Photo 3<input type="text" name="photoURL3" >
                                 -->
 
-                                <b>Genre.</b>
+                                <br><br><b>Genre.</b>
                                 <select>
                                     <option value="Competitive">Competitive</option>
                                     <option value="Exercise">Exercise</option>
                                 </select>
 
-                                <b>Activity</b>
+                                <br><br><b>Activity</b>
                                 <input type="text" name="activity" >
 
-                                <b>Contact email address:</b>
+                                <br><br><b>Contact email address:</b>
                                 <input type="text" name="contactEmailAddress" >
 
-                                <b>Meeting place info</b>
+                                <br><br><b>Meeting place info</b>
                                 <textarea name="meetingPlaceInfo"></textarea>
 
-                                <b>Website</b>
+                                <br><br><b>Website</b>
                                 <input type="text" name="website" >
 
-                                <b>Contact name:</b>
+                                <br><br><b>Contact name:</b>
                                 <input type="text" name="contactName" >
 
-                                <b>phone number:</b>
+                                <br><br><b>phone number:</b>
                                 <input type="text" name="phoneNumber" >
 
-                                <input name="createClub" type="submit" class="button">
+                                <br><br><input name="createClub" type="submit" class="button">
                             </form>
                         </form>
 
