@@ -311,7 +311,6 @@
                 if (isset($_POST["createNews"])) {
                     $articleTitle = $_POST["articleTitle"];
                     $articleText = $_POST["articleText"];
-                    $fileToUpload = $_POST["fileToUpload"];
                     $articleAuthor = "AUTHOR";
 
 
