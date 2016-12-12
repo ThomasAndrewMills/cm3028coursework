@@ -492,11 +492,33 @@
                 <div class="col-md-12">
                     <ul class="filter">
                         <li><a class="active" href="#" data-filter="*">All</a></li>
-                        <li><a href="#" data-filter=".wordpress">WordPress</a></li>
-                        <li><a href="#" data-filter=".html">HTML</a></li>
-                        <li><a href="#" data-filter=".graphic">graphic</a></li>
-                        <li><a href="#" data-filter=".php">PHP</a></li>
-                        <li><a href="#" data-filter=".bootstrap">bootstrap</a></li>
+
+                        <?php
+
+                        $db = new mysqli(
+                            "eu-cdbr-azure-west-a.cloudapp.net",
+                            "bd2505ec24d031",
+                            "a0a7a671",
+                            "goportlethendb"
+                        );
+                        // test if connection was established, and print any errors
+                        if ($db->connect_errno) {
+                            die('Connectfailed[' . $db->connect_error . ']');
+                        }
+                        // create a SQL query as a string
+                        $sql_query = "SELECT * FROM genre";
+                        // execute the SQL query
+                        $result = $db->query($sql_query);
+
+                        //$rowsFound = $result->num_rows;
+
+                        while ($row = $result->fetch_array()) {
+                            echo('
+                                <li><a href="#" data-filter=".' . $row['genre'] . '">' . $row['genre'] . '</a></li>
+                            ');
+                        }
+                        ?>
+
                     </ul><!--/#portfolio-filter-->
                 </div>
 
@@ -530,7 +552,7 @@
                             echo('
                             
                                 
-                                <div class="col-md-4 col-sm-6 work-grid wordpress graphic">
+                                <div class="col-md-4 col-sm-6 work-grid ' . $row['genre'] . '">
                                     <a href="club.php?id='. $row['clubID'] .'">
                                     <div class="portfolio-content">
                                         <img class="img-responsive" src="cluster/images/works/tennis.jpg" alt="">
@@ -609,7 +631,6 @@
     </div>
 </section>
 <!-- /TESTIMONIAL -->
-
 
 
 
