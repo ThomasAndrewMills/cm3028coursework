@@ -1098,10 +1098,8 @@
 /* 17. MAP*/
 
 #panel	{
-	width: 100%;
-	height: auto;
 	padding-top: 5%;
-	padding-bottom: 5%;
+	padding-bottom: 2%;
 }
 
 #map{
