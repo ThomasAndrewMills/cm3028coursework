@@ -506,7 +506,6 @@
                               </div>
                           </a>
                           <form action="addEvent.php?id=' . $clubid . '" method="post" style="display:inline;">
-                                <input type="hidden" name="clubID" id="hiddenField" value="' . $_GET["id"] . '" />
                                 <input style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" name="addEvent" class="button" value="Add Event">
                           </form>
                           ');
