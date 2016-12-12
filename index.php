@@ -110,14 +110,9 @@
                         if (isset($_POST["logout"])) {
                             session_destroy();
                         }
-
                         ini_set('display_errors', 1);
                         ini_set('display_startup_errors', 1);
                         error_reporting(E_ALL);
-
-
-
-
                         if (isset($_SESSION['loginStatus'])) {
                             if ($_SESSION['loginStatus'] === TRUE) {
                                 //check the email and password
@@ -136,34 +131,25 @@
                                 $sql_query = "SELECT * FROM users WHERE emailAddress='" . $_SESSION['emailAddress'] . "' AND password='" . $_SESSION['password'] . "' LIMIT 1";
                                 // execute the SQL query
                                 $result = $db->query($sql_query);
-
                                 $rowsFound = $result->num_rows;
-
                                 while ($row = $result->fetch_array()) {
                                     // print out fields from row of data
                                     $_SESSION['displayName'] = $row['displayName'];
                                 }
-
                                 if ($rowsFound === 1) {
-
                                     $_SESSION['loginStatus'] = TRUE;
                                 }
-
                                 if ($rowsFound === 0) {
                                     $_SESSION['loginStatus'] = FALSE;
                                 }
-
                                 $result->close();
                                 // close connection to database
                                 $db->close();
                             }
                         }
-
-
                         if (isset($_POST["signin"])) {
                             $_SESSION['emailAddress'] = $_POST["email"];
                             $_SESSION['password'] = $_POST["password"];
-
                             //check the email and password
                             // connect to server and select database
                             $db = new mysqli(
@@ -180,28 +166,21 @@
                             $sql_query = "SELECT * FROM users WHERE emailAddress='" . $_SESSION['emailAddress'] . "' AND password='" . $_SESSION['password'] . "' LIMIT 1";
                             // execute the SQL query
                             $result = $db->query($sql_query);
-
                             $rowsFound = $result->num_rows;
-
                             while ($row = $result->fetch_array()) {
                                 // print out fields from row of data
                                 $_SESSION['displayName'] = $row['displayName'];
                             }
-
                             if ($rowsFound === 1) {
-
                                 $_SESSION['loginStatus'] = TRUE;
                             }
-
                             if ($rowsFound === 0) {
                                 $_SESSION['loginStatus'] = FALSE;
                             }
-
                             $result->close();
                             // cl ose connection to database
                             $db->close();
                         }
-
                         if (isset($_SESSION['loginStatus'])) {
                             //if user is logged in display username
                             if ($_SESSION['loginStatus'] === TRUE) {
@@ -215,16 +194,12 @@
                         } else {
                             echo('<li style="margin: 14px;"><b>' . "YOU ARE NOT LOGGED IN" . '</b></li>');
                         }
-
-
                         //if the signup form in submitted from createUser.php
                         if (isset($_POST["signup"])) {
                             $name = $_POST["name"];
                             $password = $_POST["password"];
                             $emailAddress = $_POST["emailAddress"];
                             $displayName = $_POST["displayName"];
-
-
                             // connect to server and select database
                             $db = new mysqli(
                                 "eu-cdbr-azure-west-a.cloudapp.net",
@@ -245,11 +220,8 @@
                             } else {
                                 echo "Error: " . $sql_query . "<br>" . $db->error;
                             }
-
                             $db->close();
                         }
-
-
                         //if the signup form in submitted from createUser.php
                         if (isset($_POST["createClub"])) {
                             $phoneNumber            = $_POST["phoneNumber"];
@@ -261,12 +233,6 @@
                             $genre                  = $_POST["genre"];
                             $aboutClub              = $_POST["aboutClub"];
                             $clubName               = $_POST["clubName"];
-
-
-
-
-
-
                             // connect to server and select database
                             $db = new mysqli(
                                 "eu-cdbr-azure-west-a.cloudapp.net",
@@ -287,11 +253,8 @@
                             } else {
                                 echo "Error: " . $sql_query . "<br>" . $db->error;
                             }
-
                             $db->close();
                         }
-
-
                         ?>
                         <li>
 
@@ -311,7 +274,6 @@
                                 </form>
                                 <?php
                             }
-
                             ?>
                         </li>
                     </ul>
@@ -386,8 +348,6 @@
             ini_set('display_errors', 1);
             ini_set('display_startup_errors', 1);
             error_reporting(E_ALL);
-
-
             // connect to server and select database
             $db = new mysqli(
                 "eu-cdbr-azure-west-a.cloudapp.net",
@@ -403,9 +363,7 @@
             $sql_query = "SELECT * FROM introductorytext";
             // execute the SQL query
             $result = $db->query($sql_query);
-
             //$rowsFound = $result->num_rows;
-
             while ($row = $result->fetch_array()) {
                 // print out fields from row of data
                 echo("
@@ -415,7 +373,7 @@
                     </div>");
             }
             ?>
-            
+
         </div>
         <br>
         <br>
@@ -447,9 +405,7 @@
                     $sql_query = "SELECT * FROM clubs;";
                     // execute the SQL query
                     $result = $db->query($sql_query);
-
                     $rowsFound = $result->num_rows;
-
                     echo('<h3><span class="st-counter">' . $rowsFound . '</span></h3>');
                     ?>
                     <p>Clubs</p>
@@ -474,9 +430,7 @@
                     $sql_query = "SELECT * FROM users;";
                     // execute the SQL query
                     $result = $db->query($sql_query);
-
                     $rowsFound = $result->num_rows;
-
                     echo('<h3><span class="st-counter">' . $rowsFound . '</span></h3>');
                     ?>
                     <p>Members</p>
@@ -501,9 +455,7 @@
                     $sql_query = "SELECT * FROM genre;";
                     // execute the SQL query
                     $result = $db->query($sql_query);
-
                     $rowsFound = $result->num_rows;
-
                     echo('<h3><span class="st-counter">' . $rowsFound . '</span></h3>');
                     ?>
                     <p>Club Genres</p>
@@ -511,29 +463,8 @@
             </div>
             <div class="col-sm-6 col-md-3">
                 <div class="fun-fact text-center">
-                    <!--GETTING AMOUNT OF Health articles-->
-                    <?php
-                    // connect to server and select database
-                    $db = new mysqli(
-                        "eu-cdbr-azure-west-a.cloudapp.net",
-                        "bd2505ec24d031",
-                        "a0a7a671",
-                        "goportlethendb"
-                    );
-                    // test if connection was established, and print any errors
-                    if ($db->connect_errno) {
-                    die('Connectfailed[' . $db->connect_error . ']');
-                    }
-                    // create a SQL query as a string
-                    $sql_query = "SELECT * FROM genre;";
-                    // execute the SQL query
-                    $result = $db->query($sql_query);
-
-                    $rowsFound = $result->num_rows;
-
-                    echo('<h3><span class="st-counter">' . $rowsFound . '</span></h3>');
-                    ?>
-                    <p>test Articles</p>
+                    <h3><span class="st-counter">0</span></h3>
+                    <p>Locations of Interest</p>
                 </div>
             </div>
         </div>
@@ -564,7 +495,6 @@
                         <li><a class="active" href="#" data-filter="*">All</a></li>
 
                         <?php
-
                         $db = new mysqli(
                             "eu-cdbr-azure-west-a.cloudapp.net",
                             "bd2505ec24d031",
@@ -579,9 +509,7 @@
                         $sql_query = "SELECT * FROM genre";
                         // execute the SQL query
                         $result = $db->query($sql_query);
-
                         //$rowsFound = $result->num_rows;
-
                         while ($row = $result->fetch_array()) {
                             echo('
                                 <li><a href="#" data-filter=".' . $row['genre'] . '">' . $row['genre'] . '</a></li>
@@ -594,32 +522,28 @@
 
                 <div class="portfolio-items">
                     <?php
-                        ini_set('display_errors', 1);
-                        ini_set('display_startup_errors', 1);
-                        error_reporting(E_ALL);
-
-
-                        // connect to server and select database
-                        $db = new mysqli(
-                            "eu-cdbr-azure-west-a.cloudapp.net",
-                            "bd2505ec24d031",
-                            "a0a7a671",
-                            "goportlethendb"
-                        );
-                        // test if connection was established, and print any errors
-                        if ($db->connect_errno) {
-                            die('Connectfailed[' . $db->connect_error . ']');
-                        }
-                        // create a SQL query as a string
-                        $sql_query = "SELECT * FROM clubs";
-                        // execute the SQL query
-                        $result = $db->query($sql_query);
-
-                        //$rowsFound = $result->num_rows;
-
-                        while ($row = $result->fetch_array()) {
-                            // print out fields from row of data
-                            echo('
+                    ini_set('display_errors', 1);
+                    ini_set('display_startup_errors', 1);
+                    error_reporting(E_ALL);
+                    // connect to server and select database
+                    $db = new mysqli(
+                        "eu-cdbr-azure-west-a.cloudapp.net",
+                        "bd2505ec24d031",
+                        "a0a7a671",
+                        "goportlethendb"
+                    );
+                    // test if connection was established, and print any errors
+                    if ($db->connect_errno) {
+                        die('Connectfailed[' . $db->connect_error . ']');
+                    }
+                    // create a SQL query as a string
+                    $sql_query = "SELECT * FROM clubs";
+                    // execute the SQL query
+                    $result = $db->query($sql_query);
+                    //$rowsFound = $result->num_rows;
+                    while ($row = $result->fetch_array()) {
+                        // print out fields from row of data
+                        echo('
                             
                                 
                                 <div class="col-md-4 col-sm-6 work-grid ' . $row['genre'] . '">
@@ -634,7 +558,7 @@
                                 </div>
                                 
                             ');
-                        }
+                    }
                     ?>
 
 
@@ -661,8 +585,6 @@
                     ini_set('display_errors', 1);
                     ini_set('display_startup_errors', 1);
                     error_reporting(E_ALL);
-
-
                     // connect to server and select database
                     $db = new mysqli(
                         "eu-cdbr-azure-west-a.cloudapp.net",
@@ -678,9 +600,7 @@
                     $sql_query = "SELECT * FROM testimonials";
                     // execute the SQL query
                     $result = $db->query($sql_query);
-
                     //$rowsFound = $result->num_rows;
-
                     while ($row = $result->fetch_array()) {
                         // print out fields from row of data
                         echo("<div class='item active text-center'>
@@ -729,7 +649,7 @@
             <div class="col-sm-6 col-sm-push-6 footer-social-icons">
                 <span>Follow us:</span>
                 <a href="https://www.facebook.com/"><i
-                            class="fa fa-facebook"></i></a>
+                        class="fa fa-facebook"></i></a>
                 <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
             </div>
             <!-- /SOCIAL ICONS -->
