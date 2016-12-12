@@ -320,7 +320,7 @@
                     var directionsDisplay = new google.maps.DirectionsRenderer;
                     var map = new google.maps.Map(document.getElementById('map'),   {
                         zoom: 7,
-                        center: {lat: 41.85, lng: -87.65}
+                        center: {lat: 57.062009, lng: -2.129583}
                     });
                     directionsDisplay.setMap(map);
 
@@ -335,7 +335,7 @@
                     directionsService.route({
                         origin: document.getElementById('start').value,
                         destination: document.getElementById('end').value,
-                        travelMode: 'DRIVING'
+                        travelMode: 'WALKING'
                     },  function(response, status)  {
                         if(status ==='OK')   {
                             directionsDisplay.setDirections(response);
