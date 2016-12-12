@@ -284,6 +284,7 @@
                     <option value="57.068341, -2.146797">Golf Course</option>
                     <option value="57.057554, -2.108243">Portlethen Bay</option>
                     <option value="57.047968, -2.122287">Cammachmore Bay</option>
+                    <option value="57.060387, -2.127293">Portlethen Paris Church</option>
                     <option value="57.057650, -2.130256">Community Woodland Park</option>
                     <option value="57.063092, -2.139899">Asda Superstore</option>
                     <option value="57.057750, -2.135994">Swimming pool</option>
@@ -300,6 +301,7 @@
                     <option value="57.068341, -2.146797">Golf Course</option>
                     <option value="57.057554, -2.108243">Portlethen Bay</option>
                     <option value="57.047968, -2.122287">Cammachmore Bay</option>
+                    <option value="57.060387, -2.127293">Portlethen Paris Church</option>
                     <option value="57.057650, -2.130256">Community Woodland Park</option>
                     <option value="57.063092, -2.139899">Asda Superstore</option>
                     <option value="57.057750, -2.135994">Swimming pool</option>
