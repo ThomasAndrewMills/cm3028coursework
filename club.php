@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
 
     <title>Go Portlethen</title>
@@ -12,7 +13,6 @@
     <link rel="stylesheet" href="cluster/css/font-awesome.css"/>
     <link rel="stylesheet" href="cluster/css/style.css"/>
     <link rel="stylesheet" href="cluster/css/responsive.css"/>
-
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="cluster/images/icon/favicon.png">
@@ -31,16 +31,42 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+    <link rel="stylesheet" type="text/css"
+          href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#3c404d",
+                        "text": "#d6d6d6"
+                    },
+                    "button": {
+                        "background": "#8bed4f"
+                    }
+                },
+                "theme": "edgeless",
+                "position": "bottom-right",
+                "content": {
+                    "message": "Our website uses cookies to make your browsing experience better. By using our site you agree to our use of cookies.",
+                    "dismiss": "Close and don't show again"
+                }
+            })
+        });
+    </script>
+
 </head>
 <body>
 
-<!-- PRELOADER
-<div id="st-preloader">
+<!-- PRELOADER -->
+<!--<div id="st-preloader">
     <div id="pre-status">
         <div class="preload-placeholder"></div>
     </div>
-</div>
- /PRELOADER -->
+</div>-->
+<!-- /PRELOADER -->
 
 
 <!-- HEADER -->
@@ -72,7 +98,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="st-navbar-collapse">
                     <ul class="nav navbar-nav navbar-left">
-                        <li><a href="index.php#clubs">Clubs</a></li>
+                        <li><a href="#clubs">Clubs</a></li>
                         <li><a href="discover.php">Discover</a></li>
                         <li><a href="healthNews.php">healthy living</a></li>
                     </ul>
@@ -84,12 +110,9 @@
                         if (isset($_POST["logout"])) {
                             session_destroy();
                         }
-
                         ini_set('display_errors', 1);
                         ini_set('display_startup_errors', 1);
                         error_reporting(E_ALL);
-
-
                         if (isset($_SESSION['loginStatus'])) {
                             if ($_SESSION['loginStatus'] === TRUE) {
                                 //check the email and password
@@ -108,34 +131,25 @@
                                 $sql_query = "SELECT * FROM users WHERE emailAddress='" . $_SESSION['emailAddress'] . "' AND password='" . $_SESSION['password'] . "' LIMIT 1";
                                 // execute the SQL query
                                 $result = $db->query($sql_query);
-
                                 $rowsFound = $result->num_rows;
-
                                 while ($row = $result->fetch_array()) {
                                     // print out fields from row of data
                                     $_SESSION['displayName'] = $row['displayName'];
                                 }
-
                                 if ($rowsFound === 1) {
-
                                     $_SESSION['loginStatus'] = TRUE;
                                 }
-
                                 if ($rowsFound === 0) {
                                     $_SESSION['loginStatus'] = FALSE;
                                 }
-
                                 $result->close();
                                 // close connection to database
                                 $db->close();
                             }
                         }
-
-
                         if (isset($_POST["signin"])) {
                             $_SESSION['emailAddress'] = $_POST["email"];
                             $_SESSION['password'] = $_POST["password"];
-
                             //check the email and password
                             // connect to server and select database
                             $db = new mysqli(
@@ -152,28 +166,21 @@
                             $sql_query = "SELECT * FROM users WHERE emailAddress='" . $_SESSION['emailAddress'] . "' AND password='" . $_SESSION['password'] . "' LIMIT 1";
                             // execute the SQL query
                             $result = $db->query($sql_query);
-
                             $rowsFound = $result->num_rows;
-
                             while ($row = $result->fetch_array()) {
                                 // print out fields from row of data
                                 $_SESSION['displayName'] = $row['displayName'];
                             }
-
                             if ($rowsFound === 1) {
-
                                 $_SESSION['loginStatus'] = TRUE;
                             }
-
                             if ($rowsFound === 0) {
                                 $_SESSION['loginStatus'] = FALSE;
                             }
-
                             $result->close();
                             // cl ose connection to database
                             $db->close();
                         }
-
                         if (isset($_SESSION['loginStatus'])) {
                             //if user is logged in display username
                             if ($_SESSION['loginStatus'] === TRUE) {
@@ -187,16 +194,12 @@
                         } else {
                             echo('<li style="margin: 14px;"><b>' . "YOU ARE NOT LOGGED IN" . '</b></li>');
                         }
-
-
                         //if the signup form in submitted from createUser.php
                         if (isset($_POST["signup"])) {
                             $name = $_POST["name"];
                             $password = $_POST["password"];
                             $emailAddress = $_POST["emailAddress"];
                             $displayName = $_POST["displayName"];
-
-
                             // connect to server and select database
                             $db = new mysqli(
                                 "eu-cdbr-azure-west-a.cloudapp.net",
@@ -217,7 +220,6 @@
                             } else {
                                 echo "Error: " . $sql_query . "<br>" . $db->error;
                             }
-
                             $db->close();
                         }
                         ?>
@@ -239,7 +241,6 @@
                                 </form>
                                 <?php
                             }
-
                             ?>
                         </li>
                     </ul>
@@ -249,85 +250,215 @@
 </header>
 <!-- /HEADER -->
 
+
+<!-- SLIDER -->
+<section id="slider">
+    <div id="home-carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="item active" style="background-image: url(cluster/images/slider/01.jpg)">
+                <div class="carousel-caption container">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <h1>Discover</h1>
+                            <h2>North Kincardineshire</h2>
+                            <p style="color:white;font-weight: normal;">Discover new places and plan your routes around Portlethen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(cluster/images/slider/02.jpg)">
+                <div class="carousel-caption container">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <h1>Sports in your area</h1>
+                            <h2>stay active</h2>
+                            <p style="color:white;font-weight: normal;">Discover sports and clubs in the Portlethen Community</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(cluster/images/slider/03.jpg)">
+                <div class="carousel-caption container">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <h1>health and wellbeing</h1>
+                            <h2>be healthy</h2>
+                            <p style="color:white;font-weight: normal;">Discover the latest news and information to ensure a healthy lifestyle</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="home-carousel-left" href="#home-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+            <a class="home-carousel-right" href="#home-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+        </div>
+    </div> <!--/#home-carousel-->
+</section>
+<!-- /SLIDER -->
+
+
 <!-- SERVICES -->
-<section id="services">
+<section id="about">
     <div class="container">
         <div class="row">
-            <div style="float:left;width:auto;display: inline-block;max-width: 700px;margin-right:50px;">
+            <div class="col-md-12">
+                <div class="section-title">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h1>What is Go Portlethen?</h1>
+                    <span class="st-border"></span>
+                </div>
+            </div>
+
+            <?php
+            ini_set('display_errors', 1);
+            ini_set('display_startup_errors', 1);
+            error_reporting(E_ALL);
+            // connect to server and select database
+            $db = new mysqli(
+                "eu-cdbr-azure-west-a.cloudapp.net",
+                "bd2505ec24d031",
+                "a0a7a671",
+                "goportlethendb"
+            );
+            // test if connection was established, and print any errors
+            if ($db->connect_errno) {
+                die('Connectfailed[' . $db->connect_error . ']');
+            }
+            // create a SQL query as a string
+            $sql_query = "SELECT * FROM introductorytext";
+            // execute the SQL query
+            $result = $db->query($sql_query);
+            //$rowsFound = $result->num_rows;
+            while ($row = $result->fetch_array()) {
+                // print out fields from row of data
+                echo("
+                    <div style='display: inline-block;width: 320px;height: 150px;'>
+                        <h5>" . $row['heading'] . "</h5>
+                        <p style=\"font-weight:normal;\">" . $row['text'] . "</p>
+                    </div>");
+            }
+            ?>
+
+        </div>
+        <br>
+        <br>
+        <br>
+    </div>
+</section>
+<!-- /SERVICES -->
+
+<!-- FUN FACTS -->
+<section id="fun-facts">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="fun-fact text-center">
+                    <!--GETTING AMOUNT OF CLUBS-->
+                    <?php
+                    // connect to server and select database
+                    $db = new mysqli(
+                        "eu-cdbr-azure-west-a.cloudapp.net",
+                        "bd2505ec24d031",
+                        "a0a7a671",
+                        "goportlethendb"
+                    );
+                    // test if connection was established, and print any errors
+                    if ($db->connect_errno) {
+                        die('Connectfailed[' . $db->connect_error . ']');
+                    }
+                    // create a SQL query as a string
+                    $sql_query = "SELECT * FROM clubs;";
+                    // execute the SQL query
+                    $result = $db->query($sql_query);
+                    $rowsFound = $result->num_rows;
+                    echo('<h3><span class="st-counter">' . $rowsFound . '</span></h3>');
+                    ?>
+                    <p>Clubs</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="fun-fact text-center">
+                    <!--GETTING AMOUNT OF USERS-->
+                    <?php
+                    // connect to server and select database
+                    $db = new mysqli(
+                        "eu-cdbr-azure-west-a.cloudapp.net",
+                        "bd2505ec24d031",
+                        "a0a7a671",
+                        "goportlethendb"
+                    );
+                    // test if connection was established, and print any errors
+                    if ($db->connect_errno) {
+                        die('Connectfailed[' . $db->connect_error . ']');
+                    }
+                    // create a SQL query as a string
+                    $sql_query = "SELECT * FROM users;";
+                    // execute the SQL query
+                    $result = $db->query($sql_query);
+                    $rowsFound = $result->num_rows;
+                    echo('<h3><span class="st-counter">' . $rowsFound . '</span></h3>');
+                    ?>
+                    <p>Members</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="fun-fact text-center">
+                    <!--GETTING AMOUNT OF GENRES-->
+                    <?php
+                    // connect to server and select database
+                    $db = new mysqli(
+                        "eu-cdbr-azure-west-a.cloudapp.net",
+                        "bd2505ec24d031",
+                        "a0a7a671",
+                        "goportlethendb"
+                    );
+                    // test if connection was established, and print any errors
+                    if ($db->connect_errno) {
+                        die('Connectfailed[' . $db->connect_error . ']');
+                    }
+                    // create a SQL query as a string
+                    $sql_query = "SELECT * FROM genre;";
+                    // execute the SQL query
+                    $result = $db->query($sql_query);
+                    $rowsFound = $result->num_rows;
+                    echo('<h3><span class="st-counter">' . $rowsFound . '</span></h3>');
+                    ?>
+                    <p>Club Genres</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="fun-fact text-center">
+                    <h3><span class="st-counter">0</span></h3>
+                    <p>Locations of Interest</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /FUN FACTS -->
+
+<!-- OUR WORKS -->
+<section id="clubs">
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title">
+                    <h1>Clubs</h1>
+                    <span class="st-border"></span>
+                </div>
+            </div>
+
+            <div class="portfolio-wrapper">
                 <div class="col-md-12">
-                    <div class="section-title">
+                    <ul class="filter">
+                        <li><a class="active" href="#" data-filter="*">All</a></li>
 
                         <?php
-                        ini_set('display_errors', 1);
-                        ini_set('display_startup_errors', 1);
-                        error_reporting(E_ALL);
-
-
-                        $clubID = 0;
-                        if (isset($_POST["addEvent"])) {
-                            $clubID = $_POST["clubID"];
-                            $eventDate = $_POST["date"];
-                            $eventTitle = $_POST["title"];
-                            $eventDescription = $_POST["description"];
-
-                            // connect to server and select database
-                            $db = new mysqli(
-                                "eu-cdbr-azure-west-a.cloudapp.net",
-                                "bd2505ec24d031",
-                                "a0a7a671",
-                                "goportlethendb"
-                            );
-                            // test if connection was established, and print any errors
-                            if ($db->connect_errno) {
-                                die('Connectfailed[' . $db->connect_error . ']');
-                            }
-                            // create a SQL query as a string
-                            $sql_query = "INSERT INTO events (date, title, description, clubID)
-                                                          VALUES ('$eventDate','$eventTitle','$eventDescription','$clubID')";
-
-                            // execute the SQL query
-                            if ($db->query($sql_query) === TRUE) {
-                                echo "Upload successful!";
-                            } else {
-                                echo "Error: " . $sql_query . "<br>" . $db->error;
-                            }
-
-                            $db->close();
-                        }
-
-                        if (isset($_POST["deleteEvent"])) {
-                            $clubID = $_GET["id"];
-                            $eventID = $_POST['eventID'];
-                            // connect to server and select database
-                            $db = new mysqli(
-                                "eu-cdbr-azure-west-a.cloudapp.net",
-                                "bd2505ec24d031",
-                                "a0a7a671",
-                                "goportlethendb"
-                            );
-                            // test if connection was established, and print any errors
-                            if ($db->connect_errno) {
-                                die('Connectfailed[' . $db->connect_error . ']');
-                            }
-                            // create a SQL query as a string
-                            $sql_query = "DELETE FROM events WHERE eventID='" . $eventID . "'";
-
-                            // execute the SQL query
-                            if ($db->query($sql_query) === TRUE) {
-                                echo "Upload successful!";
-                            } else {
-                                echo "Error: " . $sql_query . "<br>" . $db->error;
-                            }
-
-                            $db->close();
-                        }
-
-
-
-                        $clubid = $_GET["id"];
-
-
-                        // connect to server and select database
                         $db = new mysqli(
                             "eu-cdbr-azure-west-a.cloudapp.net",
                             "bd2505ec24d031",
@@ -339,202 +470,122 @@
                             die('Connectfailed[' . $db->connect_error . ']');
                         }
                         // create a SQL query as a string
-                        $sql_query = "SELECT * FROM clubs WHERE clubID = " . $clubid . "";
+                        $sql_query = "SELECT * FROM genre";
                         // execute the SQL query
                         $result = $db->query($sql_query);
-
                         //$rowsFound = $result->num_rows;
-                        $about = "";
-                        $activity = "";
-                        $genre = "";
-                        $meetingPlaceInfo = "";
-                        $website = "";
-                        $contactName = "";
-                        $contactEmailAddress = "";
                         while ($row = $result->fetch_array()) {
-                            // print out fields from row of data
-                            echo("<h1>" . $row['name'] . "</h1>");
-                            $about = $row['about'];
-                            $activity = $row['activity'];
-                            $genre = $row['genre'];
-                            $meetingPlaceInfo = $row['meetingPlaceInfo'];
-                            $website = $row['website'];
-                            $contactName = $row['contactName'];
-                            $contactEmailAddress = $row['contactEmailAddress'];
+                            echo('
+                                <li><a href="#" data-filter=".' . $row['genre'] . '">' . $row['genre'] . '</a></li>
+                            ');
                         }
                         ?>
-                        <span class="st-border"></span>
-                    </div>
+
+                    </ul><!--/#portfolio-filter-->
                 </div>
 
-
-
-
-                <?php
-
-                echo('
-                <div id="post-carousel" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        ');
-
-
-
-
-
-
-
-                // connect to server and select database
-                $db = new mysqli(
-                    "eu-cdbr-azure-west-a.cloudapp.net",
-                    "bd2505ec24d031",
-                    "a0a7a671",
-                    "goportlethendb"
-                );
-                // test if connection was established, and print any errors
-                if ($db->connect_errno) {
-                    die('Connectfailed[' . $db->connect_error . ']');
-                }
-                // create a SQL query as a string
-                $sql_query = "SELECT * FROM media;";
-                // execute the SQL query
-                $result = $db->query($sql_query);
-
-                //$rowsFound = $result->num_rows;
-                $counter = 0;
-                while ($row = $result->fetch_array()) {
-                    // print out fields from row of data
-
-
-                    if($counter ===0){
-                        echo('<div class="item active">
-                               <img src="get_image.php?mediaID=' . $row['mediaID'] .'" alt="' . $row['caption'] . '">
-                          </div>');
-                    } else {
-                        echo('<div class="item">
-                               <img src="get_image.php?mediaID=' . $row['mediaID'] .'" alt="' . $row['caption'] . '">
-                          </div>');
+                <div class="portfolio-items">
+                    <?php
+                    ini_set('display_errors', 1);
+                    ini_set('display_startup_errors', 1);
+                    error_reporting(E_ALL);
+                    // connect to server and select database
+                    $db = new mysqli(
+                        "eu-cdbr-azure-west-a.cloudapp.net",
+                        "bd2505ec24d031",
+                        "a0a7a671",
+                        "goportlethendb"
+                    );
+                    // test if connection was established, and print any errors
+                    if ($db->connect_errno) {
+                        die('Connectfailed[' . $db->connect_error . ']');
                     }
-                    $counter = $counter + 1;
-                }
+                    // create a SQL query as a string
+                    $sql_query = "SELECT * FROM clubs";
+                    // execute the SQL query
+                    $result = $db->query($sql_query);
+                    //$rowsFound = $result->num_rows;
+                    while ($row = $result->fetch_array()) {
+                        // print out fields from row of data
+                        echo('
+                            
+                                
+                                <div class="col-md-4 col-sm-6 work-grid ' . $row['genre'] . '">
+                                    <a href="club.php?id='. $row['clubID'] .'">
+                                    <div class="portfolio-content">
+                                        <img class="img-responsive" src="cluster/images/works/tennis.jpg" alt="">
+                                        <div class="portfolio-overlay">
+                                            <br><br>' . $row['name'] . '<br>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </div>
+                                
+                            ');
+                    }
+                    ?>
 
 
-
-                echo('  <a class="post-carousel-left" href="#post-carousel" data-slide="prev"><i
-                                    class="fa fa-angle-left"></i></a>
-                        <a class="post-carousel-right" href="#post-carousel" data-slide="next"><i
-                                    class="fa fa-angle-right"></i></a>
-                    </div>
-                </div>');
-
-
-
-                ?>
-
-
-
-
-
-                <?php
-                //get and display events
-
-                echo("<div>
-                    <h3>About the club</h3>
-                    <p>" . $about . "</p></div>");
-                ?>
-
-
-
-
-
-
-
-
-
-
-                <h3 style="margin-top: 90px;">Upcoming events</h3>
-                <?php
-
-                // connect to server and select database
-                $db = new mysqli(
-                    "eu-cdbr-azure-west-a.cloudapp.net",
-                    "bd2505ec24d031",
-                    "a0a7a671",
-                    "goportlethendb"
-                );
-                // test if connection was established, and print any errors
-                if ($db->connect_errno) {
-                    die('Connectfailed[' . $db->connect_error . ']');
-                }
-                // create a SQL query as a string
-                $sql_query = "SELECT * FROM events WHERE clubID = " . $clubid . "";
-                // execute the SQL query
-                $result = $db->query($sql_query);
-
-                //$rowsFound = $result->num_rows;
-
-                while ($row = $result->fetch_array()) {
-                    // print out fields from row of data
-                    echo("
-                        <div style='margin-left:10px;margin-right:10px;'>
-                            <div style='float:left;display: display: inline;'>
-                                <h5>" . $row['title'] . "</h5>
-                            </div>
-                            <div style='float:right;display: display: inline;'>
-                                <h5>" . $row['date'] . "</h5>
-                            </div>
-                            <div style='float:left;'>
-                                <p style='font-weight:bold;color:#707070;'>" . $row['description'] . "</p>
-                            </div>
-                        </div>
-                        <form action=\"club.php?id=" . $clubid . "&eventID=" . $row['eventID'] . "'\" method=\"post\" style=\"display:inline;\">
-                                    <input style=\"margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;\" type=\"submit\" name=\"deleteEvent\" class=\"button\" value=\"deleteEvent\">
-                        </form>
-                    ");
-                }
-                echo('</div>
-                    <div style=\'display: inline-block;width:auto;float:left;max-width: 400px;margin-top:150px;\'>');
-
-                if (isset($_SESSION['emailAddress'])) {
-                    echo('<a href="#">
-                              <form action="club.php?id=' . $clubid . '" method="post" style="display:inline;">
-                                    <input style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" name="joinClub" class="button" value="Join Club">
-                              </form>
-                          </a>
-                          <a href="editClub.php">
-                              <div style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;padding-top:9px;padding-bottom:9px;" class="button">
-                                   Edit Club
-                              </div>
-                          </a>
-                          <form action="addEvent.php?id=' . $clubid . '" method="post" style="display:inline;">
-                                <input style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" name="addEvent" class="button" value="Add Event">
-                          </form>
-                          ');
-                }
-
-                echo("
-                
-            
-            
-                <h4 class='sidebar-title'>Activity</h4>
-                <p>" . $activity . "</p>
-                <h4 class=\"sidebar-title\">Genre</h4>
-                <p>" . $genre . "</p>
-                <h4 class=\"sidebar-title\">Times & Location</h4>
-                <p>" . $meetingPlaceInfo . "</p>
-                <h4 class=\"sidebar-title\">Website</h4>
-                <a><p>" . $website . "</p></a>
-                <h4 class=\"sidebar-title\">Contact Information</h4>
-                <p>" . $contactName . "</p>
-                <p>" . $contactEmailAddress . "</p>
-            </div>
-            
-        ");
-                ?>
+                </div>
             </div>
         </div>
     </div>
 </section>
-<!-- /SERVICES -->
+<!-- /OUR WORKS -->
+
+
+
+
+
+<!-- TESTIMONIAL -->
+<section id="testimonial">
+    <div class="container">
+        <div class="row">
+            <div class="overlay"></div>
+            <div class="col-md-8 col-md-offset-2 col-sm-12">
+                <div class="st-testimonials">
+
+                    <?php
+                    ini_set('display_errors', 1);
+                    ini_set('display_startup_errors', 1);
+                    error_reporting(E_ALL);
+                    // connect to server and select database
+                    $db = new mysqli(
+                        "eu-cdbr-azure-west-a.cloudapp.net",
+                        "bd2505ec24d031",
+                        "a0a7a671",
+                        "goportlethendb"
+                    );
+                    // test if connection was established, and print any errors
+                    if ($db->connect_errno) {
+                        die('Connectfailed[' . $db->connect_error . ']');
+                    }
+                    // create a SQL query as a string
+                    $sql_query = "SELECT * FROM testimonials";
+                    // execute the SQL query
+                    $result = $db->query($sql_query);
+                    //$rowsFound = $result->num_rows;
+                    while ($row = $result->fetch_array()) {
+                        // print out fields from row of data
+                        echo("<div class='item active text-center'>
+                                    <p style='color:white;font-weight: normal;'>" . $row['testimonial'] ."</p>
+                                    <div class=\"st-border\"></div>
+                                    <div class=\"client-info\">
+                                        <h5>" . $row['name'] . "</h5>
+                                        <span></span>
+                                    </div>
+                            </div>");
+                    }
+                    ?>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /TESTIMONIAL -->
+
 
 
 <!-- FOOTER -->
@@ -544,7 +595,8 @@
             <!-- SOCIAL ICONS -->
             <div class="col-sm-6 col-sm-push-6 footer-social-icons">
                 <span>Follow us:</span>
-                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.facebook.com/"><i
+                        class="fa fa-facebook"></i></a>
                 <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
             </div>
             <!-- /SOCIAL ICONS -->
