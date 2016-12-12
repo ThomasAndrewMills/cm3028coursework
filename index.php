@@ -94,7 +94,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="logo" href="index.php"><b style="font-size: 20px;">GOPORTLETHEN</b></a>
+                    <a class="logo" href="index.php"><b style="font-size: 20px;">GO PORTLETHEN</b></a>
                 </div>
                 <div class="collapse navbar-collapse" id="st-navbar-collapse">
                     <ul class="nav navbar-nav navbar-left">
@@ -661,6 +661,7 @@
     </div>
 </footer>
 <!-- /FOOTER -->
+
 
 
 <!-- Scroll-up -->
