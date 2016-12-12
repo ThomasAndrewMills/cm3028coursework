@@ -426,7 +426,7 @@
                                 <p style='font-weight:bold;color:#707070;'>" . $row['description'] . "</p>
                             </div>
                         </div>
-                        <form action="club.php?id=' . $clubid . &eventID=' . $row['eventID'] . ' " method=\"post\" style=\"display:inline;\">
+                        <form action=\"club.php?id=" . $clubid . "&eventID=" . $row['eventID'] . "'\" method=\"post\" style=\"display:inline;\">
                                     <input style=\"margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;\" type=\"submit\" name=\"deleteEvent\" class=\"button\" value=\"deleteEvent\">
                         </form>
                     ");
