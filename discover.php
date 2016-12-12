@@ -283,6 +283,18 @@
     <div class="container">
         <div class="row">
             <body>
+                <div id="floating-panel">
+                <b>Start: </b>
+                <select id="start">
+                    <option value="chicago, il">Chicagoo</option>
+                    <option value="st louis, mo">St Louiss</option>
+                </select>
+                <b>End: </b>
+                <select id="end">
+                    <option value="chicago, il">Chicago</option>
+                    <option value="st louis, mo">St Louiss</option>
+                </select>
+                </div>
                 <div id="maptwo"></div>
                 <script>
                 function initMap()  {
@@ -318,18 +330,6 @@
                 <script async defer
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF5a7_Ocmo66Y7fVALFlbUovbS2I_LeJ4&callback=initMap">
                 </script>
-                <div id="floating-panel">
-                <b>Start: </b>
-                <select id="start">
-                    <option value="chicago, il">Chicagoo</option>
-                    <option value="st louis, mo">St Louiss</option>
-                </select>
-                <b>End: </b>
-                <select id="end">
-                    <option value="chicago, il">Chicago</option>
-                    <option value="st louis, mo">St Louiss</option>
-                </select>
-                </div>
             </body>
         </div>
     </div>
