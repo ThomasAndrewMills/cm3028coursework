@@ -268,14 +268,10 @@
                         <span class="st-border"></span>
 
 
-                        <?php
-                        $clubID = $_POST['clubID'];
-                        ?>
-
                         <br>
                         <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
                         <script>tinymce.init({selector: 'textarea'});</script>
-                        <form action="club.php<?php$_GET["id"];?>" method="post">
+                        <form action="club.php?id=<?php$_GET["id"];?>" method="post">
                             <input type="text" name="eventTitle">
                             <input type="date" name="date">
                             <textarea name="description"></textarea>
