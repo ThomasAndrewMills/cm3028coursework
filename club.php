@@ -279,7 +279,7 @@
                                 die('Connectfailed[' . $db->connect_error . ']');
                             }
                             // create a SQL query as a string
-                            $sql_query = "DELETE FROM events WHERE eventID='" . $eventID . "'";
+                            $sql_query = "DELETE FROM events WHERE eventID IN'" . $eventID . "'";
                             // execute the SQL query
                             if ($db->query($sql_query) === TRUE) {
                                 echo "Upload successful!";
@@ -426,7 +426,7 @@
                                 <p style='font-weight:bold;color:#707070;'>" . $row['description'] . "</p>
                             </div>
                         </div>
-                        <form action=\"club.php?id=" . $clubid . "&eventID=" . $row['eventID'] . "'\" method=\"post\" style=\"display:inline;\">
+                        <form action="club.php?id=" . $clubid . "&eventID=" . $row['eventID'] . "'\" method=\"post\" style=\"display:inline;\">
                                     <input style=\"margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;\" type=\"submit\" name=\"deleteEvent\" class=\"button\" value=\"deleteEvent\">
                         </form>
                     ");
