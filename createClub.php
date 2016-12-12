@@ -266,13 +266,11 @@
                     <div class="section-title">
                         <h1>Post an Article</h1>
                         <span class="st-border"></span>
-
-                        <form action="healthNews.php" method="post">
                             <br>
                             <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
                             <script>tinymce.init({selector: 'textarea'});</script>
-                            <form action="index.php" method="post">
 
+                            <form action="index.php" method="post">
                                 <b>Club name:</b>
                                 <input type="text" name="clubName" placeholder="Club name">
 
@@ -313,8 +311,6 @@
 
                                 <br><br><input name="createClub" type="submit" class="button">
                             </form>
-                        </form>
-
 
                     </div>
 
