@@ -266,7 +266,7 @@
                         }
                         if (isset($_POST["deleteEvent"])) {
                             $clubID = $_GET["id"];
-                            $eventID = $_GET['eventID'];
+                            $eventID = $_GET["eventID"];
                             // connect to server and select database
                             $db = new mysqli(
                                 "eu-cdbr-azure-west-a.cloudapp.net",
