@@ -183,6 +183,7 @@
 
 	#floating-panel	{
 		position: fixed;
+		padding-top: 0%;
 	}
 
 
