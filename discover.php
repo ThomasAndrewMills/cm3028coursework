@@ -293,7 +293,7 @@
                     <option value="57.062477, -2.128828">Portlethen Primary</option>
                     <option value="57.058333, -2.147654">Portlethen Moss</option>
                     <option value="57.068889, -2.107275">Findon</option>
-
+                    <option value="57.036203, -2.147854">Newtonhill</option>
                 </select>
                 <b>End: </b>
                 <select id="end">
@@ -310,6 +310,7 @@
                     <option value="57.062477, -2.128828">Portlethen Primary</option>
                     <option value="57.058333, -2.147654">Portlethen Moss</option>
                     <option value="57.068889, -2.107275">Findon</option>
+                    <option value="57.036203, -2.147854">Newtonhill</option>
                 </select>
             </div>
         </div>
