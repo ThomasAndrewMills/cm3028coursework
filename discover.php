@@ -275,7 +275,7 @@
 <!-- /HEADER -->
 
 
-<div id="floating-panel">
+<div id="floating-panel" style="position:absolute;">
                 <b>Start: </b>
                 <select id="start">
                     <option value="chicago, il">Chicagoo</option>
