@@ -84,9 +84,12 @@
                         if (isset($_POST["logout"])) {
                             session_destroy();
                         }
+
                         ini_set('display_errors', 1);
                         ini_set('display_startup_errors', 1);
                         error_reporting(E_ALL);
+
+
                         if (isset($_SESSION['loginStatus'])) {
                             if ($_SESSION['loginStatus'] === TRUE) {
                                 //check the email and password
@@ -105,25 +108,34 @@
                                 $sql_query = "SELECT * FROM users WHERE emailAddress='" . $_SESSION['emailAddress'] . "' AND password='" . $_SESSION['password'] . "' LIMIT 1";
                                 // execute the SQL query
                                 $result = $db->query($sql_query);
+
                                 $rowsFound = $result->num_rows;
+
                                 while ($row = $result->fetch_array()) {
                                     // print out fields from row of data
                                     $_SESSION['displayName'] = $row['displayName'];
                                 }
+
                                 if ($rowsFound === 1) {
+
                                     $_SESSION['loginStatus'] = TRUE;
                                 }
+
                                 if ($rowsFound === 0) {
                                     $_SESSION['loginStatus'] = FALSE;
                                 }
+
                                 $result->close();
                                 // close connection to database
                                 $db->close();
                             }
                         }
+
+
                         if (isset($_POST["signin"])) {
                             $_SESSION['emailAddress'] = $_POST["email"];
                             $_SESSION['password'] = $_POST["password"];
+
                             //check the email and password
                             // connect to server and select database
                             $db = new mysqli(
@@ -140,21 +152,28 @@
                             $sql_query = "SELECT * FROM users WHERE emailAddress='" . $_SESSION['emailAddress'] . "' AND password='" . $_SESSION['password'] . "' LIMIT 1";
                             // execute the SQL query
                             $result = $db->query($sql_query);
+
                             $rowsFound = $result->num_rows;
+
                             while ($row = $result->fetch_array()) {
                                 // print out fields from row of data
                                 $_SESSION['displayName'] = $row['displayName'];
                             }
+
                             if ($rowsFound === 1) {
+
                                 $_SESSION['loginStatus'] = TRUE;
                             }
+
                             if ($rowsFound === 0) {
                                 $_SESSION['loginStatus'] = FALSE;
                             }
+
                             $result->close();
                             // cl ose connection to database
                             $db->close();
                         }
+
                         if (isset($_SESSION['loginStatus'])) {
                             //if user is logged in display username
                             if ($_SESSION['loginStatus'] === TRUE) {
@@ -168,12 +187,16 @@
                         } else {
                             echo('<li style="margin: 14px;"><b>' . "YOU ARE NOT LOGGED IN" . '</b></li>');
                         }
+
+
                         //if the signup form in submitted from createUser.php
                         if (isset($_POST["signup"])) {
                             $name = $_POST["name"];
                             $password = $_POST["password"];
                             $emailAddress = $_POST["emailAddress"];
                             $displayName = $_POST["displayName"];
+
+
                             // connect to server and select database
                             $db = new mysqli(
                                 "eu-cdbr-azure-west-a.cloudapp.net",
@@ -194,6 +217,7 @@
                             } else {
                                 echo "Error: " . $sql_query . "<br>" . $db->error;
                             }
+
                             $db->close();
                         }
                         ?>
@@ -215,6 +239,7 @@
                                 </form>
                                 <?php
                             }
+
                             ?>
                         </li>
                     </ul>
@@ -236,12 +261,15 @@
                         ini_set('display_errors', 1);
                         ini_set('display_startup_errors', 1);
                         error_reporting(E_ALL);
+
+
                         $clubID = 0;
                         if (isset($_POST["addEvent"])) {
                             $clubID = $_POST["clubID"];
                             $eventDate = $_POST["date"];
                             $eventTitle = $_POST["title"];
                             $eventDescription = $_POST["description"];
+
                             // connect to server and select database
                             $db = new mysqli(
                                 "eu-cdbr-azure-west-a.cloudapp.net",
@@ -256,14 +284,17 @@
                             // create a SQL query as a string
                             $sql_query = "INSERT INTO events (date, title, description, clubID)
                                                           VALUES ('$eventDate','$eventTitle','$eventDescription','$clubID')";
+
                             // execute the SQL query
                             if ($db->query($sql_query) === TRUE) {
                                 echo "Upload successful!";
                             } else {
                                 echo "Error: " . $sql_query . "<br>" . $db->error;
                             }
+
                             $db->close();
                         }
+
                         if (isset($_POST["deleteEvent"])) {
                             $clubID = $_GET["id"];
                             $eventID = $_POST['eventID'];
@@ -280,15 +311,22 @@
                             }
                             // create a SQL query as a string
                             $sql_query = "DELETE FROM events WHERE eventID='" . $eventID . "'";
+
                             // execute the SQL query
                             if ($db->query($sql_query) === TRUE) {
                                 echo "Upload successful!";
                             } else {
                                 echo "Error: " . $sql_query . "<br>" . $db->error;
                             }
+
                             $db->close();
                         }
+
+
+
                         $clubid = $_GET["id"];
+
+
                         // connect to server and select database
                         $db = new mysqli(
                             "eu-cdbr-azure-west-a.cloudapp.net",
@@ -304,6 +342,7 @@
                         $sql_query = "SELECT * FROM clubs WHERE clubID = " . $clubid . "";
                         // execute the SQL query
                         $result = $db->query($sql_query);
+
                         //$rowsFound = $result->num_rows;
                         $about = "";
                         $activity = "";
@@ -332,10 +371,18 @@
 
 
                 <?php
+
                 echo('
                 <div id="post-carousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         ');
+
+
+
+
+
+
+
                 // connect to server and select database
                 $db = new mysqli(
                     "eu-cdbr-azure-west-a.cloudapp.net",
@@ -351,10 +398,13 @@
                 $sql_query = "SELECT * FROM media;";
                 // execute the SQL query
                 $result = $db->query($sql_query);
+
                 //$rowsFound = $result->num_rows;
                 $counter = 0;
                 while ($row = $result->fetch_array()) {
                     // print out fields from row of data
+
+
                     if($counter ===0){
                         echo('<div class="item active">
                                <img src="get_image.php?mediaID=' . $row['mediaID'] .'" alt="' . $row['caption'] . '">
@@ -366,12 +416,18 @@
                     }
                     $counter = $counter + 1;
                 }
+
+
+
                 echo('  <a class="post-carousel-left" href="#post-carousel" data-slide="prev"><i
                                     class="fa fa-angle-left"></i></a>
                         <a class="post-carousel-right" href="#post-carousel" data-slide="next"><i
                                     class="fa fa-angle-right"></i></a>
                     </div>
                 </div>');
+
+
+
                 ?>
 
 
@@ -380,6 +436,7 @@
 
                 <?php
                 //get and display events
+
                 echo("<div>
                     <h3>About the club</h3>
                     <p>" . $about . "</p></div>");
@@ -396,6 +453,7 @@
 
                 <h3 style="margin-top: 90px;">Upcoming events</h3>
                 <?php
+
                 // connect to server and select database
                 $db = new mysqli(
                     "eu-cdbr-azure-west-a.cloudapp.net",
@@ -411,7 +469,9 @@
                 $sql_query = "SELECT * FROM events WHERE clubID = " . $clubid . "";
                 // execute the SQL query
                 $result = $db->query($sql_query);
+
                 //$rowsFound = $result->num_rows;
+
                 while ($row = $result->fetch_array()) {
                     // print out fields from row of data
                     echo("
@@ -427,14 +487,14 @@
                             </div>
                         </div>
                         <br>
-                        </div>
                         <form action=\"club.php?id=" . $clubid . "&eventID=" . $row['eventID'] . "'\" method=\"post\" style=\"display:inline;\">
-                                    <input style=\"margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;\" type=\"submit\" name=\"deleteEvent\" class=\"button\" value=\"deleteEvent\">
+                                <input style=\"margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;\" type=\"submit\" name=\"deleteEvent\" class=\"button\" value=\"deleteEvent\">
                         </form>
                     ");
                 }
-                echo('
+                echo('</div>
                     <div style=\'display: inline-block;width:auto;float:left;max-width: 400px;margin-top:150px;\'>');
+
                 if (isset($_SESSION['emailAddress'])) {
                     echo('<a href="#">
                               <form action="club.php?id=' . $clubid . '" method="post" style="display:inline;">
@@ -451,6 +511,7 @@
                           </form>
                           ');
                 }
+
                 echo("
                 
             
