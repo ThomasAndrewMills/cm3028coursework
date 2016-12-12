@@ -250,6 +250,48 @@
                         }
 
 
+                        //if the signup form in submitted from createUser.php
+                        if (isset($_POST["createClub"])) {
+                            $phoneNumber            = $_POST["phoneNumber"];
+                            $contactName            = $_POST["contactName"];
+                            $website                = $_POST["website"];
+                            $meetingPlaceInfo       = $_POST["meetingPlaceInfo"];
+                            $contactEmailAddress    = $_POST["contactEmailAddress"];
+                            $activity               = $_POST["activity"];
+                            $genre                  = $_POST["genre"];
+                            $aboutClub              = $_POST["aboutClub"];
+                            $clubName               = $_POST["clubName"];
+
+
+
+
+
+
+                            // connect to server and select database
+                            $db = new mysqli(
+                                "eu-cdbr-azure-west-a.cloudapp.net",
+                                "bd2505ec24d031",
+                                "a0a7a671",
+                                "goportlethendb"
+                            );
+                            // test if connection was established, and print any errors
+                            if ($db->connect_errno) {
+                                die('Connectfailed[' . $db->connect_error . ']');
+                            }
+                            // create a SQL query as a string
+                            $sql_query = "INSERT INTO clubs (name, about, genre, activity, contactEmailAddress, meetingPlaceInfo, website, contactName, phoneNumber)
+                                          VALUES ('$clubName','$aboutClub','$genre','$activity','$contactEmailAddress','$meetingPlaceInfo','$website','$contactName','$phoneNumber')";
+                            // execute the SQL query
+                            if ($db->query($sql_query) === TRUE) {
+                                echo "Club creation successful!";
+                            } else {
+                                echo "Error: " . $sql_query . "<br>" . $db->error;
+                            }
+
+                            $db->close();
+                        }
+
+
                         ?>
                         <li>
 
