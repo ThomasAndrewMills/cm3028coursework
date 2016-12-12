@@ -182,7 +182,7 @@
 	}
 
 	#floating-panel	{
-		position: fixed;
+		position: inherit;
 		padding-top: 0%;
 	}
 
