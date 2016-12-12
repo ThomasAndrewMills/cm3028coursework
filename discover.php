@@ -378,7 +378,7 @@
             <div class="col-sm-4 contact-info">
                 <p class="contact-content">Lorem ipssum dolor sit amet, consectetur adipisicing elit. Quae voluptatum dolorum, possimus tenetur pariatur officia, quo commodi autem doloribus vero rerum aspernatur quidem temporibus.</p>
                 <p class="st-phone"><i class="fa fa-mobile"></i> <strong>+00 123-456-789</strong></p>
-                <p class="st-email"><i class="fa fa-envelope-o"></i> <strong>email@yourdomain.com</strong></p>
+                <p class="st-email"><i class="fa fa-envelope-o"></i> <strong>goportlethen@email.com</strong></p>
             </div>
         </div>
     </div>
