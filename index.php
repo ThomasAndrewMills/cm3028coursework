@@ -116,6 +116,8 @@
                         error_reporting(E_ALL);
 
 
+
+
                         if (isset($_SESSION['loginStatus'])) {
                             if ($_SESSION['loginStatus'] === TRUE) {
                                 //check the email and password
@@ -246,6 +248,8 @@
 
                             $db->close();
                         }
+
+
                         ?>
                         <li>
 
@@ -485,6 +489,9 @@
                 <div class="section-title">
                     <h1>Clubs</h1>
                     <span class="st-border"></span>
+                    <form action="createClub.php" style="margin-top:10px;">
+                        <input style="font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" value="Create Club" class="button">
+                    </form>
                 </div>
             </div>
 
