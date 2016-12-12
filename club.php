@@ -262,6 +262,37 @@
                         ini_set('display_startup_errors', 1);
                         error_reporting(E_ALL);
 
+
+
+                        if (isset($_POST["deleteEvent"])) {
+                            $clubID = $_GET["id"];
+                            $eventID = $_GET["eventID"];
+                            // connect to server and select database
+                            $db = new mysqli(
+                                "eu-cdbr-azure-west-a.cloudapp.net",
+                                "bd2505ec24d031",
+                                "a0a7a671",
+                                "goportlethendb"
+                            );
+                            // test if connection was established, and print any errors
+                            if ($db->connect_errno) {
+                                die('Connectfailed[' . $db->connect_error . ']');
+                            }
+                            // create a SQL query as a string
+                            $sql_query = "DELETE FROM events WHERE eventID='" . $eventID . "'";
+
+                            // execute the SQL query
+                            if ($db->query($sql_query) === TRUE) {
+                                echo "Upload successful!";
+                            } else {
+                                echo "Error: " . $sql_query . "<br>" . $db->error;
+                            }
+
+                            $db->close();
+                        }
+
+
+
                         $clubid = $_GET["id"];
 
 
@@ -314,6 +345,7 @@
                 <div id="post-carousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         ');
+
 
 
 
@@ -422,6 +454,9 @@
                             <div style='float:left;'>
                                 <p style='font-weight:bold;color:#707070;'>" . $row['about'] . "</p>
                             </div>
+                            <form action=\"club.php?id=" . $clubid . "&eventID=" . $row['eventID'] . "'\" method=\"post\" style=\"display:inline;\">
+                                    <input style=\"margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;\" type=\"submit\" name=\"deleteEvent\" class=\"button\" value=\"Delete Event\">
+                            </form>
                         </div>
                     ");
                 }
@@ -439,11 +474,9 @@
                                    Edit Club
                               </div>
                           </a>
-                          <a href="addEvent.php">
-                              <div style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;padding-top:9px;padding-bottom:9px;" class="button">
-                                   Add event
-                              </div>
-                          </a>
+                          <form action="addEvent.php?id=' . $clubid . '" method="post" style="display:inline;">
+                                <input type="hidden" name="articalID" id="hiddenField" value="' . $_GET["id"] . '" />
+                          </form>
                           ');
                 }
 
