@@ -277,7 +277,7 @@
 
 
 <!-- map -->
-<section id="map" style="height:500px;">
+<section id="map" style="height:1100px;">
     <div class="container">
         <div id="floating-panel">
             <b>Start: </b>
