@@ -274,7 +274,7 @@
                         <script>tinymce.init({selector: 'textarea'});</script>
                         <form action="club.php" method="post">
                             <input type="hidden" value="<?php echo($_GET["id"]);?>" name="clubID" />
-                            <input type="text" name="eventTitle">
+                            <input type="text" name="title">
                             <input type="date" name="date">
                             <textarea name="description"></textarea>
                             <input name="addEvent" type="submit" class="button" value="Submit">
