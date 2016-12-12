@@ -271,17 +271,16 @@
                         <?php
                         $clubID = $_POST['clubID'];
                         ?>
-                        <form action="healthNews.php" method="post">
-                            <br>
-                            <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-                            <script>tinymce.init({selector: 'textarea'});</script>
-                            <form action="club.php?" method="post">
-                                <input type="hidden" name="clubID" id="hiddenField" value="<?php $clubID ?>" />
-                                <input type="text" name="eventTitle">
-                                <input type="date" name="date">
-                                <textarea name="description"></textarea>
-                                <input name="addEvent" type="submit" class="button" value="Submit">
-                            </form>
+
+                        <br>
+                        <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+                        <script>tinymce.init({selector: 'textarea'});</script>
+                        <form action="club.php" method="post">
+                            <input type="hidden" name="clubID" id="hiddenField" value="<?php $clubID ?>" />
+                            <input type="text" name="eventTitle">
+                            <input type="date" name="date">
+                            <textarea name="description"></textarea>
+                            <input name="addEvent" type="submit" class="button" value="Submit">
                         </form>
                     </div>
                 </div>
