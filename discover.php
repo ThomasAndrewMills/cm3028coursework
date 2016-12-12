@@ -287,7 +287,7 @@
                 <b>Start: </b>
                 <select id="start">
                     <option value="chicago, il">Chicago</option>
-                    <option value="st louis, mo">St Louis</option>
+                    <option value="st louis, mo">St Louiss</option>
                 </select>
                 <b>End: </b>
                 <select id="end">
