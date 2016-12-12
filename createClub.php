@@ -286,7 +286,7 @@
                                 -->
 
                                 <br><br><b>Genre.</b>
-                                <select>
+                                <select name="genre">
                                     <option value="Competitive">Competitive</option>
                                     <option value="Exercise">Exercise</option>
                                 </select>
