@@ -1097,6 +1097,12 @@
 
 /* 17. MAP*/
 
+#panel	{
+	width: 100%;
+	padding-top: 5%;
+	padding-bottom: 3%;
+}
+
 #map{
 	background-color: #DCDCDC;
 	width: 100%;
