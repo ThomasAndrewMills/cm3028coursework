@@ -294,7 +294,7 @@
                     <div class="row">
                         <div class="col-sm-7">
                             <h1>Discover</h1>
-                            <h2>North Kincardineshireohtrughtrsuhgjdog</h2>
+                            <h2>North Kincardineshire</h2>
                             <p style="color:white;font-weight: normal;">Discover new places and plan your routes around Portlethen</p>
                         </div>
                     </div>
@@ -464,8 +464,27 @@
             </div>
             <div class="col-sm-6 col-md-3">
                 <div class="fun-fact text-center">
-                    <h3><span class="st-counter">0</span></h3>
-                    <p>Locations of Interest</p>
+                    <!--GETTING AMOUNT OF GENRES-->
+                    <?php
+                    // connect to server and select database
+                    $db = new mysqli(
+                        "eu-cdbr-azure-west-a.cloudapp.net",
+                        "bd2505ec24d031",
+                        "a0a7a671",
+                        "goportlethendb"
+                    );
+                    // test if connection was established, and print any errors
+                    if ($db->connect_errno) {
+                        die('Connectfailed[' . $db->connect_error . ']');
+                    }
+                    // create a SQL query as a string
+                    $sql_query = "SELECT * FROM healthnews;";
+                    // execute the SQL query
+                    $result = $db->query($sql_query);
+                    $rowsFound = $result->num_rows;
+                    echo('<h3><span class="st-counter">' . $rowsFound . '</span></h3>');
+                    ?>
+                    <p>Health Articles</p>
                 </div>
             </div>
         </div>
@@ -482,7 +501,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title">
-                    <h1>WHY WONT THIS WORK!!!</h1>
+                    <h1>Clubs</h1>
                     <span class="st-border"></span>
                     <form action="createClub.php" style="margin-top:10px;">
                         <input style="font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" value="Create Club" class="button">
