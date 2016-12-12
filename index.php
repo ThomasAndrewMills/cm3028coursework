@@ -284,6 +284,7 @@
 <!-- /HEADER -->
 
 
+
 <!-- SLIDER -->
 <section id="slider">
     <div id="home-carousel" class="carousel slide" data-ride="carousel">
