@@ -96,6 +96,32 @@
                     <a class="logo" href="index.php"><b style="font-size: 20px;">GOPORTLETHEN</b></a>
                 </div>
                 <div class="collapse navbar-collapse" id="st-navbar-collapse">
+                    <div id="floating-panel">
+                        <b>Start: </b>
+                        <select id="start">
+                            <option value="57.057814, -2.135943">Portlethen Academy</option>
+                            <option value="57.068341, -2.146797">Golf Course</option>
+                            <option value="57.057554, -2.108243">Portlethen Bay</option>
+                            <option value="57.063092, -2.139899">Asda Superstore</option>
+                            <option value="57.057750, -2.135994">Swimming pool</option>
+                            <option value="57.061551, -2.128097">Train Station</option>
+                            <option value="57.056754, -2.116575">Portlethen Village</option>
+                            <option value="57.062477, -2.128828">Portlethon Primary</option>
+                            <option value="57.068889, -2.107275">Findon</option>
+                        </select>
+                        <b>End: </b>
+                        <select id="end">
+                            <option value="57.057814, -2.135943">Portlethen Academy</option>
+                            <option value="57.068341, -2.146797">Golf Course</option>
+                            <option value="57.057554, -2.108243">Portlethen Bay</option>
+                            <option value="57.063092, -2.139899">Asda Superstore</option>
+                            <option value="57.057750, -2.135994">Swimming pool</option>
+                            <option value="57.061551, -2.128097">Train Station</option>
+                            <option value="57.056754, -2.116575">Portlethen Village</option>
+                            <option value="57.062477, -2.128828">Portlethon Primary</option>
+                            <option value="57.068889, -2.107275">Findon</option>
+                        </select>
+                    </div>
                     <ul class="nav navbar-nav navbar-left">
                         <li><a href="#clubs">Clubs</a></li>
                         <li><a href="discover.php">Discover</a></li>
@@ -271,29 +297,9 @@
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container -->
         </nav>
+
 </header>
 <!-- /HEADER -->
-
-<section id="panel" style="position: relative">
-    <div class="container">
-        <div class="row">
-            <div id="floating-panel" style="">
-            <body>
-                <b>Start: </b>
-                <select id="start">
-                    <option value="chicago, il">Chicagoo</option>
-                    <option value="st louis, mo">St Louiss</option>
-                </select>
-                <b>End: </b>
-                <select id="end">
-                    <option value="chicago, il">Chicago</option>
-                    <option value="st louis, mo">St Louiss</option>
-                </select>
-            </body>
-            </div>
-        </div>
-    </div>
-</section>
 
 
 <!-- map -->
@@ -301,18 +307,18 @@
     <div class="container">
         <div class="row">
             <body>
-                <div id="maptwo"></div>
-                <script>
-                function initMap()  {
+            <div id="maptwo"></div>
+            <script>
+                function initMap() {
                     var directionsService = new google.maps.DirectionsService;
                     var directionsDisplay = new google.maps.DirectionsRenderer;
-                    var map = new google.maps.Map(document.getElementById('map'),   {
-                        zoom: 7,
-                        center: {lat: 41.85, lng: -87.65}
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 15,
+                        center: {lat: 57.062009, lng: -2.129583}
                     });
                     directionsDisplay.setMap(map);
 
-                    var onChangeHandler = function()    {
+                    var onChangeHandler = function() {
                         calculateAndDisplayRoute(directionsService, directionsDisplay);
                     };
                     document.getElementById('start').addEventListener('change', onChangeHandler);
@@ -323,19 +329,19 @@
                     directionsService.route({
                         origin: document.getElementById('start').value,
                         destination: document.getElementById('end').value,
-                        travelMode: 'DRIVING'
-                    },  function(response, status)  {
-                        if(status ==='OK')   {
+                        travelMode: 'WALKING'
+                    }, function(response, status) {
+                        if (status === 'OK') {
                             directionsDisplay.setDirections(response);
-                        } else  {
+                        } else {
                             window.alert('Directions request failed due to ' + status);
                         }
                     });
                 }
-                </script>
-                <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF5a7_Ocmo66Y7fVALFlbUovbS2I_LeJ4&callback=initMap">
-                </script>
+            </script>
+            <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF5a7_Ocmo66Y7fVALFlbUovbS2I_LeJ4&callback=initMap">
+            </script>
             </body>
         </div>
     </div>
@@ -349,7 +355,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title">
-                    <h1>Contact us</h1>
+                    <h1>New3 Contact us</h1>
                     <span class="st-border"></span>
                 </div>
             </div>
