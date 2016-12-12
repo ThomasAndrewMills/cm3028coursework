@@ -182,18 +182,10 @@
 	}
 
 	#floating-panel	{
-		position: absolute;
-		top: 10px;
-		left: 25%;
-		z-index: 5;
-		padding: 5px;
-		border: 1px;
-		text-align: center;
 		padding-left: 10%;
 		padding-right: 10%;
 		padding-bottom: 10%;
 		padding-top: 10%;
-		line-height: 30px;
 	}
 
 
