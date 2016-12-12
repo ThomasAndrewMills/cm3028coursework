@@ -263,9 +263,9 @@
                         error_reporting(E_ALL);
 
 
-
+                        $clubID = 0;
                         if (isset($_POST["addEvent"])) {
-                            $clubID = $_GET["id"];
+                            $clubID = $_POST["clubID"];
                             $eventDate = $_POST["date"];
                             $eventTitle = $_POST["title"];
                             $eventDescription = $_POST["description"];
