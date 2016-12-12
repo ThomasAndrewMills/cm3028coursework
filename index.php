@@ -541,7 +541,7 @@
                             die('Connectfailed[' . $db->connect_error . ']');
                         }
                         // create a SQL query as a string
-                        $sql_query = "SELECT * FROM clubs";
+                        $sql_query = "SELECT clubs.genre, clubs.clubID, media.mediaURL, clubs.name FROM clubs, media, clubmedia WHERE clubs.clubID = clubmedia.clubID AND clubmedia.mediaID = media.mediaID";
                         // execute the SQL query
                         $result = $db->query($sql_query);
 
@@ -555,7 +555,7 @@
                                 <div class="col-md-4 col-sm-6 work-grid ' . $row['genre'] . '">
                                     <a href="club.php?id='. $row['clubID'] .'">
                                     <div class="portfolio-content">
-                                        <img class="img-responsive" src="cluster/images/works/tennis.jpg" alt="">
+                                        <img class="img-responsive" src="' . $row['mediaURL'] . '" alt="">
                                         <div class="portfolio-overlay">
                                             <br><br>' . $row['name'] . '<br>
                                         </div>
