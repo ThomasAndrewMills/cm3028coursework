@@ -282,7 +282,7 @@
                         $result = $db->query($sql_query);
 
                         //$rowsFound = $result->num_rows;
-                        $clubDescription = "";
+                        $about = "";
                         $activity = "";
                         $genre = "";
                         $meetingPlaceInfo = "";
@@ -292,7 +292,7 @@
                         while ($row = $result->fetch_array()) {
                             // print out fields from row of data
                             echo("<h1>" . $row['name'] . "</h1>");
-                            $clubDescription = $row['description'];
+                            $about = $row['about'];
                             $activity = $row['activity'];
                             $genre = $row['genre'];
                             $meetingPlaceInfo = $row['meetingPlaceInfo'];
@@ -376,7 +376,7 @@
 
                 echo("<div>
                     <h3>About the club</h3>
-                    <p>" . $clubDescription . "</p></div>");
+                    <p>" . $about . "</p></div>");
                 ?>
 
 
@@ -420,7 +420,7 @@
                                 <h5>" . $row['Date'] . "</h5>
                             </div>
                             <div style='float:left;'>
-                                <p style='font-weight:bold;color:#707070;'>" . $row['Description'] . "</p>
+                                <p style='font-weight:bold;color:#707070;'>" . $row['about'] . "</p>
                             </div>
                         </div>
                     ");
