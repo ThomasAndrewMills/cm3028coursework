@@ -273,21 +273,23 @@
         </nav>
 </header>
 <!-- /HEADER -->
+
 <section id="panel">
     <div class="container">
         <div class="row">
+            <div id="floating-panel" style="position:relative">
             <body>
-            <div id="floating-panel" style="">
-            <b>Start: </b>
-            <select id="start">
-                <option value="chicago, il">Chicagoo</option>
-                <option value="st louis, mo">St Louiss</option>
-            </select>
-            <b>End: </b>
-            <select id="end">
-                <option value="chicago, il">Chicago</option>
-                <option value="st louis, mo">St Louiss</option>
-            </select>
+                <b>Start: </b>
+                <select id="start">
+                    <option value="chicago, il">Chicagoo</option>
+                    <option value="st louis, mo">St Louiss</option>
+                </select>
+                <b>End: </b>
+                <select id="end">
+                    <option value="chicago, il">Chicago</option>
+                    <option value="st louis, mo">St Louiss</option>
+                </select>
+            </body>
             </div>
         </div>
     </div>
