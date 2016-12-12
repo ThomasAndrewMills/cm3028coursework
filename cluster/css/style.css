@@ -181,11 +181,6 @@
 		color: #fff;	
 	}
 
-	#map	{
-		height: 100%;
-		margin-bottom: 5px;
-	}
-
 	#floating-panel	{
 		position: absolute;
 		top: 10px;
@@ -1110,13 +1105,13 @@
 
 /* 17. MAP*/
 
-/*#map{
+#map{
 	background-color: #DCDCDC;
 	padding-left: 15%;
 	padding-right: 15%;
 	padding-top: 10%;
 	padding-bottom: 3%;
-}*/
+}
 
 #about .about-us{
 	padding-left: 15%;
