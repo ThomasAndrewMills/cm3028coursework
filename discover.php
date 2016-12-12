@@ -279,7 +279,7 @@
 
 
 <!-- map -->
-<section id="map" style="margin-bottom:700px;">
+<section id="map" style="height:700px;">
     <div class="container">
         <div class="row">
             <body>
