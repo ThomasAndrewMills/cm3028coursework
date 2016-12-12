@@ -263,10 +263,41 @@
                         error_reporting(E_ALL);
 
 
+                        $clubID = 0;
+                        if (isset($_POST["addEvent"])) {
+                            $clubID = $_POST["clubID"];
+                            $eventDate = $_POST["date"];
+                            $eventTitle = $_POST["title"];
+                            $eventDescription = $_POST["description"];
+
+                            // connect to server and select database
+                            $db = new mysqli(
+                                "eu-cdbr-azure-west-a.cloudapp.net",
+                                "bd2505ec24d031",
+                                "a0a7a671",
+                                "goportlethendb"
+                            );
+                            // test if connection was established, and print any errors
+                            if ($db->connect_errno) {
+                                die('Connectfailed[' . $db->connect_error . ']');
+                            }
+                            // create a SQL query as a string
+                            $sql_query = "INSERT INTO events (date, title, description, clubID)
+                                                          VALUES ('$eventDate','$eventTitle','$eventDescription','$clubID')";
+
+                            // execute the SQL query
+                            if ($db->query($sql_query) === TRUE) {
+                                echo "Upload successful!";
+                            } else {
+                                echo "Error: " . $sql_query . "<br>" . $db->error;
+                            }
+
+                            $db->close();
+                        }
 
                         if (isset($_POST["deleteEvent"])) {
                             $clubID = $_GET["id"];
-                            $eventID = $_GET["eventID"];
+                            $eventID = $_POST['eventID'];
                             // connect to server and select database
                             $db = new mysqli(
                                 "eu-cdbr-azure-west-a.cloudapp.net",
@@ -444,20 +475,21 @@
                 while ($row = $result->fetch_array()) {
                     // print out fields from row of data
                     echo("
-                        <div style='margin-left:10px;margin-right:10px;background-color: #5bc0de;'>
+                        <div style='margin-left:10px;margin-right:10px;'>
                             <div style='float:left;display: display: inline;'>
-                                <h5>" . $row['Title'] . "</h5>
+                                <h5>" . $row['title'] . "</h5>
                             </div>
                             <div style='float:right;display: display: inline;'>
-                                <h5>" . $row['Date'] . "</h5>
+                                <h5>" . $row['date'] . "</h5>
                             </div>
                             <div style='float:left;'>
-                                <p style='font-weight:bold;color:#707070;'>" . $row['about'] . "</p>
+                                <p style='font-weight:bold;color:#707070;'>" . $row['description'] . "</p>
                             </div>
-                            <form action=\"club.php?id=" . $clubid . "&eventID=" . $row['eventID'] . "'\" method=\"post\" style=\"display:inline;\">
-                                    <input style=\"margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;\" type=\"submit\" name=\"deleteEvent\" class=\"button\" value=\"Delete Event\">
-                            </form>
                         </div>
+                        <br>
+                        <form action=\"club.php?id=" . $clubid . "&eventID=" . $row['eventID'] . "'\" method=\"post\" style=\"display:inline;\">
+                                    <input style=\"margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;\" type=\"submit\" name=\"deleteEvent\" class=\"button\" value=\"deleteEvent\">
+                        </form>
                     ");
                 }
                 echo('</div>
@@ -475,7 +507,7 @@
                               </div>
                           </a>
                           <form action="addEvent.php?id=' . $clubid . '" method="post" style="display:inline;">
-                                <input type="hidden" name="articalID" id="hiddenField" value="' . $_GET["id"] . '" />
+                                <input style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" name="addEvent" class="button" value="Add Event">
                           </form>
                           ');
                 }
