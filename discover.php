@@ -295,6 +295,8 @@
                     <option value="st louis, mo">St Louiss</option>
                 </select>
                 </div>
+            </body>
+            <body>
                 <div id="maptwo"></div>
                 <script>
                 function initMap()  {
