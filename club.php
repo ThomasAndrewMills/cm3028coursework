@@ -274,7 +274,7 @@
                                 "a0a7a671",
                                 "goportlethendb"
                             );
-                            // test if connection was established, and print any errors
+                            // test if connection was estlablished, and print any errors
                             if ($db->connect_errno) {
                                 die('Connectfailed[' . $db->connect_error . ']');
                             }
