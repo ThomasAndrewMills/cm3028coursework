@@ -779,12 +779,12 @@
 /* 13. CONTACT */
 
 	#contact{
-		padding-top: 130px;
-		padding-bottom: 120px;
+		padding-top: 1%;
+		padding-bottom: 1%;
 	}
 	
 	.contact-info .contact-content{
-		margin-bottom: 30px;
+		margin-bottom: 10px;
 	}
 
 	.contact-info p{
