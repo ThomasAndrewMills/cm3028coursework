@@ -533,7 +533,7 @@
 
                     echo('<h3><span class="st-counter">' . $rowsFound . '</span></h3>');
                     ?>
-                    <p>Health Articles</p>
+                    <p>test Articles</p>
                 </div>
             </div>
         </div>
