@@ -171,7 +171,7 @@
                             }
 
                             $result->close();
-                            // cl ose connection to database
+                            // close connection to database
                             $db->close();
                         }
 

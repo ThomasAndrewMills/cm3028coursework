@@ -341,9 +341,9 @@
                 <div class="carousel-caption container">
                     <div class="row">
                         <div class="col-sm-7">
-                            <h1>Sports in your area</h1>
-                            <h2>stay active</h2>
-                            <p style="color:white;font-weight: normal;">Discover sports and clubs in the Portlethen Community</p>
+                            <h1>Sports in your Area</h1>
+                            <h2>Stay Active</h2>
+                            <p style="color:white;font-weight: normal;">Discover Sports and clubs in the Portlethen Community</p>
                         </div>
                     </div>
                 </div>
@@ -352,8 +352,8 @@
                 <div class="carousel-caption container">
                     <div class="row">
                         <div class="col-sm-7">
-                            <h1>health and wellbeing</h1>
-                            <h2>be healthy</h2>
+                            <h1>Health and Wellbeing</h1>
+                            <h2>Be Healthy</h2>
                             <p style="color:white;font-weight: normal;">Discover the latest news and information to ensure a healthy lifestyle</p>
                         </div>
                     </div>
