@@ -1098,6 +1098,7 @@
 /* 17. MAP*/
 
 #panel	{
+	width: 100%;
 	position: relative;
 	padding-top: 5%;
 	padding-bottom: 2%;
