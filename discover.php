@@ -273,47 +273,25 @@
         </nav>
 </header>
 <!-- /HEADER -->
-
-
-<<<<<<< HEAD
-<div id="floating-panel">
-    <b>Start: </b>
-    <select id="start">
-        <option value="57.057814, -2.135943">Portlethen Academy</option>
-        <option value="57.068341, -2.146797">Golf Course</option>
-        <option value="57.057554, -2.108243">Portlethen Bay</option>
-        <option value="57.063092, -2.139899">Asda Superstore</option>
-        <option value="57.057750, -2.135994">Swimming pool</option>
-        <option value="57.061551, -2.128097">Train Station</option>
-        <option value="57.056754, -2.116575">Portlethen Village</option>
-        <option value="57.062477, -2.128828">Portlethon Primary</option>
-        <option value="57.068889, -2.107275">Findon</option>
-    </select>
-    <b>End: </b>
-    <select id="end">
-        <option value="57.057814, -2.135943">Portlethen Academy</option>
-        <option value="57.068341, -2.146797">Golf Course</option>
-        <option value="57.057554, -2.108243">Portlethen Bay</option>
-        <option value="57.063092, -2.139899">Asda Superstore</option>
-        <option value="57.057750, -2.135994">Swimming pool</option>
-        <option value="57.061551, -2.128097">Train Station</option>
-        <option value="57.056754, -2.116575">Portlethen Village</option>
-        <option value="57.062477, -2.128828">Portlethon Primary</option>
-        <option value="57.068889, -2.107275">Findon</option>
-=======
-<div id="floating-panel" style="">
-    <b>Start: </b>
-    <select id="start">
-        <option value="chicago, il">Chicagoo</option>
-        <option value="st louis, mo">St Louiss</option>
-    </select>
-    <b>End: </b>
-    <select id="end">
-        <option value="chicago, il">Chicago</option>
-        <option value="st louis, mo">St Louiss</option>
->>>>>>> origin/master
-    </select>
-</div>
+<section id="panel">
+    <div class="container">
+        <div class="row">
+            <body>
+            <div id="floating-panel" style="">
+            <b>Start: </b>
+            <select id="start">
+                <option value="chicago, il">Chicagoo</option>
+                <option value="st louis, mo">St Louiss</option>
+            </select>
+            <b>End: </b>
+            <select id="end">
+                <option value="chicago, il">Chicago</option>
+                <option value="st louis, mo">St Louiss</option>
+            </select>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <!-- map -->
@@ -323,38 +301,38 @@
             <body>
                 <div id="maptwo"></div>
                 <script>
-                    function initMap() {
-                        var directionsService = new google.maps.DirectionsService;
-                        var directionsDisplay = new google.maps.DirectionsRenderer;
-                        var map = new google.maps.Map(document.getElementById('map'), {
-                            zoom: 15,
-                            center: {lat: 57.062009, lng: -2.129583}
-                        });
-                        directionsDisplay.setMap(map);
+                function initMap()  {
+                    var directionsService = new google.maps.DirectionsService;
+                    var directionsDisplay = new google.maps.DirectionsRenderer;
+                    var map = new google.maps.Map(document.getElementById('map'),   {
+                        zoom: 7,
+                        center: {lat: 41.85, lng: -87.65}
+                    });
+                    directionsDisplay.setMap(map);
 
-                        var onChangeHandler = function() {
-                            calculateAndDisplayRoute(directionsService, directionsDisplay);
-                        };
-                        document.getElementById('start').addEventListener('change', onChangeHandler);
-                        document.getElementById('end').addEventListener('change', onChangeHandler);
-                    }
+                    var onChangeHandler = function()    {
+                        calculateAndDisplayRoute(directionsService, directionsDisplay);
+                    };
+                    document.getElementById('start').addEventListener('change', onChangeHandler);
+                    document.getElementById('end').addEventListener('change', onChangeHandler);
+                }
 
-                    function calculateAndDisplayRoute(directionsService, directionsDisplay) {
-                        directionsService.route({
-                            origin: document.getElementById('start').value,
-                            destination: document.getElementById('end').value,
-                            travelMode: 'WALKING'
-                        }, function(response, status) {
-                            if (status === 'OK') {
-                                directionsDisplay.setDirections(response);
-                            } else {
-                                window.alert('Directions request failed due to ' + status);
-                            }
-                        });
-                    }
+                function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+                    directionsService.route({
+                        origin: document.getElementById('start').value,
+                        destination: document.getElementById('end').value,
+                        travelMode: 'DRIVING'
+                    },  function(response, status)  {
+                        if(status ==='OK')   {
+                            directionsDisplay.setDirections(response);
+                        } else  {
+                            window.alert('Directions request failed due to ' + status);
+                        }
+                    });
+                }
                 </script>
                 <script async defer
-                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF5a7_Ocmo66Y7fVALFlbUovbS2I_LeJ4&callback=initMap">
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF5a7_Ocmo66Y7fVALFlbUovbS2I_LeJ4&callback=initMap">
                 </script>
             </body>
         </div>
