@@ -279,7 +279,6 @@
 <!-- map -->
 <section id="map" style="height:900px;">
     <div class="container">
-        </div>
         <div class="row">
             <div id="floating-panel">
                 <b>Start: </b>
@@ -306,6 +305,7 @@
                     <option value="57.062477, -2.128828">Portlethon Primary</option>
                     <option value="57.068889, -2.107275">Findon</option>
                 </select>
+            </div>
             <body>
             <div id="maptwo"></div>
             <script>
