@@ -324,7 +324,7 @@
 
 
 
-                        $clubid = $_GET["id"];
+                        $clubID = $_GET["id"];
 
 
                         // connect to server and select database
@@ -339,7 +339,7 @@
                             die('Connectfailed[' . $db->connect_error . ']');
                         }
                         // create a SQL query as a string
-                        $sql_query = "SELECT * FROM clubs WHERE clubID = " . $clubid . "";
+                        $sql_query = "SELECT * FROM clubs WHERE clubID = " . $clubID . "";
                         // execute the SQL query
                         $result = $db->query($sql_query);
 
@@ -466,7 +466,7 @@
                     die('Connectfailed[' . $db->connect_error . ']');
                 }
                 // create a SQL query as a string
-                $sql_query = "SELECT * FROM events WHERE clubID = " . $clubid . "";
+                $sql_query = "SELECT * FROM events WHERE clubID = " . $clubID . "";
                 // execute the SQL query
                 $result = $db->query($sql_query);
 
@@ -487,18 +487,17 @@
                             </div>
                         </div>
                         <br>
-                        </div>
-                        <form action=\"club.php?id=" . $clubid . "&eventID=" . $row['eventID'] . "'\" method=\"post\" style=\"display:inline;\">
-                                    <input style=\"margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;\" type=\"submit\" name=\"deleteEvent\" class=\"button\" value=\"deleteEvent\">
+                        <form action=\"club.php?id=" . $clubID . "&eventID=" . $row['eventID'] . "'\" method=\"post\" style=\"display:inline;\">
+                                <input style=\"margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;\" type=\"submit\" name=\"deleteEvent\" class=\"button\" value=\"deleteEvent\">
                         </form>
                     ");
                 }
-                echo('
+                echo('</div>
                     <div style=\'display: inline-block;width:auto;float:left;max-width: 400px;margin-top:150px;\'>');
 
                 if (isset($_SESSION['emailAddress'])) {
                     echo('<a href="#">
-                              <form action="club.php?id=' . $clubid . '" method="post" style="display:inline;">
+                              <form action="club.php?id=' . $clubID . '" method="post" style="display:inline;">
                                     <input style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" name="joinClub" class="button" value="Join Club">
                               </form>
                           </a>
@@ -507,7 +506,7 @@
                                    Edit Club
                               </div>
                           </a>
-                          <form action="addEvent.php?id=' . $clubid . '" method="post" style="display:inline;">
+                          <form action="addEvent.php?id=' . $clubID . '" method="post" style="display:inline;">
                                 <input style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" name="addEvent" class="button" value="Add Event">
                           </form>
                           ');
