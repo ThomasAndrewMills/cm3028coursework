@@ -182,7 +182,7 @@
 	}
 
 	#floating-panel	{
-		position: absolute;
+		position: relative;
 		padding-bottom: 5px;
 		padding-top: 0px;
 	}
