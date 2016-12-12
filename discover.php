@@ -381,31 +381,6 @@
                 <p class="st-phone"><i class="fa fa-mobile"></i> <strong>+00 123-456-789</strong></p>
                 <p class="st-email"><i class="fa fa-envelope-o"></i> <strong>email@yourdomain.com</strong></p>
                 <p class="st-website"><i class="fa fa-globe"></i> <strong>www.yourdomain.com</strong></p>
-
-            </div>
-            <div class="col-sm-7 col-sm-offset-1">
-                <form action="cluster/php/send-contact.php" class="contact-form" name="contact-form" method="post">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <input type="text" name="name" required="required" placeholder="Name*">
-                        </div>
-                        <div class="col-sm-6">
-                            <input type="email" name="email" required="required" placeholder="Email*">
-                        </div>
-                        <div class="col-sm-6">
-                            <input type="text" name="subject" placeholder="Subject">
-                        </div>
-                        <div class="col-sm-6">
-                            <input type="text" name="website" placeholder="Website">
-                        </div>
-                        <div class="col-sm-12">
-                            <textarea name="message" required="required" cols="30" rows="7" placeholder="Message*"></textarea>
-                        </div>
-                        <div class="col-sm-12">
-                            <input type="submit" name="submit" value="Send Message" class="btn btn-send">
-                        </div>
-                    </div>
-                </form>
             </div>
         </div>
     </div>
@@ -419,8 +394,8 @@
             <!-- SOCIAL ICONS -->
             <div class="col-sm-6 col-sm-push-6 footer-social-icons">
                 <span>Follow us:</span>
-                <a href="https://www.facebook.com/Portlethen-Sports-Club-703745156314817/"><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
             </div>
             <!-- /SOCIAL ICONS -->
             <div class="col-sm-6 col-sm-pull-6 copyright">
