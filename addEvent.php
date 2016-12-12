@@ -272,7 +272,7 @@
                         <br>
                         <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
                         <script>tinymce.init({selector: 'textarea'});</script>
-                        <form action="club.php" method="post">
+                        <form action="club.php?=id=<?php echo($_GET["id"]);?>" method="post">
                             <input type="hidden" value="<?php echo($_GET["id"]);?>" name="clubID" />
                             <input type="text" name="title">
                             <input type="date" name="date">
