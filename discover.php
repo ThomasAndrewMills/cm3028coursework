@@ -373,9 +373,12 @@
                 <div class="section-title">
                     <h1>Contact us</h1>
                     <span class="st-border"></span>
-                    <p class="st-phone"><i class="fa fa-mobile"></i> <strong>+00 123-456-789</strong></p>
-                    <p class="st-email"><i class="fa fa-envelope-o"></i> <strong>goportlethen@email.com</strong></p>
-                 </div>
+                </div>
+            </div>
+            <div class="col-sm-4 contact-info">
+                <p class="st-phone"><i class="fa fa-mobile"></i> <strong>+00 123-456-789</strong></p>
+                <p class="st-email"><i class="fa fa-envelope-o"></i> <strong>goportlethen@email.com</strong></p>
+            </div>
         </div>
     </div>
 </section>
