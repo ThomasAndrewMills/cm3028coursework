@@ -426,7 +426,7 @@
                     ");
                 }
                 echo('</div>
-                    <div style=\'display: inline-block;width:auto;float:left;min-width:600px;max-width: 400px;margin-top:150px;\'>');
+                    <div style=\'display: inline-block;width:auto;float:left;max-width: 400px;margin-top:150px;\'>');
 
                 if (isset($_SESSION['emailAddress'])) {
                     echo('<a href="#">
