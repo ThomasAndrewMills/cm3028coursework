@@ -279,7 +279,7 @@
                                 die('Connectfailed[' . $db->connect_error . ']');
                             }
                             // create a SQL query as a string
-                            $sql_query = "DELETE FROM 'events' WHERE 'eventID' = '$eventID'";
+                            $sql_query = "DELETE FROM events WHERE eventID='" . $eventID . "'";
                             // execute the SQL query
                             if ($db->query($sql_query) === TRUE) {
                                 echo "Upload successful!";
