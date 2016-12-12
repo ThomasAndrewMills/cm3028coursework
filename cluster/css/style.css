@@ -1099,12 +1099,12 @@
 
 #panel	{
 	width: 100%;
-	position: relative;
 	padding-top: 5%;
 	padding-bottom: 2%;
 }
 
 #map{
+	padding-top: 10%;
 	background-color: #DCDCDC;
 	width: 100%;
 	padding-bottom: 3%;
