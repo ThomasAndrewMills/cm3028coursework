@@ -1,38 +1,10 @@
 <!DOCTYPE html>
-<html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
+
+    <meta charset="UTF-8">
+
     <title>Go Portlethen</title>
-
-    <style>
-
-        /* Always set the map height explicitly to define the size of the div
-         * element that contains the map. */
-        #map {
-            height: 70%;
-        }
-        /* Optional: Makes the sample page fill the window. */
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        #floating-panel {
-            position: absolute;
-            top: 10px;
-            left: 25%;
-            z-index: 5;
-            background-color: #fff;
-            padding: 5px;
-            border: 1px solid #999;
-            text-align: center;
-            font-family: 'Roboto','sans-serif';
-            line-height: 30px;
-            padding-left: 10px;
-        }
-    </style>
 
     <!-- Main CSS file -->
     <link rel="stylesheet" href="cluster/css/bootstrap.min.css" />
@@ -87,7 +59,6 @@
 </head>
 <body>
 
-
 <!-- PRELOADER -->
 <!--<div id="st-preloader">
     <div id="pre-status">
@@ -95,6 +66,7 @@
     </div>
 </div>-->
 <!-- /PRELOADER -->
+
 
 <!-- HEADER -->
 <header id="header">
@@ -263,7 +235,7 @@
                             }
                             // create a SQL query as a string
                             $sql_query = "INSERT INTO users (name, password, emailAddress,displayName)
-                                              VALUES ('$name', '$password', '$emailAddress','$displayName')";
+                                          VALUES ('$name', '$password', '$emailAddress','$displayName')";
                             // execute the SQL query
                             if ($db->query($sql_query) === TRUE) {
                                 echo "Signup successful!";
@@ -329,41 +301,54 @@
         <option value="57.068889, -2.107275">Findon</option>
     </select>
 </div>
-<div id="map"></div>
-<script>
-    function initMap() {
-        var directionsService = new google.maps.DirectionsService;
-        var directionsDisplay = new google.maps.DirectionsRenderer;
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 15,
-            center: {lat: 57.062009, lng: -2.129583}
-        });
-        directionsDisplay.setMap(map);
 
-        var onChangeHandler = function() {
-            calculateAndDisplayRoute(directionsService, directionsDisplay);
-        };
-        document.getElementById('start').addEventListener('change', onChangeHandler);
-        document.getElementById('end').addEventListener('change', onChangeHandler);
-    }
 
-    function calculateAndDisplayRoute(directionsService, directionsDisplay) {
-        directionsService.route({
-            origin: document.getElementById('start').value,
-            destination: document.getElementById('end').value,
-            travelMode: 'WALKING'
-        }, function(response, status) {
-            if (status === 'OK') {
-                directionsDisplay.setDirections(response);
-            } else {
-                window.alert('Directions request failed due to ' + status);
-            }
-        });
-    }
-</script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF5a7_Ocmo66Y7fVALFlbUovbS2I_LeJ4&callback=initMap">
-</script>
+<!-- map -->
+<section id="map" style="height:700px;">
+    <div class="container">
+        <div class="row">
+            <body>
+            <div id="maptwo"></div>
+            <script>
+                function initMap() {
+                    var directionsService = new google.maps.DirectionsService;
+                    var directionsDisplay = new google.maps.DirectionsRenderer;
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 15,
+                        center: {lat: 57.062009, lng: -2.129583}
+                    });
+                    directionsDisplay.setMap(map);
+
+                    var onChangeHandler = function() {
+                        calculateAndDisplayRoute(directionsService, directionsDisplay);
+                    };
+                    document.getElementById('start').addEventListener('change', onChangeHandler);
+                    document.getElementById('end').addEventListener('change', onChangeHandler);
+                }
+
+                function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+                    directionsService.route({
+                        origin: document.getElementById('start').value,
+                        destination: document.getElementById('end').value,
+                        travelMode: 'WALKING'
+                    }, function(response, status) {
+                        if (status === 'OK') {
+                            directionsDisplay.setDirections(response);
+                        } else {
+                            window.alert('Directions request failed due to ' + status);
+                        }
+                    });
+                }
+            </script>
+            <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF5a7_Ocmo66Y7fVALFlbUovbS2I_LeJ4&callback=initMap">
+            </script>
+            </body>
+        </div>
+    </div>
+</section>
+<!-- /map -->
+
 
 <!-- CONTACT -->
 <section id="contact">
@@ -371,12 +356,12 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title">
-                    <h1>Contact us</h1>
+                    <h1>New Contact us</h1>
                     <span class="st-border"></span>
                 </div>
             </div>
             <div class="col-sm-4 contact-info">
-                <p class="contact-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae voluptatum dolorum, possimus tenetur pariatur officia, quo commodi autem doloribus vero rerum aspernatur quidem temporibus.</p>
+                <p class="contact-content">Lorem ipssum dolor sit amet, consectetur adipisicing elit. Quae voluptatum dolorum, possimus tenetur pariatur officia, quo commodi autem doloribus vero rerum aspernatur quidem temporibus.</p>
                 <p class="st-address"><i class="fa fa-map-marker"></i> <strong>E71 8th Ave, New York NY 21001, US</strong></p>
                 <p class="st-phone"><i class="fa fa-mobile"></i> <strong>+00 123-456-789</strong></p>
                 <p class="st-email"><i class="fa fa-envelope-o"></i> <strong>email@yourdomain.com</strong></p>
