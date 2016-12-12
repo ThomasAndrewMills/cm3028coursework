@@ -355,7 +355,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title">
-                    <h1>New2 Contact us</h1>
+                    <h1>New3 Contact us</h1>
                     <span class="st-border"></span>
                 </div>
             </div>
