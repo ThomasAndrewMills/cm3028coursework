@@ -319,7 +319,7 @@
                     var directionsService = new google.maps.DirectionsService;
                     var directionsDisplay = new google.maps.DirectionsRenderer;
                     var map = new google.maps.Map(document.getElementById('map'),   {
-                        zoom: 7,
+                        zoom: 15,
                         center: {lat: 57.062009, lng: -2.129583}
                     });
                     directionsDisplay.setMap(map);
