@@ -1098,6 +1098,7 @@
 /* 17. MAP*/
 
 #panel	{
+	position: relative;
 	padding-top: 5%;
 	padding-bottom: 2%;
 }
@@ -1105,7 +1106,6 @@
 #map{
 	background-color: #DCDCDC;
 	width: 100%;
-	padding-top: 3%;
 	padding-bottom: 3%;
 }
 
