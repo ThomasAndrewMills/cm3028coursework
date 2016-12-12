@@ -279,33 +279,33 @@
 <!-- map -->
 <section id="map" style="height:700px;">
     <div class="container">
-        <div id="floating-panel">
-            <b>Start: </b>
-            <select id="start">
-                <option value="57.057814, -2.135943">Portlethen Academy</option>
-                <option value="57.068341, -2.146797">Golf Course</option>
-                <option value="57.057554, -2.108243">Portlethen Bay</option>
-                <option value="57.063092, -2.139899">Asda Superstore</option>
-                <option value="57.057750, -2.135994">Swimming pool</option>
-                <option value="57.061551, -2.128097">Train Station</option>
-                <option value="57.056754, -2.116575">Portlethen Village</option>
-                <option value="57.062477, -2.128828">Portlethon Primary</option>
-                <option value="57.068889, -2.107275">Findon</option>
-            </select>
-            <b>End: </b>
-            <select id="end">
-                <option value="57.057814, -2.135943">Portlethen Academy</option>
-                <option value="57.068341, -2.146797">Golf Course</option>
-                <option value="57.057554, -2.108243">Portlethen Bay</option>
-                <option value="57.063092, -2.139899">Asda Superstore</option>
-                <option value="57.057750, -2.135994">Swimming pool</option>
-                <option value="57.061551, -2.128097">Train Station</option>
-                <option value="57.056754, -2.116575">Portlethen Village</option>
-                <option value="57.062477, -2.128828">Portlethon Primary</option>
-                <option value="57.068889, -2.107275">Findon</option>
-            </select>
-        </div>
         <div class="row">
+            <div id="floating-panel">
+                <b>Start: </b>
+                <select id="start">
+                    <option value="57.057814, -2.135943">Portlethen Academy</option>
+                    <option value="57.068341, -2.146797">Golf Course</option>
+                    <option value="57.057554, -2.108243">Portlethen Bay</option>
+                    <option value="57.063092, -2.139899">Asda Superstore</option>
+                    <option value="57.057750, -2.135994">Swimming pool</option>
+                    <option value="57.061551, -2.128097">Train Station</option>
+                    <option value="57.056754, -2.116575">Portlethen Village</option>
+                    <option value="57.062477, -2.128828">Portlethon Primary</option>
+                    <option value="57.068889, -2.107275">Findon</option>
+                </select>
+                <b>End: </b>
+                <select id="end">
+                    <option value="57.057814, -2.135943">Portlethen Academy</option>
+                    <option value="57.068341, -2.146797">Golf Course</option>
+                    <option value="57.057554, -2.108243">Portlethen Bay</option>
+                    <option value="57.063092, -2.139899">Asda Superstore</option>
+                    <option value="57.057750, -2.135994">Swimming pool</option>
+                    <option value="57.061551, -2.128097">Train Station</option>
+                    <option value="57.056754, -2.116575">Portlethen Village</option>
+                    <option value="57.062477, -2.128828">Portlethon Primary</option>
+                    <option value="57.068889, -2.107275">Findon</option>
+                </select>
+            </div>
             <body>
             <div id="maptwo"></div>
             <script>
