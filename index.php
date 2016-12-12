@@ -510,29 +510,35 @@
                 </div>
             </div>
             <div class="col-sm-6 col-md-3">
+                            <div class="fun-fact text-center">
+                                <!--GETTING AMOUNT OF Health articles-->
+                                <?php
+                                // connect to server and select database
+                                $db = new mysqli(
+                                    "eu-cdbr-azure-west-a.cloudapp.net",
+                                    "bd2505ec24d031",
+                                    "a0a7a671",
+                                    "goportlethendb"
+                                );
+                                // test if connection was established, and print any errors
+                                if ($db->connect_errno) {
+                                    die('Connectfailed[' . $db->connect_error . ']');
+                                }
+                                // create a SQL query as a string
+                                $sql_query = "SELECT * FROM genre;";
+                                // execute the SQL query
+                                $result = $db->query($sql_query);
+
+                                $rowsFound = $result->num_rows;
+
+                                echo('<h3><span class="st-counter">' . $rowsFound . '</span></h3>');
+                                ?>
+                                <p>Health Articles</p>
+                            </div>
+                        </div>
+            <div class="col-sm-6 col-md-3">
                 <div class="fun-fact text-center">
-                    <!--GETTING AMOUNT OF Health articles-->
-                    <?php
-                    // connect to server and select database
-                    $db = new mysqli(
-                        "eu-cdbr-azure-west-a.cloudapp.net",
-                        "bd2505ec24d031",
-                        "a0a7a671",
-                        "goportlethendb"
-                    );
-                    // test if connection was established, and print any errors
-                    if ($db->connect_errno) {
-                        die('Connectfailed[' . $db->connect_error . ']');
-                    }
-                    // create a SQL query as a string
-                    $sql_query = "SELECT * FROM genre;";
-                    // execute the SQL query
-                    $result = $db->query($sql_query);
-
-                    $rowsFound = $result->num_rows;
-
-                    echo('<h3><span class="st-counter">' . $rowsFound . '</span></h3>');
-                    ?>
+                    <h3><span class="st-counter">0</span></h3>
                     <p>Health Articles</p>
                 </div>
             </div>
