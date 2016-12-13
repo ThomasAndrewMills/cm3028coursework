@@ -435,15 +435,6 @@
                     <div style=\'display: inline-block;width:auto;float:left;max-width: 400px;margin-top:150px;\'>');
                 if (isset($_SESSION['emailAddress'])) {
                     echo('<a href="#">
-                              <form action="club.php?id=' . $clubid . '" method="post" style="display:inline;">
-                                    <input style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" name="joinClub" class="button" value="Join Club">
-                              </form>
-                          </a>
-                          <a href="editClub.php">
-                              <div style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;padding-top:9px;padding-bottom:9px;" class="button">
-                                   Edit Club
-                              </div>
-                          </a>
                           <form action="addEvent.php?id=' . $clubid . '" method="post" style="display:inline;">
                                 <input style="margin-left:5px;display: inline;font-weight: 600;border-radius: 5px;background-color: #63ffb2;" type="submit" name="addEvent" class="button" value="Add Event">
                           </form>
