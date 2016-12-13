@@ -264,7 +264,7 @@
                 <br>
                 <div style="float:left;width:570px;">
                     <div class="section-title">
-                        <h1>Post an Article</h1>
+                        <h1>Create a Club</h1>
                         <span class="st-border"></span>
                             <br>
                             <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
