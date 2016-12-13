@@ -676,7 +676,6 @@
             <!-- /SOCIAL ICONS -->
             <div class="col-sm-6 col-sm-pull-6 copyright">
                 <p>&copy; 2015 <a href="">ShapedTheme</a>. All Rights Reserved.</p>
-                <p> Logo <a href='http://www.freepik.com/free-vector/watercolor-running-man_715978.htm'>esigned by Freepik</a> </p>
             </div>
         </div>
     </div>
